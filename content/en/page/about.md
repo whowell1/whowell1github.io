@@ -5,7 +5,7 @@ date: 2021-01-14
 description:
 keywords: ["about-us", "about-hugo", "contact"]
 type: about
-thumbnail: "/Users/wren/development/hugo-website/personal/static/picture.jpg"
+
 ---
 
 I am currently working as a security analyst. I have experience in creating applications in Python, PHP, JavaScript, and Java. 
