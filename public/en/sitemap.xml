@@ -2,24 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blist.vercel.app/en/</loc>
-    <lastmod>2021-07-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://blist.vercel.app/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="dy"
-                href="https://blist.vercel.app/dy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blist.vercel.app/en/"
-                />
-  </url><url>
     <loc>https://blist.vercel.app/en/blog/</loc>
     <lastmod>2021-07-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -45,6 +27,24 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://blist.vercel.app/en/tags/"
+                />
+  </url><url>
+    <loc>https://blist.vercel.app/en/</loc>
+    <lastmod>2021-07-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://blist.vercel.app/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="dy"
+                href="https://blist.vercel.app/dy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blist.vercel.app/en/"
                 />
   </url><url>
     <loc>https://blist.vercel.app/en/tags/css/</loc>
