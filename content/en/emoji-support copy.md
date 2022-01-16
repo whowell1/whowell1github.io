@@ -1,12 +1,12 @@
 ---
-author: "Hugo Authors"
+author: "Wren Howell"
 title: "My Journey into the tech field"
-date: 2021-07-15
+date: 2021-01-14
 description: "My personal Journey"
 tags: ["emoji"]
 thumbnail: https://images.squarespace-cdn.com/content/v1/5181ccc0e4b03000ce6fc3e7/1509205023955-3HPFAPFHPE61JJV24MTH/What+Is+A+Buyers+Journey.jpeg?format=1500w
 ---
-<!-- My Journey As into cyber security
+<!-- My Journey into cyber security
 
 When I graduated from high school, I had no idea what I wanted to do. I remember telling some teachers that I wanted to double major in biology and African American history. I wanted to major in biology because I thought that would be a easy major, and I wanted to major in African American history because I loved the Civil Rights movements.
 Unlike many of my peers, I took a semester off before I started to go to college as I navigated the move back to the States after going high school abroad. 
