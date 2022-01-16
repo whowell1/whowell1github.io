@@ -1,4 +1,5 @@
-baseurl = "https://wonderful-wescoff-cddc75.netlify.app/"
+baseurl = "https://wrentarohowell.com/"
+#baseurl = "https://wonderful-wescoff-cddc75.netlify.app/"
 metaDataFormat = "yaml"
 title = "Wren Howell"
 theme = "blist"
