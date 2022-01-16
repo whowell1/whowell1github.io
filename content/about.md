@@ -1,10 +1,13 @@
-author: Wren Howel
+author: Wren Howell
 title: About Me
 date: 2021-01-14
 description:
-keywords: ["about-us", "about-hugo", "contact"]
+keywords: ["about-me"]
 type: about
 ---
+
+
+:honeybee:
 
 I am currently working as a security analyst. I have experience in developing applications in Python, PHP, JavaScript, and Java. 
 
