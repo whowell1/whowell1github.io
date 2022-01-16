@@ -1,6 +1,6 @@
 ---
 author: "Hugo Authors"
-title: "My Journey into the tech field "
+title: "My Journey into the tech field"
 date: 2021-07-15
 description: "My personal Journey"
 tags: ["emoji"]
