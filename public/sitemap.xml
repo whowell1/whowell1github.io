@@ -3,18 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://wrentarohowell.com/blog/</loc>
-    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wrentarohowell.com/tags/red-flags/</loc>
+    <lastmod>2022-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wrentarohowell.com/blog/being-on-a-good-team/</loc>
+    <lastmod>2022-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wrentarohowell.com/tags/</loc>
+    <lastmod>2022-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wrentarohowell.com/</loc>
+    <lastmod>2022-01-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wrentarohowell.com/tags/journey/</loc>
     <lastmod>2022-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wrentarohowell.com/blog/my-journey/</loc>
-    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wrentarohowell.com/tags/</loc>
-    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wrentarohowell.com/</loc>
     <lastmod>2022-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wrentarohowell.com/tags/css/</loc>
@@ -58,6 +64,8 @@
   </url><url>
     <loc>https://wrentarohowell.com/page/</loc>
     <lastmod>2021-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wrentarohowell.com/blog/tool-agnostic/</loc>
   </url><url>
     <loc>https://wrentarohowell.com/categories/</loc>
   </url>

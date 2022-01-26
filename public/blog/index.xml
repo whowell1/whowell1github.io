@@ -5,7 +5,17 @@
     <link>https://wrentarohowell.com/blog/</link>
     <description>Recent content in Blog on Wren Howell</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 14 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wrentarohowell.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wrentarohowell.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Red Flags to Look for When Looking for a New Team</title>
+      <link>https://wrentarohowell.com/blog/being-on-a-good-team/</link>
+      <pubDate>Sun, 23 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://wrentarohowell.com/blog/being-on-a-good-team/</guid>
+      <description>It is a new year and an strong job market with plenty of people looking for new roles. The following are a few red flags that I learned to look for from other developers and from my own experiences when looking a new team. In no particular order, here they are.
+ Managers that do not have technical experience.  This applies to people who are relatively early in their careers.</description>
+    </item>
+    
     <item>
       <title>My journey into the tech field</title>
       <link>https://wrentarohowell.com/blog/my-journey/</link>
@@ -14,6 +24,16 @@
       <guid>https://wrentarohowell.com/blog/my-journey/</guid>
       <description>I have been in the tech field for almost two years, and a common question that I get asked from college students and high school students that look like me is, “How did you get there?” So to all that ask, here is my story.
 If someone had asked me when I was in high school that I would be working in tech, I would not have believed them. Back then, I did not even know that was a career option.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wrentarohowell.com/blog/tool-agnostic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wrentarohowell.com/blog/tool-agnostic/</guid>
+      <description>The importance of being tool agnostic
+In technology, whether as a engineer, or a anaylst, tools change all the time. As a developer, front end frameworks change all the time, from React, Svelte, to Angular. As a</description>
     </item>
     
   </channel>
