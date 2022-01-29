@@ -13,7 +13,7 @@ DefaultContentLanguageInSubdir = true
     languageName = "English"
     [languages.en.params]
       introTitle = "Hey! I'm Wren"
-      introSubtitle = "I am a security analyst/programmer and this is my page where I write about security, web3, and some other topics I am interested in. "
+      introSubtitle = "I am a security analyst/programmer and this is my page where I write about security, technology, and some other topics I am interested in. "
       introPhoto = "/picture.jpg"
       logo = "/blist-logo.png"
     [[languages.en.menu.main]]
