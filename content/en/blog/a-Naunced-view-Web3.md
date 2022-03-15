@@ -1,10 +1,10 @@
 ---
 author: "Wren Howell"
 title: "A Naunced View on Web3"
-date: 2022-01-23
+date: 2022-03-06
 description: "My view on Web"
 tags: ["Web3"]
-thumbnail: hhttps://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fphotos%2Fweb3-world-wide-web-based-on-blockchain-incorporating-and-token-picture-id1370239730%3Fb%3D1%26k%3D20%26m%3D1370239730%26s%3D170667a%26w%3D0%26h%3DtHRnKVPIpa_bOBtw7TTULBFEV25dEYVLI2Ye9NPu1Ug%3D&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fweb3&tbnid=ka79yisQ8mi0HM&vet=12ahUKEwjw7pD_lsf2AhWPsXIEHSd2Bm0QMygBegUIARDdAQ..i&docid=k7UBoQTEWNPPAM&w=567&h=305&q=web3%20image&ved=2ahUKEwjw7pD_lsf2AhWPsXIEHSd2Bm0QMygBegUIARDdAQ
+thumbnail: https://academy-public.coinmarketcap.com/optimized-uploads/559ebb4592094a2cad06aa5655510a2b.png
 ---
 As I reflected on my journey into tech, I realized that my motivations and interests are linked to liberation. Liberation is why I studied the Civil Rights Movement, why I was interested in history, and why I got into cybersecurity and tech. I have been in plenty of Web3 Twitter spaces over the last couple of weeks, and I often hear that Web3 is revolutionary because it has the potential to liberate people. So I am asking the question: what is Web3 and how does it liberate people?
 
