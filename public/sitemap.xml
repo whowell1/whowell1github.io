@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://wrentarohowell.com/blog/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wrentarohowell.com/tags/k8-learning/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wrentarohowell.com/blog/kubernetes/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wrentarohowell.com/tags/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wrentarohowell.com/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://wrentarohowell.com/blog/a-naunced-view-web3/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wrentarohowell.com/blog/</loc>
-    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wrentarohowell.com/tags/</loc>
-    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://wrentarohowell.com/tags/web3/</loc>
-    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wrentarohowell.com/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wrentarohowell.com/tags/red-flags/</loc>
