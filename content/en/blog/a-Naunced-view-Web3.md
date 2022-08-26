@@ -12,6 +12,8 @@ Bitcoin, cryptocurrencies, and NFTs are under the umbrella of web3, or Web 3.0. 
 
 Web 1.0 was the first iteration of the web that was composed of static HTML pages. This means that all you could do was load the page and read its contents. The picture below shows an example of what a website in Web 1.0 looked like.
 
+<img src="/early-web.jpeg" width="400">
+
 
 Web 2.0 is the current iteration of the internet as we know it. Unlike Web 1.0, it allowed content creators and its users more participation. It let people comment on websites and blogs and allowed more people to share content online. This helped power sites like Youtube, Facebook, and Instagram. 
 
@@ -27,7 +29,7 @@ Cryptocurrency
 
 Cryptocurrencies are virtual currencies underpinned by cryptographic systems. They enable secure online payments without the use of third-party middlemen. "Crypto" refers to the various encryption algorithms and cryptographic techniques that safeguard these entries. There are many different types of cryptocurrencies and each type of cryptocurrency tackles different problems. 
 Bitcoin 
-The first major cryptocurrency developed was by Satoshi Nakamoto and is a pseudonym used by its founder or group of founders. Bitcoin is created, traded, and stored on a public ledger, the blockchain, and stores value. The difference between Bitcoin and other traditional like the dollar is that it is not backed by an institution such a bank or a government and has a fixed amount of bitcoin. 
+The first major cryptocurrency developed was by Satoshi Nakamoto and is a pseudonym used by its founder or group of founders. Bitcoin is created, traded, and stored on a public ledger, the blockchain, and stores value. The difference between Bitcoin and other traditional currencies like the dollar is that it is not backed by an institution such a bank or a government and has a fixed amount of bitcoin. 
 
 Ethereum and smart contracts
 
