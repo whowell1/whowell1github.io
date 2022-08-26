@@ -13,9 +13,6 @@ Bitcoin, cryptocurrencies, and NFTs are under the umbrella of web3, or Web 3.0. 
 Web 1.0 was the first iteration of the web that was composed of static HTML pages. This means that all you could do was load the page and read its contents. The picture below shows an example of what a website in Web 1.0 looked like.
 
 
-
-
-
 Web 2.0 is the current iteration of the internet as we know it. Unlike Web 1.0, it allowed content creators and its users more participation. It let people comment on websites and blogs and allowed more people to share content online. This helped power sites like Youtube, Facebook, and Instagram. 
 
 Web3, or as I like to refer to it as Web2+, refers to a movement towards decentralization of power from entities that control the internet. In the current iteration of Web2.0, social media sites like Facebook, Google, Twitter control user data and users are dependent on the platform. A problem in Web2.0 is that content creators rely on the algorithm to make sure that their content is shared, and for content creators to make money, the platform is always up and running. Although sites like Instagram are usually accessible, there have been times where Instagram has been down that would affect your income as a creator (Imagine if you were promoting a product live and the Instagram site was down). Users also do not control how these companies store and use their data. Web3 attempts to take power back from these companies through decentralization. 
