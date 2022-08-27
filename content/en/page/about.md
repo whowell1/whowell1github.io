@@ -1,5 +1,5 @@
 ---
-author: Wren Howel
+author: Wren Howell
 title: About Me
 date: 2021-01-14
 description:
