@@ -83,7 +83,7 @@ In the Airbnb, Seccomp acts like a strict bouncer stationed at the property entr
 So, if one of your friends try to engage in any activity not on the approved list, like trying to access sensitive areas or performing potentially dangerous actions, the bouncer blocks them from doing so, ensuring that only safe and permitted actions are allowed within the Airbnb property.
 
 
-In short, Seccomp acts as a vigilant gatekeeper, restricting guests (orm processes in Linux land) to only perform authorized and safe activities, enhancing security within the Airbnb environment.
+In short, Seccomp acts as a vigilant gatekeeper, restricting guests (or, processes in Linux land) to only perform authorized and safe activities, enhancing security within the Airbnb environment.
 
 I hope you enjoyed this analogy filled breakdown of what a container is!
 
