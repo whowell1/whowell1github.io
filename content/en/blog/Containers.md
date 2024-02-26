@@ -68,7 +68,8 @@ Depending on the operating system, the type of MAC control changes. Debian-deriv
 
 AppArmor creates a "profile" for each program, which contains the rules governing its behavior. These profiles restrict access to a number of resources, including files, network traffic, and Linux Capabilities.
 
-Understanding AppArmor and SELinux Better with Airbnb Analogy
+**Understanding AppArmor and SELinux Better with Airbnb Analogy**
+
 SELinux is like having strict rules and regulations enforced by the landlord for every aspect of the rental property. Each room has specific rules that guests have to follow , such as what they can touch and who they can interact with. These rules are rigidly enforced, ensuring a high level of security but leave little room for context.
 
 On the other hand, AppArmor is more like having personalized security guards assigned to each guest. These guards closely monitor the activities of individual guests and intervene if they detect any suspicious behavior or if a guest tries to access restricted areas. The rules are tailored to each person’s behavior and can be adjusted more based on their specific circumstances. This approach provides a flexible and customizable security solution but requires more effort and resources to ensure optimal protection.
@@ -81,7 +82,10 @@ In the Airbnb, Seccomp acts like a strict bouncer stationed at the property entr
 
 So, if one of your friends try to engage in any activity not on the approved list, like trying to access sensitive areas or performing potentially dangerous actions, the bouncer blocks them from doing so, ensuring that only safe and permitted actions are allowed within the Airbnb property.
 
-In summary, Seccomp acts as a vigilant gatekeeper, restricting guests (or, in this case, processes) to only perform authorized and deemed safe activities, enhancing security within the Airbnb environment.
+
+In short, Seccomp acts as a vigilant gatekeeper, restricting guests (orm processes in Linux land) to only perform authorized and safe activities, enhancing security within the Airbnb environment.
+
+I hope you enjoyed this analogy filled breakdown of what a container is!
 
 
 
