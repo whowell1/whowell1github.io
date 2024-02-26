@@ -23,7 +23,7 @@ This means that containers are places where you can run programs with constraine
 
 Why is the environment restricted?  
 
-Since people who work in tech are most familiar with Docker containers which are Linux-based containers,, I will explain how a Docker container can run programs in a constrained environment. 
+Since people who work in tech are most familiar with Docker containers which are Linux-based containers, I will explain how a Docker container can run programs in a constrained environment. 
 
 A container is in a restricted environment because it shares the kernel with the underlying host. This allows the container to run on the same operating system as the host, unlike virtual machines where the VM DOES need a separate kernel. So, a good analogy would be going on a trip with a group of friends and their significant others for a birthday celebration. Instead of staying at a different hotel, everybody stays in an Airbnb that has two stories, a basement, and an extra cottage in the backyard. At an Airbnb, all the friends can share the same resources the house provides, like a bathroom and a kitchen.. Some of the benefits of staying at the Airbnb instead of the hotel is that it is cheaper, it is easier to coordinate activities, and it is faster to get up and go.
 
