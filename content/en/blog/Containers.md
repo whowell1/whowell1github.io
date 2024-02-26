@@ -1,7 +1,7 @@
 ---
 author: "Wren Howell"
 title: "Understanding Containers and their underlying Technology "
-date: 2022-03-14
+date: 2024-02-26
 description: "Containers Learning Journey"
 tags: ["Containers, learning"]
 thumbnail: https://cdn.shopify.com/s/files/1/0120/4849/8752/files/iStock-1284852950_480x480.jpg?v=1618857709
