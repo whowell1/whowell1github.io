@@ -53,11 +53,12 @@ Network: Imagine this as a basement in the Airbnb with its own utilities such as
 
 **What are capabilities?**
 
-Capabilities give the ability to grant privileges at a granular level. Continuing with the Airbnb analogy, imagine if you had to ask the Airbnb host for every change you wanted to make during the stay, like adjusting to temperature or requesting the owner of Airbnb to see if you could invite additional friends over for dinner at Airbnb. This would take a long time and provide a frustrating experience, as you would have to wait until the host responds. From the host's perspective, they also want to give a great experience to their guests and not be bothered by every little change, but they want to protect their property by not having any rules. The decision to permit doing certain things would be up to the person's name on Airbnb as they will be the one responsible for the condition of the Airbnb. In this way, capabilities give the system granular control ability without being over-permissive.   
+Capabilities give the ability to grant privileges at a granular level. Continuing with the Airbnb analogy, imagine if you had to ask the Airbnb host for every change you wanted to make during the stay, like adjusting to temperature or requesting the owner of Airbnb to see if you could invite additional friends over for dinner at Airbnb. This would take a long time and provide a frustrating experience, as you would have to wait until the host responds. From the host's perspective, they also want to give a great experience to their guests and not be bothered by every little change, but they want to protect their property by not having any rules. The decision to permit doing certain things would be up to the person's name on Airbnb as they will be the one responsible for the condition of the Airbnb. In this way, capabilities give the system granular control without being over-permissive.   
 
 **What are Cgroups?**
 
 Cgroups, short for "control groups," is a feature in the Linux kernel that allows you to manage and allocate system resources, such as CPU, memory, disk I/O, and network bandwidth, among groups of processes. Continuing with the Airbnb analogy, cgroups ensure that one friend or a couple of friends do not use all the water or electricity and are not inconvenient to other people. 
+
 Most modern Linux operating systems utilize Cgroup2, but there could be both cgroup1 and cgroup2 on a host. Cgroup2 is a more advanced implementation of cgroup1 and has additional security controls that enable newer features like rootless containers. 
 
 **What are mandatory access controls?**
@@ -74,7 +75,7 @@ SELinux is like having strict rules and regulations enforced by the landlord for
 
 On the other hand, AppArmor is more like having personalized security guards assigned to each guest. These guards closely monitor the activities of individual guests and intervene if they detect any suspicious behavior or if a guest tries to access restricted areas. The rules are tailored to each person’s behavior and can be adjusted more based on their specific circumstances. This approach provides a flexible and customizable security solution but requires more effort and resources to ensure optimal protection.
 
-What is Seccomp? 
+**What is Seccomp?**
 
 Seccomp, short for Secure Computing Mode, is a feature in the Linux kernel that allows you to restrict the system calls made by a process. Seccomp filters are rules or policies that define which system calls a process is allowed to make, limiting its ability to interact with the operating system. For example, when a process tries to make a system call, Seccomp checks it against the defined rules. If the system call is allowed by the rules, it is executed normally. However, if the system call is not permitted, Seccomp blocks it and prevents the system call from being executed.
 
