@@ -1,6 +1,6 @@
 ---
 author: "Wren Howell"
-title: "Understanding Containers and their underlying Technology "
+title: "Understanding the What in Containers and their Underlying Technology "
 date: 2024-02-26
 description: "Containers Learning Journey"
 tags: ["Containers, learning"]
