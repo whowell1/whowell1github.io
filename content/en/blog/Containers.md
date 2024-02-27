@@ -42,13 +42,13 @@ Mount namespace: Picture this as a storage room for storing different items (fil
 
 PID namespace: Imagine that at this Airbnb, there is going to be a huge party on the first floor and each room of the Airbnb is going to have a theme. Because the music is very loud in each room, only the people with the same theme can communicate with each other. In this analogy, a theme in the party represents a namespace. Just like how only people in the same theme can only communicate with each other, because processes within a PID namespace have unique process IDs, they cannot  or interact with processes outside their namespace.
   
-Time: Imagine you have a habit of being late, so in your room, you set your clock 15 minutes earlier than the clock in the Airbnb's living room. Similarly, processes in this namespace can have different time settings than the underlying host. 
+Time namespace: Imagine you have a habit of being late, so in your room, you set your clock 15 minutes earlier than the clock in the Airbnb's living room. Similarly, processes in this namespace can have different time settings than the underlying host. 
 
 
 User Namespace: Consider this a room where you and your friends (users) in the house have their own keys and access privileges. Each person can access certain rooms based on their keys, but they can't access rooms they don't have keys for. To further break down the example, you will only have access to your room when you lock the door, not your friend's. Similarly, processes within a user namespace have their own isolated user and group IDs, separate from the IDs in the rest of the system.
 
 
-Network: Imagine this as a basement in the Airbnb with its own utilities such as electricity, water, and internet connection. Each bathroom represents a namespace as each bathroom has isolated plumbing and lights that serve the needs of each friend. The flooding of one bathroom will not make the bathrooms in the Airbnb unusable. Similarly, processes within a network namespace have their own isolated network configuration, like network interfaces that provide security, resource management, and isolation for its processes. 
+Network namespace: Imagine this as a basement in the Airbnb with its own utilities such as electricity, water, and internet connection. Each bathroom represents a namespace as each bathroom has isolated plumbing and lights that serve the needs of each friend. The flooding of one bathroom will not make the bathrooms in the Airbnb unusable. Similarly, processes within a network namespace have their own isolated network configuration, like network interfaces that provide security, resource management, and isolation for its processes. 
 
 
 **What are capabilities?**
