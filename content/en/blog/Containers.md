@@ -28,7 +28,7 @@ Since people who work in tech are most familiar with Docker containers which are
 
 A container is in a restricted environment because it shares the kernel with the underlying host. This allows the container to run on the same operating system as the host, unlike virtual machines where the VM **DOES** need a separate kernel. So, a good analogy would be going on a trip with a group of friends and their significant others for a birthday celebration. Instead of staying at a different hotel, everybody stays in an Airbnb that has two stories, a basement, and an extra cottage in the backyard. At an Airbnb, all the friends can share the same resources the house provides, like a bathroom and a kitchen. Some of the benefits of staying at the Airbnb instead of the hotel is that it is cheaper, it is easier to coordinate activities, and it is faster to get up and go.
 
-In this case, renting an Airbnb would be a container, and going to a hotel would be a virtual machine as everybody will be under one roof and will share resources of the home. Just like if everybody stays at the Airbnb, it is faster to go places together, and cheaper than staying at a hotel, containers are much quicker to start up, less resource intensive than virtual machines. 
+In this case, renting an Airbnb would be a container, and going to a hotel would be a virtual machine as everybody will be under one roof and will share resources of the home. Just like if everybody stays at the Airbnb, it is faster to go places together, and cheaper than staying at a hotel, containers are much quicker to start up and less resource intensive than virtual machines. 
 
 **What does it mean to run programs in a restricted environment?**
 
