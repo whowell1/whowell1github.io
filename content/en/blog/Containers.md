@@ -1,12 +1,12 @@
 ---
 author: "Wren Howell"
-title: "Understanding the What in Containers and their Underlying Technology "
+title: "Understanding the What in Containers and their Underlying Technology"
 date: 2024-02-26
 description: "Containers Learning Journey"
 tags: ["Containers, learning"]
 thumbnail: https://cdn.shopify.com/s/files/1/0120/4849/8752/files/iStock-1284852950_480x480.jpg?v=1618857709
 ---
-**Understanding Container Security**
+**Understanding Containers**
 
 Two years ago, I started on a journey to understand containers. In that journey, I dove deep into containers and here are the highlights of what I learned.
 
@@ -57,7 +57,7 @@ Capabilities give the ability to grant privileges at a granular level. Continuin
 
 **What are Cgroups?**
 
-Cgroups, short for "control groups," is a feature in the Linux kernel that allows you to manage and allocate system resources, such as CPU, memory, disk I/O, and network bandwidth, and groups of processes. Continuing with the Airbnb analogy, cgroups ensure that one friend or a couple of friends do not use all the water or electricity in the Airbnb and do not cause inconveniences to other people. 
+Cgroups, short for "control groups," is a feature in the Linux kernel that allows you to manage and allocate system resources, such as CPU, memory, disk I/O, and network bandwidth, and groups of processes. Continuing with the Airbnb analogy, cgroups ensure that one friend or a couple of friends in a different part of the Airbnb do not use all the water or electricity in it and do not cause inconveniences to other people. 
 
 Most modern Linux operating systems utilize Cgroup2, but there could be both cgroup1 and cgroup2 on a host. Cgroup2 is a more advanced implementation of cgroup1 and has additional security controls that enable newer features like rootless containers. 
 
