@@ -56,13 +56,13 @@ Better interview questions will ask the interviewee about the situation and gaug
 
 These are better questions because they have a variety of answers that you can give that are not easily Googleable and require you to show nuance and situational awareness. 
 
-**A link to resources that a list of interview questions**
+**A link to resources that has a list of interview questions**
 
-[Simplilearn] (https://www.simplilearn.com/tutorials/cyber-security-tutorial/cyber-security-interview-questions)
-[edureka]  (https://www.edureka.co/blog/interview-questions/cybersecurity-interview-questions/)
-[brainstation] (https://brainstation.io/career-guides/cybersecurity-interview-questions)
+- Questions from [edureka](https://www.edureka.co/blog/interview-questions/cybersecurity-interview-questions/)
 
-We just updated our [Docs Contribution Guide](https://www.codecademy.com/pages/contribute-docs)!
+- Questions from [Simplilearn](https://www.simplilearn.com/tutorials/cyber-security-tutorial/cyber-security-interview-questions)
+
+- Questions from [brainstation](https://brainstation.io/career-guides/cybersecurity-interview-questions)
 
 
 
