@@ -54,7 +54,7 @@ Better interview questions will ask the interviewee about the situation and gaug
 
 - In your opinion, what is the most essential part of the CIA triad?
 
-These are better questions because they have a variety of answers that you can give that are not easily Googleable and require you to show nuance and situational awareness. 
+These are better questions because they have a variety of answers that you can give that are not easily Googleable and require you to show nuance and situational awareness. My advice for those looking to interview would be say that understanding the WHAT questions are important, but more important are the how and why. When asked a situational question know how to explain why you are doing x and why you are doing y. 
 
 **A link to resources that has a list of interview questions**
 
