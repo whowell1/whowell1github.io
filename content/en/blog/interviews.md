@@ -2,7 +2,7 @@
 author: "Wren Howell"
 title: "Advice on Technical Interviews "
 date: 2023-01-14
-description: "Interviews"
+description: "Interviews tips"
 tags: ["Interview Questions Tips, Interview questions resources"]
 thumbnail: https://image.cnbcfm.com/api/v1/image/107252082-1686077448227-job-interview-2021-09-24-04-13-49-utc.jpg?v=1688994001&w=630&h=354&ffmt=webp&vtcrop=y
 ---
