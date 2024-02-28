@@ -48,11 +48,11 @@ thumbnail: https://image.cnbcfm.com/api/v1/image/107252082-1686077448227-job-int
  
 Better interview questions will ask the interviewee about the situation and gauge how they would respond. Here are examples of better interview questions.  
 
-**You have found three types of malware on different hosts: a trojan, a virus, and a worm. What are some ways to contain these types of malware?**
+- You have found three types of malware on different hosts: a trojan, a virus, and a worm. What are some ways to contain these types of malware?
 
-**In what situations would a threat actor use encryption, hashing, and encoding to hide their malicious activities?**
+- In what situations would a threat actor use encryption, hashing, and encoding to hide their malicious activities?
 
-**In your opinion, what is the most essential part of the CIA triad?** 
+- In your opinion, what is the most essential part of the CIA triad?
 
 These are better questions because they have a variety of answers that you can give that are not easily Googleable and require you to show nuance and situational awareness. 
 
