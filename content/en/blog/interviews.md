@@ -27,7 +27,7 @@ thumbnail: https://image.cnbcfm.com/api/v1/image/107252082-1686077448227-job-int
 
 - Encryption is a way to scramble data so only authorized parties can unscramble it. The only way to “unlock” a piece of data is to have a key. There are two types of encryption: public and private key encryption.
   - Public key encryption, also known as asymmetric encryption, is where something uses a public key to encrypt the message, and the recipient of the intended message uses the private key to decrypt the message. Examples are Diffie-Hellman key exchange and the RSA.  
-  - Private key encryption or symmetric key encryption is the simple lock and key analogy. The same message is used to encrypt and decrypt a message. Examples that use this encryption are AES and WPA encryption.
+  - Private key encryption or symmetric key encryption is the simple lock and key analogy. The same message is used to encrypt and decrypt a message. Examples that use this type of encryption are AES and WPA encryption.
 
 - Hashing is the process of converting data — text, numbers, files — into a fixed-length string of letters and numbers. This form of data manipulation is not bidirectional, meaning that once you hash data using a hasing alogorithm, it is almost impossible to have the data return to its original form. Examples of hashes includes MD5 and sha256. 
 
@@ -63,7 +63,6 @@ These are better questions because they have a variety of answers that you can g
 - Questions from [Simplilearn](https://www.simplilearn.com/tutorials/cyber-security-tutorial/cyber-security-interview-questions)
 
 - Questions from [brainstation](https://brainstation.io/career-guides/cybersecurity-interview-questions)
-
 
 
 
