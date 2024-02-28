@@ -23,7 +23,7 @@ thumbnail: https://image.cnbcfm.com/api/v1/image/107252082-1686077448227-job-int
 
 **What is the difference between encryption, hashing, encoding, and serialization?**
 
-- All four listed above are a form of changing the data from one form to another.  
+- All four listed above are a way of changing the data from one form to another.  
 
 - Encryption is a way to scramble data so only authorized parties can unscramble it. The only way to “unlock” a piece of data is to have a key. There are two types of encryption: public and private key encryption.
   - Public key encryption, also known as asymmetric encryption, is where something uses a public key to encrypt the message, and the recipient of the intended message uses the private key to decrypt the message. Examples are Diffie-Hellman key exchange and the RSA.  
