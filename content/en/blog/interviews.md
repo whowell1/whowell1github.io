@@ -7,7 +7,7 @@ tags: ["Interview Questions"]
 thumbnail: https://image.cnbcfm.com/api/v1/image/107252082-1686077448227-job-interview-2021-09-24-04-13-49-utc.jpg?v=1688994001&w=630&h=354&ffmt=webp&vtcrop=y
 ---
 
- I have had mentees ask me for advice for technical interviews for a cyber security job. There is no question that the worst part of looking for a job is the interview because there is so much riding on your answers. To prepare, most people Google "Top 75 cybersecurity questions" and try to memorize questions from that list (links to some example questions are listed at the end).
+ I have had mentees ask me for advice for technical interviews for a cyber security job. There is no question that the worst part of looking for a job is the interview because there is so much riding on your answers. To prepare, most beginners Google "Top 75 cybersecurity questions" and try to memorize questions from that list (links to some example questions are listed at the end).
  
  However, even though those questions are important to know, those questions do not really tell the interviewer of interviewee any essential information. These are the wrong questions to ask because they are Googleable questions. Somebody with no experience can memorize the questions, or a qualified candidate can forget the exact definition of these words in the heat of the moment. At a job, most WHAT questions can be Googled, and the actual work only starts when you can use the answers to formulate a theory and apply them. The purpose of a good interview should be to evaluate how prepared a candidate is for the job, and the questions asked should reflect questions that a candidate would be expected to answer. Here are some examples of bad interview questions: 
 
@@ -63,8 +63,6 @@ These are better questions because they have a variety of answers that you can g
 - Questions from [Simplilearn](https://www.simplilearn.com/tutorials/cyber-security-tutorial/cyber-security-interview-questions)
 
 - Questions from [brainstation](https://brainstation.io/career-guides/cybersecurity-interview-questions)
-
-
 
 {{< css.inline >}}
 
