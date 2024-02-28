@@ -23,9 +23,11 @@ thumbnail: https://image.cnbcfm.com/api/v1/image/107252082-1686077448227-job-int
 
 **What is the difference between encryption, hashing, encoding, and serialization?**
 
-- All three listed above are a form of changing the data from one form to another.  
+- All four listed above are a form of changing the data from one form to another.  
 
-- Encryption is a way to scramble data so only authorized parties can unscramble it. The only way to “unlock” a piece of data is to have a key. There are two types of encryption: public and private key encryption. Public key encryption, also known as asymmetric encryption, is where something uses a public key to encrypt the message, and the recipient of the intended message uses the private key to decrypt the message. Examples are Diffie-Hellman key exchange. Private key encryption or symmetric key encryption is the simple lock and key analogy. The same message is used to encrypt and decrypt a message. Examples that use this encryption are AES and WPA encryption.
+- Encryption is a way to scramble data so only authorized parties can unscramble it. The only way to “unlock” a piece of data is to have a key. There are two types of encryption: public and private key encryption.
+  - Public key encryption, also known as asymmetric encryption, is where something uses a public key to encrypt the message, and the recipient of the intended message uses the private key to decrypt the message. Examples are Diffie-Hellman key exchange. 
+  - Private key encryption or symmetric key encryption is the simple lock and key analogy. The same message is used to encrypt and decrypt a message. Examples that use this encryption are AES and WPA encryption.
 
 - Hashing is like a fingerprint of a program. This form of data manipulation is not bidirectional, meaning that once you hash data, it is impossible to have the data return to its original form. Examples of hashes includes MD5 and sha256. 
 
@@ -35,7 +37,10 @@ thumbnail: https://image.cnbcfm.com/api/v1/image/107252082-1686077448227-job-int
 
 **What is the CIA triad?**
 
--Confidentiality, Integrity, and Availability
+- The CIA triad is a model in cybersecurity that stands for confidentiality, integrity, and availability.
+  - Confidentiality refers to the protection of sensitive information from unauthorized access or disclosure. This means ensuring that only authorized individuals or systems have access to certain data or resources.
+  - Integrity ensures that data remains accurate, reliable, and consistent throughout its lifecycle. 
+  - Availability ensures that information and resources are accessible and usable when needed by authorized users. 
 
 **What is the DFIR process?**
 
@@ -49,11 +54,13 @@ Better interview questions will ask the interviewee about the situation and gaug
 
 **In your opinion, what is the most essential part of the CIA triad?** 
 
-These are better questions because they have a variety of answers that you can give that are not Googleable and require you to show nuance and situational awareness. 
+These are better questions because they have a variety of answers that you can give that are not easily Googleable and require you to show nuance and situational awareness. 
 
+**A link to resources that a list of interview questions**
 
-
-
+[Simplilearn] (https://www.simplilearn.com/tutorials/cyber-security-tutorial/cyber-security-interview-questions)
+[edureka]  (https://www.edureka.co/blog/interview-questions/cybersecurity-interview-questions/)
+[brainstation] (https://brainstation.io/career-guides/cybersecurity-interview-questions)
 
 
 
