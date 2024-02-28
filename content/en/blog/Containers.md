@@ -36,7 +36,7 @@ Continuing with the Airbnb analogy, just because everybody stays at the Airbnb a
 
 **What are namespaces?**
 
-Namespaces are a feature in Linux that allows processes to have their own isolated view of system resources. Going back to the Airbnb analogy, each room represents a specific resource or aspect of the system, and namespaces are like  sections within this house that provide isolation for different activities. Eight namespaces are currently supported by Docker: mount, PID, network, Cgroup, IPC, time, UTS, and user namespace. Each one serves an important function, but I want to highlight the mount, PID, time, and user namespaces. Each of these namespaces is explained in further detail in the Linux man-pages. 
+Namespaces are a feature in Linux that allows processes to have their own isolated view of system resources. Going back to the Airbnb analogy, each room represents a specific resource or aspect of the system, and namespaces are like  sections within this house that provide isolation for different activities. Eight namespaces are currently supported by Docker: mount, PID, network, Cgroup, IPC, time, UTS, and user namespace. Each one serves an important function, but I want to highlight the mount, PID, and time. Each of these namespaces is explained in further detail in the Linux man-pages. 
 
 Mount namespace: Picture this as a storage room for storing different items (files and directories). Just as the Airbnb will have a central storage area, each room of the Airbnb will also have its own storage area as well with its own layout. For example, the basement and the cottage in the backyard will have different storage layouts, and the friend staying at the basement should not store their belongings in the cottage. In the same way, processes within a mount namespace have their own isolated view of the filesystem, with their own set of mounts and directories.
 
@@ -44,7 +44,7 @@ PID namespace: For this birthday celebration, imagine that there is a plan to ha
 
 Time namespace: Imagine for this trip there are time-sensitive events that everyone has to go to but you have a habit of being late. So to avoid running late you set your clock in your room 15 minutes earlier than the normal time. Similarly, processes in this namespace can have different time settings than the underlying host.
 
-User Namespace: Consider this a room where you and your friends (users) in the house have their own keys and access privileges. Each person can access certain rooms based on their keys, but they can't access rooms they don't have keys for. To further break down the example, you will only have access to your room when you lock the door, not your friend's. Similarly, processes within a user namespace have their own isolated user and group IDs, separate from the IDs in the rest of the system.
+
 
 
 Network namespace: Imagine this as a basement in the Airbnb with its own utilities such as electricity, water, and internet connection. Each bathroom represents a namespace as each bathroom has isolated plumbing and lights that serve the needs of each friend. The flooding of one bathroom will not make the bathrooms in the Airbnb unusable. Similarly, processes within a network namespace have their own isolated network configuration, like network interfaces that provide security, resource management, and isolation for its processes. 
