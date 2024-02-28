@@ -62,6 +62,9 @@ These are better questions because they have a variety of answers that you can g
 [edureka]  (https://www.edureka.co/blog/interview-questions/cybersecurity-interview-questions/)
 [brainstation] (https://brainstation.io/career-guides/cybersecurity-interview-questions)
 
+We just updated our [Docs Contribution Guide](https://www.codecademy.com/pages/contribute-docs)!
+
+
 
 
 {{< css.inline >}}
