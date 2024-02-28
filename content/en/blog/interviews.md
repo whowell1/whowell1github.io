@@ -12,40 +12,42 @@ thumbnail: https://image.cnbcfm.com/api/v1/image/107252082-1686077448227-job-int
  However, even though those questions are important to know, those questions do not really tell the interviewer of interviewee any essential information. These are the wrong questions to ask because they are Googleable questions. Somebody with no experience can memorize the questions, or a qualified candidate can forget the exact definition of these words in the heat of the moment. At a job, most WHAT questions can be Googled, and the actual work only starts when you can use the answers to formulate a theory and apply them. The purpose of a good interview should be to evaluate how prepared a candidate is for the job, and the questions asked should reflect questions that a candidate would be expected to answer. Here are some examples of bad interview questions: 
 
  
- What is the difference between a trojan, a virus, and a worm?
+ **What is the difference between a trojan, a virus, and a worm?**
 
-A trojan is a malicious software that disguises itself as a legitimate program. Examples of Trojans are Infostealer and Emotet.  
+- A trojan is a malicious software that disguises itself as a legitimate program. Examples of Trojans are Infostealer and Emotet.  
 
-A virus is a type of malware that attaches itself to executable files or documents and replicates it by infecting other files. It typically requires user intervention to spread, such as running an infected program or opening an infected file. WannaCry is an example of a virus.
+- A virus is a type of malware that attaches itself to executable files or documents and replicates it by infecting other files. It typically requires user intervention to spread, such as running an infected program or opening an infected file. WannaCry is an example of a virus.
 
 
-A worm is a standalone malware program that spreads independently over computer networks or the internet, typically without user intervention. Unlike viruses, worms do not need to attach themselves to other files to spread. An example of a worm would be Stuxnet. 
+- A worm is a standalone malware program that spreads independently over computer networks or the internet, typically without user intervention. Unlike viruses, worms do not need to attach themselves to other files to spread. An example of a worm would be Stuxnet. 
 
-What is the difference between encryption, hashing, encoding, and serialization? 
+**What is the difference between encryption, hashing, encoding, and serialization?**
 
-All three listed above are a form of changing the data from one form to another.  
+- All three listed above are a form of changing the data from one form to another.  
 
-Encryption is a way to scramble data so only authorized parties can unscramble it. The only way to “unlock” a piece of data is to have a key. There are two types of encryption: public and private key encryption. Public key encryption, also known as asymmetric encryption, is where something uses a public key to encrypt the message, and the recipient of the intended message uses the private key to decrypt the message. Examples are Diffie-Hellman key exchange. Private key encryption or symmetric key encryption is the simple lock and key analogy. The same message is used to encrypt and decrypt a message. Examples that use this encryption are AES and WPA encryption.
+- Encryption is a way to scramble data so only authorized parties can unscramble it. The only way to “unlock” a piece of data is to have a key. There are two types of encryption: public and private key encryption. Public key encryption, also known as asymmetric encryption, is where something uses a public key to encrypt the message, and the recipient of the intended message uses the private key to decrypt the message. Examples are Diffie-Hellman key exchange. Private key encryption or symmetric key encryption is the simple lock and key analogy. The same message is used to encrypt and decrypt a message. Examples that use this encryption are AES and WPA encryption.
 
-Hashing is like a fingerprint of a program. This form of data manipulation is not bidirectional, meaning that once you hash data, it is impossible to have the data return to its original form. Examples of hashes includes MD5 and sha256. 
+- Hashing is like a fingerprint of a program. This form of data manipulation is not bidirectional, meaning that once you hash data, it is impossible to have the data return to its original form. Examples of hashes includes MD5 and sha256. 
 
-Encoding is converting one form of data to another so a different format can read it. An example would be encoding data from UTF-8 to another character set. Or from json to xml. 
+- Encoding is converting one form of data to another so a different format can read it. An example would be encoding data from UTF-8 to another character set. Or from json to xml. 
 
-Serialization refers to converting data from one structure to another for better storage or transmission. 
+- Serialization refers to converting data from one structure to another for better storage or transmission. 
 
-What is the CIA triad? 
-Confidentiality, Integrity, and Availability
+**What is the CIA triad?**
 
-What is the DFIR process?
-DFIR process is preparation, identification, containment, eradication, and lessons learned.
+-Confidentiality, Integrity, and Availability
+
+**What is the DFIR process?**
+
+- DFIR process is preparation, identification, containment, eradication, and lessons learned.
  
 Better interview questions will ask the interviewee about the situation and gauge how they would respond. Here are examples of better interview questions.  
 
-You have found three types of malware on different hosts: a trojan, a virus, and a worm. What are some ways to contain these types of malware?
+**You have found three types of malware on different hosts: a trojan, a virus, and a worm. What are some ways to contain these types of malware?**
 
-In what situations would a threat actor use encryption, hashing, and encoding to hide their malicious activities? 
+**In what situations would a threat actor use encryption, hashing, and encoding to hide their malicious activities?**
 
-In your opinion, what is the most essential part of the CIA triad? 
+**In your opinion, what is the most essential part of the CIA triad?** 
 
 These are better questions because they have a variety of answers that you can give that are not Googleable and require you to show nuance and situational awareness. 
 
