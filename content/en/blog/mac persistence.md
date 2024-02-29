@@ -4,7 +4,7 @@ title: "Mac Persistence Mechanisms"
 date: 2024-01-25
 description: "Mac Persistence"
 tags: ["Mac Persistence, Launch Daemon, Launch Agent"]
-thumbnail: hhttps://www.thesun.co.uk/wp-content/uploads/2023/10/apple-logo-grey-comp.jpg?w=1280&quality=44
+thumbnail: https://1000logos.net/wp-content/uploads/2016/10/apple-emblem.jpg
 ---
 
 Recently I had a friend that was concerned about some strange behavior that was occuring on his Macbook, so I decided to look at common persistence mechanisms on a Mac host. I remember when I first got my Macbook, one of the selling points was that "Macs do not get any virus." Sadly this is no longer true, and the types of malware that affect Macs are growing. Here is a background on Mac persistence mechanisms from The Art of Mac Malware by Patrick Wardle. This is only going to be basics as it will only cover persistence mechanisms in launch daemon and launch agents.
