@@ -11,7 +11,7 @@ Recently I had a friend that was concerned about some strange behavior that was 
 
 **What is persistence?**
 
-Persistence is defined as ‘the characteristic of a state that outlives the process that created it.
+Persistence is defined as "the characteristic of a state that outlives the process that created it."
 Breaking down the language in a simpler way, persistence is the ability of software, configurations, or data to remain even after the system is restarted or shut down. Persistence is essential for computers to run smoothly but threat actors use persistence to  maintain unauthorized access to a machine.
 
 **What are Launch Agents and Launch daemons?**
@@ -23,7 +23,7 @@ A good comparison of launch agent and launch daemons in Windows would be Windows
 **Where are Launch Agents and Launch Daemons located?**
 
 - ~/Library/LaunchAgents for user specific settings
-- /Library/LaunchDaemon for System-wide setting
+- /Library/LaunchDaemon for system-wide setting
 
 **Potential Solution?**
 
