@@ -15,9 +15,9 @@ At the end of an interview, when a recruiter asks if you have any questions, you
 2. What tools do you use at the company to help with IR?
 3. How big is your team and who is the longest tenured person on the team? How long have they been there? What are your boss’s career aspirations?
 4. What are the on-call expectations?
-5. What does it look like when there is a big incident?
+5. Imagine that there is a major incident. Describe to me what that looks like?
 6. What does the training budget look like on a year to year basis?
-7. What kind of threats are you worried about?
+7. What kind of threats are you worried about and how are you tracking these threats?
 8. How many endpoints do you have? What percent of the environment is Windows, Mac, cloud, and Linux?
 9. What is the average number of alerts that you get in a day?
 10. How does purple teaming look like at the company? How do tabletop exercises look at the company?
