@@ -1,10 +1,10 @@
 ---
 author: "Wren Howell"
 title: "Follow up Questions to ask the Interviewer"
-date: 2023-01-14
+date: 2023-02-14
 description: "Interviewing the interviewer"
 tags: ["Interview Questions Tips, Interview questions resources, followup questions"]
-thumbnail: https://image.cnbcfm.com/api/v1/image/107252082-1686077448227-job-interview-2021-09-24-04-13-49-utc.jpg?v=1688994001&w=630&h=354&ffmt=webp&vtcrop=y
+thumbnail: https://www.thoughtco.com/thmb/wUxPI25zRCMha2tHSC3uDJoE8MQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/smiling-african-american-young-adult-at-a-job-interview-594485122-59b072350d327a00109184dd.jpg
 ---
 
  
