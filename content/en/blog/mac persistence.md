@@ -29,8 +29,8 @@ A good comparison of launch agent and launch daemons in Windows would be Windows
 
 When looking at the metadata of the plist, there are some keys that may offer a clue into a program having persistence. Those keys are
 
-- RunAtLoad:if this is set to true, it will run automatically when the machine turns on. Like a cron job
-- KeepAlive: if this is set to true, the program will restart if it dies
+- RunAtLoad:if this is set to true, it will run automatically when the machine turns on. This is like a cron job.
+- KeepAlive: if this is set to true, the program will restart if it dies.
 - StartInterval: if this is present, it will specify a time interval (in seconds) for the program to be relaunched.
 
 What I told my friend is to look at programs running from the directories in launch daemon and launch agent. Are there any programs that he does not recognize? Are there any programs running where any of the plist flags do not make sense?
