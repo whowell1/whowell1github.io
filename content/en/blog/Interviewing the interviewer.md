@@ -26,6 +26,7 @@ At the end of an interview, when a recruiter asks if you have any questions, you
 14. Tell me how the greater cyber org is structured. Who is going to be your boss’s boss and how long have they been there?
 15. How long has the IR been a part of the company? Does it have external contractors? If it does, how are their roles different? Describe the relationship between the contractors and the FTE. 
 16. How is the success of the IR team measured at the company? 
+17. What is the reason for this job opening(s)?
 
 
 {{< css.inline >}}
