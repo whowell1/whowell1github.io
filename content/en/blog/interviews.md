@@ -45,7 +45,13 @@ thumbnail: https://image.cnbcfm.com/api/v1/image/107252082-1686077448227-job-int
 **What is the DFIR process?**
 
 - DFIR process is a structured method used in cybersecurity  to investigate and respond to cybersecurity incidents. The main steps are preparation, identification, containment, eradication, and lessons learned.
- 
+
+
+**What is the happens when you go to www.google.com?**
+
+- This is a better question, as it requires you to know how people get to the Internet, but it is still easily googleable. [A good diagram to the answer.](https://github.com/whowell1/DFIR-Resources/blob/main/AddressBarGraphic.pdf)
+
+
 Better interview questions will ask the interviewee about the situation and gauge how they would respond. Here are examples of better interview questions.  
 
 - You have found three types of malware on different hosts: a trojan, a virus, and a worm. What are some ways to contain these types of malware?
