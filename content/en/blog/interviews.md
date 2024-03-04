@@ -46,6 +46,22 @@ thumbnail: https://image.cnbcfm.com/api/v1/image/107252082-1686077448227-job-int
 
 - DFIR process is a structured method used in cybersecurity  to investigate and respond to cybersecurity incidents. The main steps are preparation, identification, containment, eradication, and lessons learned.
 
+**What is the differences between the TCP/IP model and the OSI model?**
+- This is also a better question as it interviewee to know the difference between the two models and the pros and cons of both. 
+  - OSI Model has 7 layers. Here are the following layers starting from the bottom. They are:
+    - Physical Layer: This layer is responsible for the physical transmission of data over the network medium. 
+    - Data link Layers: This layer is responsible for the reliable transmission of data between adjacent nodes on the network.
+    - Network Layer: This layer is responsible for the routing of data packets from the source to the destination across multiple network segments.
+    - Transport Layer: This layer ensures reliable end-to-end communication between hosts on the network.
+    - Session Layer: This layer establishes, manages, and terminates communication sessions between applications on different devices.
+    - Presentation Layer:This layer is where data gets encrypted and decrypted and converted into a form that is accessible by the application layer.
+    - Application Layer: This layer provides network services directly to end-users and applications
+  
+  - TCP/IP has 4 layers. Here are the following layerse starting from the bottom. They are
+    - Application Layer: This layer interacts directly with end-users and provides network services such as email, file transfer, remote login, and web browsing. Examples of protocols here include DNS(Port 53), HTTP(Port 80), HTTPS(Port 443), SSH (Port 22). 
+    - Transport Layer: This layer is responsible for end-to-end communication between the sender and receiver. Primary protocols in this layer is TCP and UDP. 
+    - Internet Layer/Network Layer: The internet layer is responsible for routing packets across different networks to their destination. Primary protocol is IP. 
+    - Link Layer/Network Interface Layer: This layer deals with the physical and logical connections between devices within the same network. Examples of protocols in this layer is Wifi and Ethernet. 
 
 **What is the happens when you go type an url into a address bar?**
 
