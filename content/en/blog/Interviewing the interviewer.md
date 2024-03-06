@@ -27,7 +27,13 @@ At the end of an interview, when a recruiter asks if you have any questions, you
 15. How long has the IR been a part of the company? Does it have external contractors? If it does, how are their roles different? Describe the relationship between the contractors and the FTE. 
 16. How is the success of the IR team measured at the company? 
 17. What is the reason for this job opening(s)?
-
+18. What does company culture mean to you?
+19. How have you viewed upward movement throughout your company?
+20. How do you handle changes (within the org, within the company, withing the job)?
+21. When was the last layoff cycle?
+22. What have you done to challenge yourself?
+23. What has the company done to challenge you?
+24. What was the biggest shift your company made that you did not agree with?  
 
 {{< css.inline >}}
 
