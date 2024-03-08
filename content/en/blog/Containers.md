@@ -14,23 +14,34 @@ Two years ago, I started on a journey to understand containers. In that journey,
 
 The reason containers became popular is that with containers, developers could put their code in a box called a container and ship it without worrying about configuring the environment that runs their code. Before containers, developers would have to spend time setting up their environments so the code could run. There were a lot of "it works on my machine, but I don't know why it doesn't work on your machine" issues. 
 
+The goal of a container from OCI (Open Container Initiative) is, "to encapsulate a software component and all its dependencies in a format that is self-describing and portable, so that any compliant runtime can run it without extra dependencies, regardless of the underlying machine and the contents of the container."
+
 **What is a container?**
 
-A container is defined by OCI (Open Container Initiative), and from their definition, a standard container is an environment for executing processes with configurable resource limitations. In addition, containers must support these processes: create, start, kill, delete, and query state. 
+A container is defined by OCI, and from their definition, a container "is an environment for executing processes with configurable resource limitations." The OCI also outlines 5 principles that containers have. They are:  
+
+- Standard operations: support standard operations of create, start, kill, delete, and query state/
+- Content-agnostic: have the same effect regardless of the contents 
+- Infrastructure-agnostic: they can be run in any OCI supported infrastructure
+- Designed for automation: because of the first 3 principles, they are designed for automation. 
+- Industrial-grade delivery: help ship software regardless of scale or size. 
+
+The OCI Runtime Spec also defines the configuration environment as well. Every container needs a configuration that is defined in a config.json that create the container. This config file has certain settings that are needed for a container to in various environments. 
 
 **Translated in Simpler Terms**
 
-This means that containers are places where you can run programs with constrained resources, and they should be able to do specific tasks like creating, starting, stopping, deleting, and checking the status of these programs.
+This means that containers are places where you can run programs and execute code in a resource constrained environment, and they should be able to do specific tasks like creating, starting, stopping, deleting, and checking the status of these programs regardless of what platform it is on. For a container to run it needs to be packaged in a certain way, and that package always has something called a json.config file that has instructions on how a container is run. 
+
 
 **Why is the environment restricted?**
-
-Since people who work in tech are most familiar with Docker containers which are Linux-based containers, I will explain how a Docker container can run programs in a constrained environment. 
 
 A container is in a restricted environment because it shares the kernel with the underlying host. This allows the container to run on the same operating system as the host, unlike virtual machines where the VM **DOES** need a separate kernel. So, a good analogy would be going on a trip with a group of friends and their significant others for a birthday celebration. Instead of staying at a different hotel, everybody stays in an Airbnb that has two stories, a basement, and an extra cottage in the backyard. At an Airbnb, all the friends can share the same resources the house provides, like a bathroom and a kitchen. Some of the benefits of staying at the Airbnb instead of the hotel is that it is cheaper, it is easier to coordinate activities, and it is faster to get up and go.
 
 In this case, renting an Airbnb would be a container, and going to a hotel would be a virtual machine as everybody will be under one roof and will share resources of the home. Just like if everybody stays at the Airbnb, it is faster to go places together, and cheaper than staying at a hotel, containers are much quicker to start up and less resource intensive than virtual machines. 
 
 **What does it mean to run programs in a restricted environment?**
+
+Since the most common way to run containers is in Linux, I am going to explain how Linux containers work.  
 
 Continuing with the Airbnb analogy, just because everybody stays at the Airbnb and NOT in a hotel, everybody should be able to do everyday things that they do in a hotel. The mechanism in which containers allow programs to be run, start, kill, delete, and query state is provided by the underlying Linux technologies. These technologies are namespaces, capabilities, cgroups, and through mandatory access controls like SELinux or AppArmor, and finally through filters like seccomp. 
 
@@ -43,9 +54,6 @@ Mount namespace: Picture this as a storage room for storing different items (fil
 PID namespace: For this birthday celebration, imagine that there is a plan to have a huge party on the first floor with many guests and each room of the Airbnb is going to have a theme. Because the music is very loud in each room, only the people with the same theme can communicate with each other. In this analogy, a theme in the party represents a namespace. Just like how only people in the same theme can only communicate with each other, processes within a PID namespace have unique process IDs and can only interact with processes inside their namespace.
 
 Time namespace: Imagine for this trip there are time-sensitive events that everyone has to go to but you have a habit of being late. So to avoid running late you set your clock in your room 15 minutes earlier than the normal time. Similarly, processes in this namespace can have different time settings than the underlying host.
-
-
-
 
 Network namespace: Imagine this as a basement in the Airbnb with its own utilities such as electricity, water, and internet connection. Each bathroom represents a namespace as each bathroom has isolated plumbing and lights that serve the needs of each friend. The flooding of one bathroom will not make the bathrooms in the Airbnb unusable. Similarly, processes within a network namespace have their own isolated network configuration, like network interfaces that provide security, resource management, and isolation for its processes. 
 
@@ -81,7 +89,6 @@ Seccomp, short for Secure Computing Mode, is a feature in the Linux kernel that 
 In the Airbnb, Seccomp acts like a strict bouncer stationed at the property entrance. This bouncer has a defined list of allowed activities and behaviors for guests. When you arrive, the bouncer checks their ID against the list and only allows you to engage in defined and safe activities. Anything outside these approved activities is strictly prohibited, and the bouncer immediately intervenes to prevent it.
 
 So, if one of your friends try to engage in any activity not on the approved list, like trying to access sensitive areas or performing potentially dangerous actions, the bouncer blocks them from doing so, ensuring that only safe and permitted actions are allowed within the Airbnb property.
-
 
 In short, Seccomp acts as a vigilant gatekeeper, restricting guests (or, processes in Linux land) to only perform authorized and safe activities, enhancing security within the Airbnb.
 
