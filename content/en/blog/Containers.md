@@ -1,6 +1,6 @@
 ---
 author: "Wren Howell"
-title: "Understanding the What in Containers and their Underlying Technology"
+title: "Understanding the What in Containers: Undestanding How Linux Containers Work"
 date: 2024-02-26
 description: "Containers Learning Journey"
 tags: ["Containers, learning"]
@@ -26,11 +26,11 @@ A container is defined by OCI, and from their definition, a container "is an env
 - Designed for automation: because of the first 3 principles, they are designed for automation. 
 - Industrial-grade delivery: help ship software regardless of scale or size. 
 
-The OCI Runtime Spec also defines the configuration environment as well. Every container needs a configuration that is defined in a config.json that create the container. This config file has certain settings that are needed for a container to in various environments. 
+The OCI Runtime Spec also defines the configuration environment as well. Every container needs a configuration that is defined in a config.json that creates the container. This config file has certain settings that are needed for a container to in various environments. 
 
 **Translated in Simpler Terms**
 
-This means that containers are places where you can run programs and execute code in a resource constrained environment, and they should be able to do specific tasks like creating, starting, stopping, deleting, and checking the status of these programs regardless of what platform it is on. For a container to run it needs to be packaged in a certain way, and that package always has something called a json.config file that has instructions on how a container is run. 
+This means that containers are places where you can run programs and execute code in a resource constrained environment, and they should be able to do specific tasks like creating, starting, stopping, deleting, and checking the status of these programs regardless of what platform it is on. For a container to run, it needs to be packaged in a certain way, and that package always has something called a json.config file that has instructions on how a container is run. 
 
 
 **Why is the environment restricted?**
