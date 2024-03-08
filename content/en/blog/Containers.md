@@ -92,7 +92,7 @@ So, if one of your friends try to engage in any activity not on the approved lis
 
 In short, Seccomp acts as a vigilant gatekeeper, restricting guests (or, processes in Linux land) to only perform authorized and safe activities, enhancing security within the Airbnb.
 
-I hope you enjoyed this analogy filled breakdown of what a container is!
+I hope you enjoyed this analogy filled breakdown of how a Linux container works!
 
 
 
