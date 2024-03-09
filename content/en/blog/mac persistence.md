@@ -23,7 +23,7 @@ A good comparison of launch agents and launch daemons in Windows would be Window
 **Where are Launch Agents and Launch Daemons located?**
 
 - ~/Library/LaunchAgents for user specific settings
-- /Library/LaunchDaemon for system-wide setting
+- /Library/LaunchDaemon for system-wide settings
 
 **Potential Solution?**
 
@@ -35,7 +35,7 @@ When looking at the metadata of the plist, there are some keys that may offer a 
 
 I told my friend to look at programs running from the directories in the launch daemon and launch agent. Are there any programs that he does not recognize? Are any programs running where any plist flags do not make sense?
 
-To make analysis more manageable for him, I made a small [python](https://github.com/whowell1/Mac-Persistence-Simple/blob/main/mac_persistence_checker.py) program that displays the directories where the launch daemon and launch agents are and look for the hash of the program. I told him to check the hashes of each file and if they do not show up in Virustotal, he has something that needs to be looked into further.
+To make analysis more manageable for him, I made a small [python](https://github.com/whowell1/Mac-Persistence-Simple/blob/main/mac_persistence_checker.py) program that displays the directories where the launch daemon and launch agents are and look for the hash of the program. I told him to check the hashes of each file and if they do show up in Virustotal as malicious, he potentially has something that needs to be looked into further.
 
 
 
