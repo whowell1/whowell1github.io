@@ -14,7 +14,7 @@ Two years ago, I started on a journey to understand containers. In that journey,
 
 The reason containers became popular is that with containers, developers could put their code in a box called a container and ship it without worrying about configuring the environment that runs their code. Before containers, developers would have to spend time setting up their environments so the code could run. There were a lot of "it works on my machine, but I don't know why it doesn't work on your machine" issues. 
 
-The goal of a container from OCI (Open Container Initiative) is, "to encapsulate a software component and all its dependencies in a format that is self-describing and portable, so that any compliant runtime can run it without extra dependencies, regardless of the underlying machine and the contents of the container."
+To help set a standard of what a container is and define behaviors of containers, different organizations came together to form OCI, Open Container Initiative. The goal of a container from OCI is, "to encapsulate a software component and all its dependencies in a format that is self-describing and portable, so that any compliant runtime can run it without extra dependencies, regardless of the underlying machine and the contents of the container."
 
 **What is a container?**
 
@@ -26,7 +26,7 @@ A container is defined by OCI, and from their definition, a container "is an env
 - Designed for automation: because of the first 3 principles, they are designed for automation. 
 - Industrial-grade delivery: help ship software regardless of scale or size. 
 
-The OCI Runtime Spec also defines the configuration environment as well. Every container needs a configuration that is defined in a config.json that creates the container. This config file has certain settings that are needed for a container to in various environments. 
+In addition to defining what a container is, the OCI also has list of specifications on how a container runtime interacts with containers in OCI Runtime Spec. A container runtime is a software that enables to perform standard operations. The OCI Runtime Spec ensures that every container has a configuration that is defined in a config.json that creates the container. This config file has certain settings that are needed for a container to in various environments. 
 
 **Translated in Simpler Terms**
 
@@ -41,7 +41,7 @@ In this case, renting an Airbnb would be a container, and going to a hotel would
 
 **What does it mean to run programs in a restricted environment?**
 
-Since the most common way to run containers is in Linux, I am going to explain how Linux containers work.  
+Since the most common way to run containers is in Linux, I am going to explain how Linux containers work in Docker, a popular containerization tool.  
 
 Continuing with the Airbnb analogy, just because everybody stays at the Airbnb and NOT in a hotel, everybody should be able to do everyday things that they do in a hotel. The mechanism in which containers allow programs to be run, start, kill, delete, and query state is provided by the underlying Linux technologies. These technologies are namespaces, capabilities, cgroups, and through mandatory access controls like SELinux or AppArmor, and finally through filters like seccomp. 
 
@@ -72,7 +72,7 @@ Most modern Linux operating systems utilize Cgroup2, but there could be both cgr
 
 Mandatory Access Control (MAC) is a security model used in Linux systems to restrict and control access to resources based on rules set by system administrators. A good analogy would be the strict Airbnb security policies on who can rent an Airbnb. Suppose Airbnb has a policy in the user agreement that a guest on an FBI watchlist cannot stay as a guest. In that case, it will not matter how famous or how much money the guest on the FBI watchlist is; the friend cannot stay. In this way, MAC sets strict rules about who can access what resources on a computer system. These rules are decided by administrators and are not negotiable, and these rules are enforced automatically. 
 
-Depending on the operating system, the type of MAC control changes. Debian-derived systems have AppArmor by default, and Red Hat-based systems use SeLinux.
+Depending on the operating system, the type of MAC control changes. Debian-derived systems have AppArmor by default, and Red Hat-based systems use SELinux.
 
 AppArmor creates a "profile" for each program, which contains the rules governing its behavior. These profiles restrict access to a number of resources, including files, network traffic, and Linux Capabilities.
 
