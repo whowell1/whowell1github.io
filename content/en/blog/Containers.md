@@ -20,9 +20,9 @@ The goal of a container from OCI (Open Container Initiative) is, "to encapsulate
 
 A container is defined by OCI, and from their definition, a container "is an environment for executing processes with configurable resource limitations." The OCI also outlines 5 principles that containers have. They are:  
 
-- Standard operations: support standard operations of create, start, kill, delete, and query state/
-- Content-agnostic: have the same effect regardless of the contents 
-- Infrastructure-agnostic: they can be run in any OCI supported infrastructure
+- Standard operations: support standard operations of create, start, kill, delete, and query state.
+- Content-agnostic: have the same effect regardless of the contents. 
+- Infrastructure-agnostic: they can be run in any OCI supported infrastructure.
 - Designed for automation: because of the first 3 principles, they are designed for automation. 
 - Industrial-grade delivery: help ship software regardless of scale or size. 
 
@@ -75,6 +75,8 @@ Mandatory Access Control (MAC) is a security model used in Linux systems to rest
 Depending on the operating system, the type of MAC control changes. Debian-derived systems have AppArmor by default, and Red Hat-based systems use SeLinux.
 
 AppArmor creates a "profile" for each program, which contains the rules governing its behavior. These profiles restrict access to a number of resources, including files, network traffic, and Linux Capabilities.
+
+On the otherhand, SELinux defines fine-grained policies that specify which processes can access specific files, directories, ports, and other system resources.
 
 **Understanding AppArmor and SELinux Better with Airbnb Analogy**
 
