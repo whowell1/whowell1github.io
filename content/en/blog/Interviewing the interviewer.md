@@ -34,6 +34,10 @@ At the end of an interview, when a recruiter asks if you have any questions, you
 22. What have you done to challenge yourself?
 23. What has the company done to challenge you?
 24. What was the biggest shift your company made that you did not agree with?  
+25. As security practictioners we are relied upon to make the correct decisons. However at the same time we are human.  What were some of the mistakes that you made in your career that you learned the most from? 
+26. What are some key moments that have defined your career so far?
+27. What experience did you have to you learned the most from?
+
 
 {{< css.inline >}}
 
