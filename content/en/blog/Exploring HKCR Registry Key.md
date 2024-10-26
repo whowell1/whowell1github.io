@@ -9,7 +9,7 @@ thumbnail: https://www.lifewire.com/thmb/vSIOZud80_RztuYM25I1lAdfto8=/750x0/filt
 
  When I was visiting friends during Christmas break, a friend's relative was watching basketball on a streaming site. With his permission, I asked to see his laptop to check if any strange downloads were attempted, but nothing caught my eye initially. But I saw some peculiar extensions in the recycle bin. Since I knew that he only used the computer for surfing the internet and editing documents, I decided to do some proactive hardening for him. 
 
-The Windows Registry is like a library that stores essential information about a computer's configuration settings, preferences, and settings. The library is broken up into different sections called Hives, each with a key and subkeys (where something is stored) and associated value (what is stored) within them.
+The Windows Registry is like a library that stores essential information about a computer's configuration settings, preferences, and settings. The library is broken up into different sections called registry hives, each with a key and subkeys (where something is stored) and associated value (what is stored) within them.
 
 A particular key, HKEY_CLASSES_ROOT\Directory\shell\open in the Windows Registry, contains information related to file extensions. The purpose of this key is related to defining the actions that occur when a user double-clicks or selects "Open" on a directory (folder) in the Windows File Explore. Every time a user tries to open a file on their computer, the operating system checks this key to see how to open it. For example, when a user tries to open a .txt file, Windows looks up how this application can be run (by default, it is via Notepad) and then determines how to edit and execute the file.
 
