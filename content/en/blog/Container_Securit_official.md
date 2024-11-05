@@ -102,7 +102,7 @@ capabilities SYS_ADMIN
 bash -v /etc
 ``` 
 
-that also has a 
+that contains has a 
 ```bash ro
 ``` 
 
