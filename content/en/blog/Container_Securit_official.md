@@ -103,7 +103,8 @@ bash -v /etc
 ``` 
 
 that contains has a 
-```bash ro
+```
+bash ro
 ``` 
 
 Keep in mind these are potential start on how to detect some of the behavior that was outlined on this post. I hope you enjoyed tidbit on containers!!
