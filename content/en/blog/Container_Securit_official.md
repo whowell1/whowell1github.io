@@ -90,22 +90,27 @@ The easiest way to detect for the aforementioned container security vulerablitie
 /var/run/docker.sock
 ```
 
-- To look for containers with excessive capablities look for files like yml or command lines that contain 
+- To look for containers with excessive capablities look for yaml files or command lines that contain 
 
 ```bash
 capabilities SYS_ADMIN
 ```
 
-- To look for containers that has a sensitive volume mount look for files like yml or command lines that contain 
+- To look for containers that has a sensitive volume mount look for yaml files or command lines that contain 
 
+```bash
+-v /etc
 ```
-bash -v /etc
-``` 
 
 that contains has a 
+
+```bash
+ro
 ```
-bash ro
-``` 
+
+
+
+
 
 Keep in mind these are potential start on how to detect some of the behavior that was outlined on this post. I hope you enjoyed tidbit on containers!!
 
