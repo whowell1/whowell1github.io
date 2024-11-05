@@ -34,10 +34,6 @@ Exposed Docker socket files are commonly used in Docker-in-Docker (DinD) setups 
 docker run -it --name REALLY-UNSAFE-CONTAINER -v /var/run/docker.sock:/var/run/docker.sock alpine
 ```
 
-**Detection for Exposed Docker.sock**
-
-Look for containers running /var/run/docker.sock as this can identity potentially really vulerable containers. 
-
 **Privileged Containers**
 
 A privileged container is a container that has elevated privileges, which allows it to perform more actions than in a restricted environment. When a container is in privileged mode, it has the potential to gain the same access to the host system processes. A container in privileged mode can access mount host system resources, manage kernel resources, etc. Therefore, using privileged containers only when necessary is essential. 
