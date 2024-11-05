@@ -10,7 +10,7 @@ Container security is exciting, and it is a very niche space to be. This post wi
 
 Even though there are resources write about container best practices, many are not implemented because they are too time-consuming, expensive, or impractical. This blog post will focus on low-hanging container security risks that organizations can avoid and some potential detections for them.
 
-Before diving into the technical layers of Docker security, it's essential to understand the container attack surface. Liz Rice and Aqua Security has a great diagram on container attack surface [here] (https://krol3.github.io/container-security-checklist/). Even though it is not liston this blog post,  securing the host system is the most crucial element of container security because the container runs on top of the host operation system. If the host operation system is insecure, then it will not matter how much the containers are hardened, the whole infrastucture will be vulnerable. 
+Before diving into the technical layers of Docker security, it's essential to understand the container attack surface. Liz Rice and Aqua Security has a great diagram on container attack surface [here](https://krol3.github.io/container-security-checklist/). Even though it is not liston this blog post,  securing the host system is the most crucial element of container security because the container runs on top of the host operation system. If the host operation system is insecure, then it will not matter how much the containers are hardened, the whole infrastucture will be vulnerable. 
 
 Continuing to use the Airbnb analogy from the last post, no matter how many bodyguards you hire at an Airbnb, if the building structure is damaged, the building is not secure. 
 
@@ -58,7 +58,7 @@ A container escape is when a process or application running in a container gains
 
 **An Example of Excessive Capabilities that Could Lead to Container Escape**
 
-An example of how a container with additional capability can lead to a container escape is a proof of concept written by [Trail of Bits] (https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/). This proof of concept abuses a feature in cgroup v1 notify on release. This feature notify_on release feature can trigger a container escape by allowing a script to execute when a cgroup becomes empty. An attacker can manipulate this process to run malicious code when it exits a cgroup that can access the host system. 
+An example of how a container with additional capability can lead to a container escape is a proof of concept written by [Trail of Bits](https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/). This proof of concept abuses a feature in cgroup v1 notify on release. This feature notify_on release feature can trigger a container escape by allowing a script to execute when a cgroup becomes empty. An attacker can manipulate this process to run malicious code when it exits a cgroup that can access the host system. 
 
 This proof-of-concept attack will not work on all containers. It will only work on containers with SYS_ADMIN capability, and the underlying host must use cgroup v1. 
 
