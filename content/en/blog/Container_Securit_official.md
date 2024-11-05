@@ -93,12 +93,18 @@ The easiest way to detect for the aforementioned container security vulerablitie
 - To look for containers with excessive capablities look for files like yml or command lines that contain 
 
 ```bash
-capabilities: add: SYS_ADMIN
+capabilities SYS_ADMIN
 ```
 
 - To look for containers that has a sensitive volume mount look for files like yml or command lines that contain 
 
-```bash -v /etc ``` that also has a ```bash ro``` 
+```
+bash -v /etc
+``` 
+
+that also has a 
+```bash ro
+``` 
 
 Keep in mind these are potential start on how to detect some of the behavior that was outlined on this post. I hope you enjoyed tidbit on containers!!
 
