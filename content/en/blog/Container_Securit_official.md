@@ -58,7 +58,7 @@ A container escape is when a process or application running in a container gains
 
 **An Example of Excessive Capabilities that Could Lead to Container Escape**
 
-An example of how a container with additional capability can lead to a container escape is a proof of concept written by [Trail of Bits](https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/). This proof of concept abuses a feature in cgroup v1 notify on release. This feature notify_on release feature can trigger a container escape by allowing a script to execute when a cgroup becomes empty. An attacker can manipulate this process to run malicious code when it exits a cgroup that can access the host system. 
+An example of how a container with additional capability can lead to a container escape is a proof of concept written by [Trail of Bits](https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/). This proof of concept abuses a feature in cgroup v1 notify on release. This feature notify_on release can trigger a container escape by allowing a script to execute when a cgroup becomes empty. An attacker can manipulate this process to run malicious code when it exits a cgroup that can access the host system. 
 
 This proof-of-concept attack will not work on all containers. It will only work on containers with SYS_ADMIN capability, and the underlying host must use cgroup v1. 
 
@@ -107,10 +107,6 @@ that contains has a
 ```bash
 ro
 ```
-
-
-
-
 
 Keep in mind these are potential start on how to detect some of the behavior that was outlined on this post. I hope you enjoyed tidbit on containers!!
 
