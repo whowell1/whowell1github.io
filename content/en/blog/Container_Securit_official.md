@@ -88,15 +88,17 @@ docker run -v /etc:/etc --name sensitive_container -d nginx
 
 The easiest way to detect for the aforementioned container security vulerablities is to look for those commands  in the enironment.
 
-- To look for exposed Docker Sockets look for
-- - files like yml or command lines that contain 
- ```bash /var/run/docker.sock```
-- To look for containers with excessive capablities look for 
-- - files like yml or command lines that contain 
+- To look for exposed Docker Sockets look for files like yml or command lines that contain 
+```bash /var/run/docker.sock```
+
+- To look for containers with excessive capablities look for files like yml or command lines that contain 
+
 ```bash capabilities: add: "SYS_ADMIN" ``` 
-- To look for containers that has a sensitive volume mount look for
-- - files like yml or command lines that contain 
+
+- To look for containers that has a sensitive volume mount look for files like yml or command lines that contain 
 ```bash -v /etc ``` that also has a ```ro``` 
+
+Keep in mind these are potential start on how to detect some of the behavior that was outlined on this post. I hope you enjoyed tidbit on containers!!
 
 {{< css.inline >}}
 
