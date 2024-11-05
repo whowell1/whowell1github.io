@@ -1,16 +1,16 @@
 ---
 author: "Wren Howell"
-title: "Container Security"
+title: "Practical Container Security"
 date: 2024-10-25
-description: "Container Security"
+description: "A little tidbit on container security"
 tags: ["Container Security, Container Escape"]
-thumbnail: https://unsplash.com/photos/man-jumping-on-the-field-o7IDnmYQvLo
+thumbnail: https://www.eagleleasing.com/wp-content/uploads/2017/06/20ft-Storage-Container.jpg
 ---
 Container security is exciting, and it is a very niche space to be. This post will build on the previous post about containers and look at common mistakes people make when deploying containers. The tricky thing about creating container detection is that it is hard to determine whether the end user is troubleshooting, not using the best practices, or exhibiting malicious behavior. The use cases will differ for each organization, so it will be up to the organization to determine the appropriate risk level, baseline their normal behavior, and decide what they want to monitor. 
 
 Even though there are resources write about container best practices, many are not implemented because they are too time-consuming, expensive, or impractical. This blog post will focus on low-hanging container security risks that organizations can avoid and some potential detections for them.
 
-Before diving into the technical layers of Docker security, it's essential to understand the container attack surface. Liz Rice and Aqua Security has a great diagram on container attack surface here [https://krol3.github.io/container-security-checklist/]. Even though it is not liston this blog post,  securing the host system is the most crucial element of container security because the container runs on top of the host operation system. If the host operation system is insecure, then it will not matter how much the containers are hardened, the whole infrastucture will be vulnerable. 
+Before diving into the technical layers of Docker security, it's essential to understand the container attack surface. Liz Rice and Aqua Security has a great diagram on container attack surface [here] (https://krol3.github.io/container-security-checklist/). Even though it is not liston this blog post,  securing the host system is the most crucial element of container security because the container runs on top of the host operation system. If the host operation system is insecure, then it will not matter how much the containers are hardened, the whole infrastucture will be vulnerable. 
 
 Continuing to use the Airbnb analogy from the last post, no matter how many bodyguards you hire at an Airbnb, if the building structure is damaged, the building is not secure. 
 
@@ -62,7 +62,7 @@ A container escape is when a process or application running in a container gains
 
 **An Example of Excessive Capabilities that Could Lead to Container Escape**
 
-An example of how a container with additional capability can lead to a container escape is a proof of concept written by Trail of Bits [https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/]. This proof of concept abuses a feature in cgroup v1 notify on release. This feature notify_on release feature can trigger a container escape by allowing a script to execute when a cgroup becomes empty. An attacker can manipulate this process to run malicious code when it exits a cgroup that can access the host system. 
+An example of how a container with additional capability can lead to a container escape is a proof of concept written by [Trail of Bits] (https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/). This proof of concept abuses a feature in cgroup v1 notify on release. This feature notify_on release feature can trigger a container escape by allowing a script to execute when a cgroup becomes empty. An attacker can manipulate this process to run malicious code when it exits a cgroup that can access the host system. 
 
 This proof-of-concept attack will not work on all containers. It will only work on containers with SYS_ADMIN capability, and the underlying host must use cgroup v1. 
 
@@ -89,11 +89,14 @@ docker run -v /etc:/etc --name sensitive_container -d nginx
 The easiest way to detect for the aforementioned container security vulerablities is to look for those commands  in the enironment.
 
 - To look for exposed Docker Sockets look for
-- - files like yml or command lines that contain  ```bash /var/run/docker.sock```
+- - files like yml or command lines that contain 
+ ```bash /var/run/docker.sock```
 - To look for containers with excessive capablities look for 
-- - files like yml or command lines that contain ```bash capabilities: add: "SYS_ADMIN" ``` 
+- - files like yml or command lines that contain 
+```bash capabilities: add: "SYS_ADMIN" ``` 
 - To look for containers that has a sensitive volume mount look for
-- - files like yml or command lines that contain ```bash -v /etc ``` that also has a ```ro``` 
+- - files like yml or command lines that contain 
+```bash -v /etc ``` that also has a ```ro``` 
 
 {{< css.inline >}}
 
