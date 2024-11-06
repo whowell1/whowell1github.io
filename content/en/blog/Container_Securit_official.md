@@ -10,7 +10,7 @@ Container security is exciting, and it is a very niche space to be. This post wi
 
 Even though there are resources write about container best practices, many are not implemented because they are too time-consuming, expensive, or impractical. This blog post will focus on low-hanging container security risks that organizations can avoid and some potential detections for them.
 
-Before diving into the technical layers of Docker security, it's essential to understand the container attack surface. Liz Rice and Aqua Security has a great diagram on container attack surface [here](https://krol3.github.io/container-security-checklist/). Even though it is not liston this blog post,  securing the host system is the most crucial element of container security because the container runs on top of the host operation system. If the host operation system is insecure, then it will not matter how much the containers are hardened, the whole infrastucture will be vulnerable. 
+Before diving into the technical layers of Docker security, it's essential to understand the container attack surface. Liz Rice and Aqua Security has a great diagram on container attack surface [here](https://krol3.github.io/container-security-checklist/). Even though it is not mentioned on this blog post,  securing the host system is the most crucial element of container security because the container runs on top of the host operation system. If the host operation system is insecure, then it will not matter how much the containers are hardened, the whole infrastucture will be vulnerable. 
 
 Continuing to use the Airbnb analogy from the last post, no matter how many bodyguards you hire at an Airbnb, if the building structure is damaged, the building is not secure. 
 
@@ -108,7 +108,7 @@ that contains has a
 ro
 ```
 
-Keep in mind these are potential start on how to detect some of the behavior that was outlined on this post. I hope you enjoyed tidbit on containers!!
+Keep in mind these are potential start on how to detect some of the behavior that was outlined on this post. I hope you enjoyed my tidbit on containers!!
 
 {{< css.inline >}}
 
