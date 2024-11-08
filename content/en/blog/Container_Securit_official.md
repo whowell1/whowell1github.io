@@ -123,7 +123,7 @@ rw
 
 However, since read-write is a default setting on volume mounts, this could be only catch it if someone is explicity typing the rw command.
 
-**More Detections for Container Security**
+**More General Detections for Container Security**
 
 - Use of CDK 
 
@@ -137,7 +137,7 @@ The importance of AppArmor, SELinux, and Seccomp were covered in the previous bl
 docker run --name sensitive_container -d nginx --security-opt apparmor=unconfined --security-opt seccomp=unconfined --security-opt label:disable 
 ```
 
-Disabling AppArmor, SELinux, Seccomp, and the use of CDK are not malicious by itself, but by combining it with other detection techniques, it can be used to help alert on malicious behavior. 
+Disabling AppArmor, SELinux, Seccomp, and the use of CDK are not malicious by nature, but by combining it with other detection techniques, it can be used to potentially alert on malicious behavior. 
 
 Keep in mind these are potential start on how to detect some of the behavior that was outlined on this post. I hope you enjoyed my tidbit on containers!!
 
