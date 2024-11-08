@@ -1,16 +1,14 @@
 ---
 author: "Wren Howell"
-title: "Practical Container Security"
+title: "A Tidbit on Container Security and Container Escapes"
 date: 2024-10-25
 description: "A little tidbit on container security"
 tags: ["Container Security, Container Escape"]
 thumbnail: https://www.eagleleasing.com/wp-content/uploads/2017/06/20ft-Storage-Container.jpg
 ---
-Container security is exciting, and it is a very niche space to be. This post will build on the previous post about containers and look at common mistakes people make when deploying containers. The tricky thing about creating container detection is that it is hard to determine whether the end user is troubleshooting, not using the best practices, or exhibiting malicious behavior. The use cases will differ for each organization, so it will be up to the organization to determine the appropriate risk level, baseline their normal behavior, and decide what they want to monitor. 
+Container security is exciting, and it is a very niche space to be. This post will build on the previous post on containers and look at common mistakes people make when deploying containers. The tricky thing about creating container detection is that it is hard to determine whether the end user is troubleshooting, not using the best practices, or exhibiting malicious behavior. The use cases will differ for each organization, so it will be up to the organization to determine the appropriate risk level, baseline their normal behavior, and decide what they want to monitor. This blog post will focus on low-hanging container security risks that organizations can avoid and some potential detections for them.
 
-Even though there are resources write about container best practices, many are not implemented because they are too time-consuming, expensive, or impractical. This blog post will focus on low-hanging container security risks that organizations can avoid and some potential detections for them.
-
-Before diving into the technical layers of Docker security, it's essential to understand the container attack surface. Liz Rice and Aqua Security has a great diagram on container attack surface [here](https://krol3.github.io/container-security-checklist/). Even though it is not mentioned on this blog post,  securing the host system is the most crucial element of container security because the container runs on top of the host operation system. If the host operation system is insecure, then it will not matter how much the containers are hardened, the whole infrastucture will be vulnerable. 
+Before diving into the technical layers of Docker security, it's essential to understand the container attack surface. Liz Rice and Aqua Security has a great diagram on container attack surface [here](https://krol3.github.io/container-security-checklist/). Even though it is not mentioned on this blog post, securing the host system is the most crucial element of container security because the container runs on top of the host operation system. If the host operation system is insecure, then it will not matter how much the containers are hardened, the whole infrastucture will be vulnerable. 
 
 Continuing to use the Airbnb analogy from the last post, no matter how many bodyguards you hire at an Airbnb, if the building structure is damaged, the building is not secure. 
 
@@ -36,7 +34,7 @@ docker run -it --name REALLY-UNSAFE-CONTAINER -v /var/run/docker.sock:/var/run/d
 
 **Privileged Containers**
 
-A privileged container is a container that has elevated privileges, which allows it to perform more actions than in a restricted environment. When a container is in privileged mode, it has the potential to gain the same access to the host system processes. A container in privileged mode can access mount host system resources, manage kernel resources, etc. Therefore, using privileged containers only when necessary is essential. 
+A privileged container is a container that has elevated privileges, which allows it to perform more actions than in a restricted environment. When a container is in privileged mode, it has the potential to gain the same access to the host system processes. A container in privileged mode can access mount host system resources, manage kernel resources, etc. This means that it is essential to only run privileged containers on specific hosts. 
 
 **Analogy of Privileged Containers**
 
@@ -52,6 +50,12 @@ docker run --privileged -it  ubuntu:latest
 
 Capabilities were mentioned in the previous post, but capabilities give the ability to grant privileges at a granular level. Giving a container additional capabilities is not inherently a bad thing --sometimes, additional capabilities are added for a container to run (in addition to the capabilities that are already included by default). A user can add many different types of capabilities to their container, but some capabilities, if combined with a privileged container, can lead to a container escape. 
 
+**Example of a Container with Excessive Capabilities**
+
+```bash
+docker run -it --cap-add=SYS_ADMIN --cap-add=DAC_OVERRIDE ubuntu:16.04 bash
+```
+
 **What is a Container Escape?**
 
 A container escape is when a process or application running in a container gains access to resources outside of the container. Analogy of a container escape is when a prisoner breaks out of their cell and gets access to other resources in the prison. 
@@ -64,9 +68,16 @@ This proof-of-concept attack will not work on all containers. It will only work 
 
 **Read-Write Volume-Mounts**  
 
-A volume mount is a way to provide persistent storage and share data between the host file system and a container. Volume mounts are used for data persistence, data sharing, and configuration. Containers are designed to be ephemeral, so the data disappears when you stop or remove the container. Developers usually need to use volume mounts on a container when creating applications requiring a database to store user info. 
+A volume mount is a way to provide persistent storage and share data between the host file system and a container. Volume mounts are used for data persistence, data sharing, and configuration. Containers are designed to be ephemeral, so the data disappears when you stop or remove the container. Volume mounts are used in a variety of ways, one example of where a developer will use a volume mount is to create applications requiring a database to store user info. By default, containers that have a volume mount run as read-write which means that the container has permission to both read from and write to the mounted filesystem or directory.
 
-However, if a developer mounts a sensitive host directory on a container in read-and-write mode, an attacker can escape from the container and onto the host. 
+So if a developer mounts a sensitive host directory on a container in read-and-write mode, an attacker can escape from the container and onto the host. This is not a full list but these are some sensitive directory that should not be mounted as a read-write volume on a container:
+
+- root
+- - mounting the root directory to a container will provide the container read-write access to the files belonging to the root user. This is like exposing all your sensitive information on the Internet. 
+- proc
+- - mounting the proc directory to a container will provide the container read-write access to the processes running on the host. This is like publishing all your belonging on the Internet.
+- sys 
+- - mounting the sys directory to a container will provide the container read-write access to the kernel information running on the host. This is like posting the dimensions of your house and internal plumbing, water heater setting on the Internet. 
 
 **Analogy of a Volume-Mount**
 
@@ -80,11 +91,13 @@ On the other hand, having a volume mount is like a different friend who has adeq
 docker run -v /etc:/etc --name sensitive_container -d nginx
 ```
 
+- in this commandline, it mounts the host's etc directory to the container's etc directory. In Docker, the directory to the host comes first, then the directory of container. 
+
 **Potential Detections for the Techniques Outlined**
 
 The easiest way to detect for the aforementioned container security vulerablities is to look for those commands  in the enironment.
 
-- To look for exposed Docker Sockets look for files like yml or command lines that contain 
+- To look for exposed Docker Socket look for files like yml or command lines that contain 
 
 ```bash
 /var/run/docker.sock
@@ -99,14 +112,18 @@ capabilities SYS_ADMIN
 - To look for containers that has a sensitive volume mount look for yaml files or command lines that contain 
 
 ```bash
--v /etc
+-v /etc:/etc 
 ```
 
 that contains has a 
 
 ```bash
-ro
+rw
 ```
+
+However, since read-write is a default setting on volume mounts, this could be excluded as well.
+
+Another more general detection that could be useful is detection on the use of CDK. CDK is a container security tool that tests the security of containers. Tools can be used for both good and evil. Threat actors were seen using this tool in a recent[DFIR report](https://thedfirreport.com/2024/10/28/inside-the-open-directory-of-the-you-dun-threat-group/)
 
 Keep in mind these are potential start on how to detect some of the behavior that was outlined on this post. I hope you enjoyed my tidbit on containers!!
 
