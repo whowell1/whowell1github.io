@@ -123,7 +123,21 @@ rw
 
 However, since read-write is a default setting on volume mounts, this could be only catch it if someone is explicity typing the rw command.
 
-Another more general detection that could be useful is detection on the use of CDK. CDK is a container security tool that tests the security of containers. Tools can be used for both good and evil. Threat actors were seen using this tool in a recent [DFIR report](https://thedfirreport.com/2024/10/28/inside-the-open-directory-of-the-you-dun-threat-group/)
+**More Detections for Container Security**
+
+- Use of CDK 
+
+[CDK](https://github.com/cdk-team/CDK)is a container security tool that tests the security of containers. Its intended use is for developers to test their security of containers, however, threat actors were seen using this tool in a recent [DFIR report](https://thedfirreport.com/2024/10/28/inside-the-open-directory-of-the-you-dun-threat-group/). 
+
+- Detection for disabling AppArmor, SELinux, or Seccomp
+
+The importance of AppArmor, SELinux, and Seccomp were covered in the previous blog post. AppArmor and SELinux are forms of mandatory access controls that are used in different flavors of Linux OS and Seccomp is a feature in the Linux kernel that allows you to restrict the system calls made by a process. These are enabled by default in tools like Docker, but can be disabled when running a container. The below command line shows disabling of AppArmor, SELinux, and Seccomp. 
+
+```bash
+docker run --name sensitive_container -d nginx --security-opt apparmor=unconfined --security-opt seccomp=unconfined --security-opt label:disable 
+```
+
+Disabling AppArmor, SELinux, Seccomp, and the use of CDK are not malicious by itself, but by combining it with other detection techniques, it can be used to help alert on malicious behavior. 
 
 Keep in mind these are potential start on how to detect some of the behavior that was outlined on this post. I hope you enjoyed my tidbit on containers!!
 
