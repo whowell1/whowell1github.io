@@ -121,9 +121,9 @@ that contains has a
 rw
 ```
 
-However, since read-write is a default setting on volume mounts, this could be excluded as well.
+However, since read-write is a default setting on volume mounts, this could be only catch it if someone is explicity typing the rw command.
 
-Another more general detection that could be useful is detection on the use of CDK. CDK is a container security tool that tests the security of containers. Tools can be used for both good and evil. Threat actors were seen using this tool in a recent[DFIR report](https://thedfirreport.com/2024/10/28/inside-the-open-directory-of-the-you-dun-threat-group/)
+Another more general detection that could be useful is detection on the use of CDK. CDK is a container security tool that tests the security of containers. Tools can be used for both good and evil. Threat actors were seen using this tool in a recent [DFIR report](https://thedfirreport.com/2024/10/28/inside-the-open-directory-of-the-you-dun-threat-group/)
 
 Keep in mind these are potential start on how to detect some of the behavior that was outlined on this post. I hope you enjoyed my tidbit on containers!!
 
