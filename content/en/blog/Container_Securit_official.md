@@ -73,11 +73,11 @@ A volume mount is a way to provide persistent storage and share data between the
 So if a developer mounts a sensitive host directory on a container in read-and-write mode, an attacker can escape from the container and onto the host. This is not a full list but these are some sensitive directory that should not be mounted as a read-write volume on a container:
 
 - root
-- - mounting the root directory to a container will provide the container read-write access to the files belonging to the root user. This is like exposing all your sensitive information on the Internet. 
+  - mounting the root directory to a container will provide the container read-write access to the files belonging to the root user. This is like exposing all your sensitive information on the Internet. 
 - proc
-- - mounting the proc directory to a container will provide the container read-write access to the processes running on the host. This is like publishing all your belonging on the Internet.
+  - mounting the proc directory to a container will provide the container read-write access to the processes running on the host. This is like publishing all your belonging on the Internet.
 - sys 
-- - mounting the sys directory to a container will provide the container read-write access to the kernel information running on the host. This is like posting the dimensions of your house and internal plumbing, water heater setting on the Internet. 
+  - mounting the sys directory to a container will provide the container read-write access to the kernel information running on the host. This is like posting the dimensions of your house and internal plumbing, water heater setting on the Internet. 
 
 **Analogy of a Volume-Mount**
 
