@@ -127,7 +127,7 @@ However, since read-write is a default setting on volume mounts, this could be o
 
 - Use of CDK 
 
-[CDK](https://github.com/cdk-team/CDK)is a container security tool that tests the security of containers. Its intended use is for developers to test their security of containers, however, threat actors were seen using this tool in a recent [DFIR report](https://thedfirreport.com/2024/10/28/inside-the-open-directory-of-the-you-dun-threat-group/). 
+[CDK](https://github.com/cdk-team/CDK) is a container security tool that tests the security of containers. Its intended use is for developers to test their security of containers, however, threat actors were seen using this tool in a recent [DFIR report](https://thedfirreport.com/2024/10/28/inside-the-open-directory-of-the-you-dun-threat-group/). 
 
 - Detection for disabling AppArmor, SELinux, or Seccomp
 
