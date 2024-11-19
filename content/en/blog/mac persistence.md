@@ -1,7 +1,7 @@
 ---
 author: "Wren Howell"
-title: "Mac Persistence Mechanisms"
-date: 2024-01-25
+title: "Windows Persistence Mechanisms"
+date: 2024-11-10
 description: "Exploring Mac Persistence"
 tags: ["Mac Persistence, Launch Daemon, Launch Agent"]
 thumbnail: https://1000logos.net/wp-content/uploads/2016/10/apple-emblem.jpg
@@ -20,7 +20,7 @@ A launch daemon is like a housekeeper who works quietly in the background, takin
 
 A good comparison of launch agents and launch daemons in Windows would be Windows Services or scheduled tasks. However, launch agents launch daemons and store their data in a property list (plist) file instead of storing things in the registry hive. Plists are used to store configuration settings, preferences, and metadata for applications and system components in macOS.
 
-**Where are Launch Agents and Launch Daemons located?**
+**Where are Launch Agents and Launch Daemons and Where are They located?**
 
 - ~/Library/LaunchAgents for user specific settings
 - /Library/LaunchDaemon for system-wide settings
