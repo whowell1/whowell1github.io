@@ -1,7 +1,7 @@
 ---
 author: "Wren Howell"
-title: "Windows Persistence Mechanisms"
-date: 2024-11-10
+title: "Mac Persistence Mechanisms"
+date: 2024-03-10
 description: "Exploring Mac Persistence"
 tags: ["Mac Persistence, Launch Daemon, Launch Agent"]
 thumbnail: https://1000logos.net/wp-content/uploads/2016/10/apple-emblem.jpg
