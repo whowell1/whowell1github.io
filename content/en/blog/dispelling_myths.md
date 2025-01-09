@@ -31,8 +31,7 @@ When I was trying to figure out how to get into cybersecurity, I chose to major 
 
 Unless you work for a cybersecurity consulting firm, cybersecurity doesn’t generate revenue for most companies. Since it’s hard to measure the success of a cybersecurity team, organizations often cut cybersecurity budgets when profits decline or during economic downturns. In my experience, companies only make significant investments in cybersecurity after experiencing a security breach. Given current trends, the cybersecurity job market is likely to remain competitive in 2025 as well.
 
-
-The purpose of this post is not to discourage those aspiring to enter the cybersecurity field. Like any industry, there will always be a demand for skilled, intelligent professionals who excel at their work. My intention is to offer a realistic perspective on what working in cybersecurity is truly like, beyond the hype of headlines and marketing pitches.
+In conclusion, the purpose of this post is not to discourage those aspiring to enter the cybersecurity field. Like any industry, there will always be a demand for skilled, intelligent professionals who excel at their work. My intention is to offer a realistic perspective on what working in cybersecurity is truly like, beyond the hype of headlines and marketing pitches.
 
 Personally, I am grateful to have found a career that I genuinely enjoy—one that offers continuous learning opportunities and aligns with many of my interests. However, it's important to acknowledge that working in cybersecurity can be challenging. Dealing with incidents like ransomware attacks can be stressful, and it’s easy to feel overwhelmed when the workload seems never-ending.
 
