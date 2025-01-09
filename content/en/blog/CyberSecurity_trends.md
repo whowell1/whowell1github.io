@@ -17,7 +17,7 @@ One major reason people want to transition into cybersecurity is because of head
 
 Most of the cybersecurity professionals I know who didn’t come from a military background ended up here by chance. Some were engineers who identified security flaws in production systems, others were involved in investigating cybercrime, or they had connections that opened doors for them. Getting a cybersecurity job straight out of college can be tough because universities often do a poor job teaching fundamental cybersecurity concepts. Even though there are more resources now than ever to break into cybersecurity, know that many people got in the industry by pure chance.
 
-3. Cybersecurity is more than just pen-testing—find something that interests you
+3. Cybersecurity is more than just pentesting, find something that interests you
 
 Many people want to become red teamers or hackers because movies and media glamorize hacking. However, red team roles are highly specialized and harder to land due to the niche skills required. Even the few universities with strong cybersecurity programs don’t necessarily provide adequate training for red team jobs.
 
@@ -25,16 +25,18 @@ That said, there are far more opportunities in cyber defense, including roles li
 
 4. Computer Science and Cybersecurity are different but related fields
 
-When I was trying to figure out how to get into cybersecurity, I chose to major in computer science because my school didn’t offer a cybersecurity degree. Although I learned algorithms and data structures, I struggled to see how they were relevant to cybersecurity. While programming can be part of cybersecurity, it’s not essential for every role. In fact, during my undergraduate years, I rarely had the chance to apply my programming skills directly to cybersecurity.
-
-That said, knowing how to code can be very useful, as it allows you to create custom tools and scripts that make your work easier. (Ironically, after I graduated, Georgia Tech introduced a dedicated track in cybersecurity within the computer science program.)
+When I was trying to figure out how to get into cybersecurity, I chose to major in computer science because my school didn’t offer a cybersecurity degree. At the time, I thought that maybe if I majored in something with computers, I could eventually fall into cyber. Even though  I learned algorithms and data structures during my time as computer science student, I struggled to see how my implementation of a linked-list tied into cybersecurity (Ironically, after I graduated, Georgia Tech introduced a dedicated track in cybersecurity within the computer science program). After getting a job in the cybersecurity industry, most of the things I learned were on the job, and most of my co-workers did not know how to code. However, I am still grateful that I learned to code in college because coding allowed me to write my own custom toolings and have a perspective as a software developer that many of my co-workers did not have. 
 
 5. Cybersecurity is a cost center for most organizations
 
 Unless you work for a cybersecurity consulting firm, cybersecurity doesn’t generate revenue for most companies. Since it’s hard to measure the success of a cybersecurity team, organizations often cut cybersecurity budgets when profits decline or during economic downturns. In my experience, companies only make significant investments in cybersecurity after experiencing a security breach. Given current trends, the cybersecurity job market is likely to remain competitive in 2025 as well.
 
 
+The purpose of this post is not to discourage those aspiring to enter the cybersecurity field. Like any industry, there will always be a demand for skilled, intelligent professionals who excel at their work. My intention is to offer a realistic perspective on what working in cybersecurity is truly like, beyond the hype of headlines and marketing pitches.
 
+Personally, I am grateful to have found a career that I genuinely enjoy—one that offers continuous learning opportunities and aligns with many of my interests. However, it's important to acknowledge that working in cybersecurity can be challenging. Dealing with incidents like ransomware attacks can be stressful, and it’s easy to feel overwhelmed when the workload seems never-ending.
+
+Burnout is a genuine concern in the cybersecurity industry, and it’s an issue that still needs more attention and proactive solutions. By sharing this insight, I hope to provide a balanced understanding of both the rewarding and demanding aspects of a career in cybersecurity.
 
 {{< css.inline >}}
 
