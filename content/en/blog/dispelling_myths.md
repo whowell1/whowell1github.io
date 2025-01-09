@@ -1,6 +1,6 @@
 ---
 author: "Wren Howell"
-title: "5 Things I Wish My Elders Told me about the Cybersecurity Industry "
+title: "5 Things I Wish My Elders Told me about the Cybersecurity Industry"
 date: 2024-12-29
 description: ""
 tags: ["Cybersecurity, Breaking in, Advice"]
