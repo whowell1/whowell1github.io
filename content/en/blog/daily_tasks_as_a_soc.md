@@ -4,7 +4,7 @@ title: "A Day in Life of Security Analyst"
 date: 2025-02-10
 description: "A day in a life"
 tags: ["a day in a life, learning"]
-thumbnail: https://cdn.shopify.com/s/files/1/0120/4849/8752/files/iStock-1284852950_480x480.jpg?v=1618857709
+thumbnail: https://www.hughes.com/sites/hughes.com/files/styles/post_detail_image/public/ENT-SOC-Aug23.webp?itok=9aiw_CtY
 ---
 As I continue to mentor new people that want to get into cybersecurity, there is one common question that I get which is, "What do you do everyday?" I have gottten this question so many times that I decided to write a blog post about it.
 
