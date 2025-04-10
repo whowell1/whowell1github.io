@@ -1,6 +1,6 @@
 ---
 author: "Wren Howell"
-title: "The Kubernetes Threats 2024"
+title: "Understanding K8 "
 date: 2025-04-10
 description: "k8"
 tags: ["K8, threats"]
