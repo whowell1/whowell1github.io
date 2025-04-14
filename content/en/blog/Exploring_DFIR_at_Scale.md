@@ -6,9 +6,9 @@ description: "DFIR at Scale"
 tags: ["Elk, DFIR, DFIR at scale"]
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Jasper.Wapiti-Hirsch.P1033401.jpg/800px-Jasper.Wapiti-Hirsch.P1033401.jpg
 ---
-One major challenge DFIR analysts face is analyzing infected machines at scale. Imagine there are four infected hosts. For the sake of this example, let's say an analyst needs to review artifacts like the NTUSER.DAT file, browser history, and multiple event logs. An analyst can use traditional tools like grep, PhiSearch, or Timeline Explorer can help sift through common artifacts, but manually combing through each log file with these tools is time-consuming and these traditional tools do not have a visual aid.
+One major challenge DFIR analysts face is analyzing infected machines at scale. Imagine there are four infected hosts. For the sake of this example, let's say an analyst needs to review artifacts like the NTUSER.DAT file, browser history, and multiple event logs. An analyst can use traditional tools like grep, PhiSearch, or Timeline Explorer can help sift through common artifacts, but manually combing through each log files with these tools is time-consuming and traditional tools do not have a visual aid.
 
-When a colleague suggested SOF-ELK as a solution, it immediately stood out as a perfect fit. [SOF-ELK](https://github.com/philhagen/sof-elk), created by Phil Hagen, is a forensic tool designed to streamline and accelerate log analysis and digital forensic investigations. It leverages the power of Elasticsearch, Logstash, and Kibana to provide an intuitive and efficient analysis experience. This implementation is dockerized, making it well-suited for resource-constrained environments.
+When a colleague suggested SOF-ELK as a solution, it immediately stood out as a perfect fit. [SOF-ELK](https://github.com/philhagen/sof-elk), created by Phil Hagen, is a forensic tool designed to streamline and accelerate log analysis and digital forensic investigations. It leverages the power of Elasticsearch, Logstash, and Kibana to provide an intuitive and efficient analysis. This implementation is dockerized, making it well-suited for resource-constrained environments.
 
  **Tools Used**
 
@@ -18,7 +18,7 @@ When a colleague suggested SOF-ELK as a solution, it immediately stood out as a 
 
 **Explaination of tool choices**
 
-I wanted this to be a quick, free and easy step up that is compatiable with different operating systems. Docker Desktop also started charging for organizations that are bigger than 500+ people. Podman is a free, open source alternative and most of the commands mirror docker. 
+I wanted this to be a quick, free and easy step up that is compatiable with different operating systems. Podman is a free, open source alternative and most of the commands mirror docker. 
 
 This verison of docker-elk using elastic version 7, that is easier to set up. These artifacts will only be used locally for analysis so additional security features that comes with verison 8 is optional. 
 
