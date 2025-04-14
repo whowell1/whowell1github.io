@@ -1,7 +1,7 @@
 ---
 author: "Wren Howell"
 title: "Addressing LLM Limitations "
-date: 2025-04-10
+date: 2025-04-12
 description: "Weakness in LLMs"
 tags: ["Prompt Injection, Hallucinations"]
 thumbnail: https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt621ce6e29b55c494/670d41be3dbe55de0cb9db4b/LLM(1800)_Krot_Studio_Alamy.jpg?width=1280&auto=webp&quality=95&format=jpg&disable=upscale
