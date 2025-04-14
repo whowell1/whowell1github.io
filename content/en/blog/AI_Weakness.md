@@ -19,7 +19,7 @@ This is an inherent flaw that will be hard to fix because LLM are designed to tr
 
 Sam Wilson proposed a way to combat prompt injection. The big idea here is that there are two LLMs a privileged LLM and a quarantined LLM. The role of the privilege LLM is only to see trusted content (in his example, it's user input) that can do real actions, that do not see untrusted data. The role of the quarantined LLM is to see untrusted data (in his example its email address and documents), but it is sandboxed and calls only extract information. The second part is that there is a control flow to show what the LLM is doing allowing the user to validate what the LLMs are doing to control execution flow in a Python-like language.
 
-By having a two-layer system, this system attempts to prevent dangerous data leaving the tool and it adds some guardrails to the execution of the prompt.
+By having a two-layer system, this system attempts to prevent dangerous data leaving and it adds some guardrails and transparency of the LLM's potential actions.
 
 However, what this solution does not address is user fatigue. If a user has to validate every step that an LLM is trying to do, users could get tired of checking and blindingly press "yes" to everything.
 
