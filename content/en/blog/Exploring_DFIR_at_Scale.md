@@ -24,9 +24,9 @@ This verison of docker-elk using elastic version 7, that is easier to set up. Th
 
 **Things to keep in mind**
 
-The container that runs kibana, elastic search, and logstash need to have enough memory to run. Otherwise it will one of the dependencies will die. 
+The container that runs kibana, elastic search, and logstash need to have enough memory to run. Otherwise one of the dependencies will be killed. 
 
-Figuring out what logs to ingest will be important too. The logs will have to be mapped to elastic search schema. Part 2 will have some demo logs from Crowdstrike that will be converted to elasic search schem
+Figuring out what logs to ingest will be important too. The logs will have to be mapped to elastic search schema. Part 2 will have some demo logs from Crowdstrike that will be converted to elasic search schema for a good visual aid. 
 
 **Installation steps**
 
