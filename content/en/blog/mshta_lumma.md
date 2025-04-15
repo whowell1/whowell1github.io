@@ -24,12 +24,13 @@ This would be followed by an obfuscated PowerShell script designed to retrieve a
 ```bash
 powershell.exe -w -h -ep Unrestricted -nop function [a bunch of hex]
 ```
-**Detection and Remediation**
 
 **Detection**
+
 A strong detection signal is when mshta.exe spawns a child process such as PowerShell or cmd.exe, especially when the PowerShell command line is unusually long or obfuscated. These are high-fidelity indicators of potentially malicious behavior.
 
 **Remediation**
+
 Since Lumma Stealer is a type info stealer, remediation steps include:
 - Resetting credentials for the affected user(s)
 - Blocking the malicious domain used in the attack
