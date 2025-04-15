@@ -9,7 +9,7 @@ thumbnail: https://frsecure.com/wp-content/uploads/2021/08/Living-Off-the-Land-A
 
 As EDR and endpoint detections evolve, so do the tactics of threat actors. Rather than relying on attacker tools that are easily flagged by security systems, adversaries are increasingly leveraging living-off-the-land techniques—abusing legitimate tools and processes already present in the environment to execute malicious activity.
 
-One such example is Lumma Stealer, a type of information stealer often associated with Russian threat actors. Lumma Stealer is known for its simplicity and effectiveness, utilizing built-in Windows binaries like mshta.exe to evade detection.
+One example is Lumma Stealer, a type of information stealer often associated with Russian threat actors. Lumma Stealer is known for its simplicity and effectiveness, utilizing built-in Windows binaries like mshta.exe to evade detection.
 
 **What is mshta.exe?** 
 
