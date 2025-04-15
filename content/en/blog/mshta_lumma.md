@@ -32,8 +32,8 @@ Another potential detection opportunity would be to check when mshta.exe spawns 
 
 Since Lumma Stealer is a type info stealer, remediation steps include:
 - Resetting credentials for the affected user(s)
-- Blocking the malicious domain used in the attack
-- Deleting the phishing email or document responsible for the initial infection
+- Blocking the malicious domain(s) used in the attack
+- Deleting the phishing email or url responsible for the initial infection
 
 For a more comprehensive defense, consider implementing Windows Defender Application Control (WDAC) policies to block all HTA file execution. This mitigates an entire class of attacks that abuse mshta.exe.
 
