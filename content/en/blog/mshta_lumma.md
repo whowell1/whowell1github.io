@@ -26,7 +26,7 @@ powershell.exe -w -h -ep Unrestricted -nop function [a bunch of hex]
 
 **Detection**
 
-Another potential detection opportunity would be to check when mshta.exe spawns a child process such as PowerShell or cmd.exe, especially when the PowerShell command line is unusually long or obfuscated. These are indicators of potentially malicious behavior.
+A potential detection opportunity would be to check when mshta.exe spawns a child process such as PowerShell or cmd.exe, especially when the PowerShell command line is unusually long or obfuscated. This is a good indicator of potentially malicious behavior.
 
 **Remediation**
 
