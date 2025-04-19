@@ -43,6 +43,8 @@ Resources
 
 - https://www.netskope.com/blog/lumma-stealer-fake-captchas-new-techniques-to-evade-detection
 
+- https://www.cybereason.com/blog/threat-analysis-rise-of-lummastealer
+
 {{< css.inline >}}
 
 <style>
