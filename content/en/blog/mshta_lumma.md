@@ -26,7 +26,7 @@ powershell.exe -w -h -ep Unrestricted -nop function [a bunch of hex]
 
 **Detection**
 
-A potential detection opportunity would be to check when mshta.exe spawns a child process such as PowerShell or cmd.exe, especially when the PowerShell command line is unusually long or obfuscated. This is a good indicator of potentially malicious behavior.
+A potential detection opportunity would be to check when mshta.exe spawns a child process such as PowerShell or cmd.exe, especially when the PowerShell command line is unusually long or obfuscated. This is a good indicator of potentially malicious behavior.　
 
 **Remediation**
 
@@ -37,6 +37,11 @@ Since Lumma Stealer is a type info stealer, remediation steps include:
 
 For a more comprehensive defense, consider implementing Windows Defender Application Control (WDAC) policies to block all HTA file execution. This mitigates an entire class of attacks that abuse mshta.exe.
 
+Resources 
+
+- https://blackpointcyber.com/blog/the-rise-of-fake-captcha-attacks/
+
+- https://www.netskope.com/blog/lumma-stealer-fake-captchas-new-techniques-to-evade-detection
 
 {{< css.inline >}}
 
