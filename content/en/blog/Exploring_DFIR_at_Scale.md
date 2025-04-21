@@ -58,7 +58,8 @@ podman-compose up
 
 5) After a couple of minutes or so, there should be a welcome to kibana page that should show up at http://localhost:5601
 
-Stay tuned in for part two, where we will take some sample data from Crowdstrike, map them to elastic search and display the logs in our elastic search instance. 
+We’ll take real-world sample data from CrowdStrike, map it to the Elasticsearch schema, and display it visually using Kibana. This will give you a powerful way to explore forensic artifacts at scale using open-source tools.
+
 
 {{< css.inline >}}
 
