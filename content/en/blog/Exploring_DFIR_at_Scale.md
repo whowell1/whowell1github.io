@@ -6,27 +6,31 @@ description: "DFIR at Scale"
 tags: ["Elk, DFIR, DFIR at scale"]
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Jasper.Wapiti-Hirsch.P1033401.jpg/800px-Jasper.Wapiti-Hirsch.P1033401.jpg
 ---
-One major challenge DFIR analysts face is analyzing infected machines at scale. Imagine there are four infected hosts. For the sake of this example, let's say an analyst needs to review artifacts like the NTUSER.DAT file, browser history, and multiple event logs. An analyst can use traditional tools like grep, PhiSearch, or Timeline Explorer can help sift through common artifacts, but manually combing through each log files with these tools is time-consuming and traditional tools do not have a visual aid.
+One major challenge DFIR analysts face is analyzing infected machines at scale. Imagine four compromised hosts. For this example, an analyst needs to review artifacts like the NTUSER.DAT file, browser history, and various Windows event logs.
 
-When a colleague suggested SOF-ELK as a solution, it immediately stood out as a perfect fit. [SOF-ELK](https://github.com/philhagen/sof-elk), created by Phil Hagen, is a forensic tool designed to streamline and accelerate log analysis and digital forensic investigations. It leverages the power of Elasticsearch, Logstash, and Kibana to provide an intuitive and efficient analysis. This implementation is dockerized, making it well-suited for resource-constrained environments.
+Traditional tools like grep, PhiSearch, or Timeline Explorer can help sift through these artifacts, but manually combing through each file is time-consuming. These tools also lack visual aids, which can slow down analysis and make pattern recognition harder.
+
+When a colleague suggested SOF-ELK, it immediately stood out as a great solution. Created by Phil Hagen, SOF-ELK is a forensic-focused tool built to streamline and accelerate log analysis. It leverages the ELK stack (Elasticsearch, Logstash, and Kibana) to provide an intuitive and powerful interface for analyzing forensic data. Best of all, it’s dockerized—making it ideal for running in resource-constrained environments.
 
  **Tools Used**
 
-- Podman and podman desktop
+- Podman & Podman Desktop
 - docker-elk
-- homebrew (package manager for Mac)
+- Homebrew (Mac package manager)
+
 
 **Explaination of tool choices**
 
-I wanted this to be a quick, free and easy step up that is compatiable with different operating systems. Podman is a free, open source alternative and most of the commands mirror docker. 
+I wanted a quick, free, and easy setup that’s compatible across different operating systems. Podman is a free, open-source alternative to Docker, and most commands are Docker-compatible.
 
-This verison of docker-elk using elastic version 7, that is easier to set up. These artifacts will only be used locally for analysis so additional security features that comes with verison 8 is optional. 
+This version of docker-elk uses Elasticsearch 7, which is simpler to set up compared to version 8. Since these artifacts will be analyzed locally, the advanced security features in version 8 aren't necessary for this use case.
+
 
 **Things to keep in mind**
 
-The container that runs kibana, elastic search, and logstash need to have enough memory to run. Otherwise one of the dependencies will be killed. 
+Resource Usage: The containers running Kibana, Elasticsearch, and Logstash require enough memory. If resources are tight, one of the services may fail to start.
 
-Figuring out what logs to ingest will be important too. The logs will have to be mapped to elastic search schema. Part 2 will have some demo logs from Crowdstrike that will be converted to elasic search schema for a good visual aid. 
+Log Mapping: Deciding what logs to ingest is important. These logs need to be mapped to the correct Elasticsearch schema. In Part 2, we’ll take sample logs from CrowdStrike and show how to convert them for ingestion and visualization.
 
 **Installation steps**
 
