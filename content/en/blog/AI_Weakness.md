@@ -19,7 +19,7 @@ A prompt injection attack occurs when an attacker manipulates the input to an LL
 
 This is an inherent flaw that will be hard to fix because LLM are designed to trust the input of the LLM. As LLMs get more access to applications, the opportunities for prompt injection increase.
 
-**Update [https://simonwillison.net/2025/Apr/11/camel/] April 13th via blog by Sam Wilson** 
+**Update (https://simonwillison.net/2025/Apr/11/camel/) April 13th via blog by Sam Wilson** 
 
 Sam Wilson proposed a way to combat prompt injection. The big idea here is that there are two LLMs a privileged LLM and a Quarantined LLM. The role of the privilege LLM is only to see trusted content (in his example, it's user input) that can do real actions, that do not see untrusted data. The role of the quarantined LLM is to see untrusted data (in his example its email address and documents), but it is sandboxed and calls only extract information. The second part is that there is a control flow to show what the LLM is doing allowing the user to validate what the LLMs are doing to control execution flow in a Python-like language.
 
