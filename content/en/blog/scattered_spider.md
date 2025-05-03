@@ -16,11 +16,11 @@ Impersonation and Phishing:
 
 Bypassing Multi-Factor Authentication (MFA):
 
-- Scattered Spider often uses techniques like SIM swapping or MFA fatigue to bypass multi-factor authentication. By overwhelming employees with continuous MFA prompts, they can force a user into approving malicious login attempts. 
+- Scattered Spider often uses technique called MFA fatigue to bypass multi-factor authentication. MFA fatigue when the the threat actor sends multiple prompts to the victim's phone to accept the login. By overwhelming employees with continuous MFA prompts, they can force a user into approving malicious login attempts. 
 
 Remote Access Tools (RATs):
 
-- Once inside the network, the group installs remote access tools like Fleetdeck.io, ScreenConnect, and Splashtop. These tools give them complete control over compromised systems, allowing them to exfiltrate data, move laterally, and maintain persistence within the network.
+- Once inside the network, the group installs remote access tools like Anydesk, Fleetdeck.io, ScreenConnect, and Splashtop. These tools give them complete control over compromised systems, allowing them to exfiltrate data, move laterally, and maintain persistence within the network.
 
 Looking for Passwords:
 
