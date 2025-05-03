@@ -52,7 +52,7 @@ Look for Exposed Passwords:
 
 **Conclusion**
 
-Scattered Spider demonstrates the growing trend of threat actors who use social engineering to bypass EDR systems. Scattered Spider shows that security is not just a technical issue, but a multifaceted issue. 
+Scattered Spider demonstrates the growing trend of threat actors who use social engineering to bypass EDR systems. Scattered Spider shows that security is not just a technical issue, but a multifaceted issue that needs support across departments.  
 
 
 References
