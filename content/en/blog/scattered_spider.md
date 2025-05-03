@@ -14,33 +14,42 @@ In a previous post, we discussed how threat actors evade EDR (Endpoint Detection
 Some of their tactics are listed below:
 
 Impersonation and Phishing:
+
 Scattered Spider often starts their attack by calling legitimate staff members, and impersonating colleagues or IT personnel. They request password resets or one-time passcodes to gain access to critical systems. This method capitalizes on the human element and bypasses the need for brute-forcing credentials.
 
 Bypassing Multi-Factor Authentication (MFA):
+
 Scattered Spider often uses techniques like SIM swapping or MFA fatigue to bypass multi-factor authentication. By overwhelming employees with continuous MFA prompts, they can force a user into approving malicious login attempts. 
 
 Remote Access Tools (RATs):
+
 Once inside the network, the group installs remote access tools like Fleetdeck.io, ScreenConnect, and Splashtop. These tools give them complete control over compromised systems, allowing them to exfiltrate data, move laterally, and maintain persistence within the network.
 
 Looking for Passwords:
+
 In large organizations, sensitive information such as passwords and credentials is often stored in places like SharePoint or Git repositories. Once they gain initial access, Scattered Spider can locate these stored credentials and use them to move laterally within the network, escalating their privileges and accessing more critical systems.
 
 Countering Scattered Spider’s Tactics
+
 What can organizations do to better defend against these kinds of attacks? Here are some strategies:
 
 Domain Impersonation Detection:
+
 Organizations should actively monitor for domain impersonation attempts (e.g., fake URLs that resemble legitimate ones). Threat actors often use lookalike domains (such as victim name-sso.com) to lure victims into revealing sensitive information.
 
 FIDO2 MFA:
+
 To counter MFA fatigue, organizations should implement FIDO2-based MFA, which uses hardware keys or biometric authentication. This kind of MFA is resistant to phishing and MFA fatigue attacks, making it much harder for attackers to bypass.
 
 Remote Monitoring and Management (RMM) Tools:
+
 Since remote access tools (RATs) are commonly used by threat actors to maintain control over compromised systems, it’s critical to monitor for suspicious use of Remote Monitoring and Management (RMM) software. This is particularly hard in global organizations where there are preferences for RMM that vary by region. A good first step would be to control who has the ability to download RMMs and choose RMMs that have some logging. 
 
 Phishing Simulation Training:
 Regularly conduct phishing simulations to test employee awareness and reinforce safe behaviors. Employees should be trained to recognize and report phishing attempts and suspicious interactions.
 
 Look for Exposed Passwords:
+
 Do not make it easy for threat actors to look for passwords that are stored in Sharepoint/teams. A good tool that can help look for passwords in an Enterprise setting is Cylera. 
 
 **Conclusion**
