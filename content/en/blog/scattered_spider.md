@@ -6,7 +6,6 @@ description: "Scattered Spider"
 tags: ["Social Engineering, Scattered Spider"]
 thumbnail: https://www.crowdstrike.com/content/dam/crowdstrike/www/en-us/wp/2023/01/0123_01_SCATTERED-SPIDER_Blog_1060x698.jpg
 ---
-
 **Scattered Spider and Their Evasion of EDR: A Brief on Their TTPs**
 
 In a previous post, we discussed how threat actors evade EDR (Endpoint Detection and Response) using Living Off the Land (LoL) techniques. In this post, I want to focus on threat actors who bypass EDR completely, called Scattered Spider. This group evades EDR completely by using social engineering tactics to cause harm to many organizations and has been behind the breaches of MGM, Twilio, and, more recently, Marks & Spencer in the UK. 
