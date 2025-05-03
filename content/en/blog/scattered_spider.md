@@ -9,7 +9,7 @@ thumbnail: https://www.crowdstrike.com/content/dam/crowdstrike/www/en-us/wp/2023
 In a previous post, we discussed how threat actors evade EDR (Endpoint Detection and Response) using Living Off the Land (LoL) techniques. In this post, I want to focus on threat actors who bypass EDR completely, called Scattered Spider. This group evades EDR completely by using social engineering tactics to cause harm to many organizations and has been behind the breaches of MGM, Twilio, and, more recently, Marks & Spencer in the UK. 
 
 
-Some of their tactics are listed below:
+Some of their tactics are listed bullet points.
 
 Impersonation and Phishing:
 
