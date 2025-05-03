@@ -48,7 +48,7 @@ Phishing Simulation Training:
 
 Look for Exposed Passwords:
 
-- Do not make it easy for threat actors to look for passwords that are stored in Sharepoint/teams. A good tool that can help look for passwords in an Enterprise setting is Cylera. 
+- Do not make it easy for threat actors to look for passwords that are stored in Sharepoint/teams. A good tool that can help look for passwords in an enterprise setting is Cylera. 
 
 **Conclusion**
 
