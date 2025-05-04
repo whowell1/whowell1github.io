@@ -40,7 +40,7 @@ FIDO2 MFA:
 
 Remote Monitoring and Management (RMM) Tools:
 
-- Since remote access tools (RATs) are commonly used by threat actors to maintain control over compromised systems, it’s critical to monitor for suspicious use of Remote Monitoring and Management (RMM) software. This is particularly hard in global organizations where there are preferences for RMM that vary by region. A good first step would be to control who has the ability to download RMMs and choose RMMs that have some logging. 
+- Since remote access tools (RATs) are commonly used by threat actors to maintain control over compromised systems, it’s critical to monitor for suspicious use of Remote Monitoring and Management (RMM) software. This is particularly hard in global organizations where there are preferences for RMM that vary by region. A good first step would be to control who has the ability to download RMMs and choose RMMs that have some logging. Another tip for responders is to see how the user got the RMM on the endpoint, as that will give responders a clue if the RMM was downloaded for legit purposes or not. 
 
 Phishing Simulation Training:
 
