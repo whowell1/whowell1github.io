@@ -9,7 +9,7 @@ thumbnail: https://frsecure.com/wp-content/uploads/2021/08/Living-Off-the-Land-A
 
 As EDR and endpoint detections evolve, so do the tactics of threat actors. Rather than relying on attacker tools that are easily flagged by security systems, adversaries are increasingly leveraging living-off-the-land techniques—abusing legitimate tools and processes already present in the environment to execute malicious activity.
 
-One example is Lumma Stealer, a type of information stealer often associated with Russian threat actors. Lumma Stealer is known for its simplicity and effectiveness, utilizing built-in Windows binaries like mshta.exe to evade detection.
+One example is Lumma Stealer, a type of information stealer often associated with Russian threat actors. Lumma Stealer is known for its simplicity and effectiveness, utilizing built-in Windows binaries like mshta.exe to evade detection. 
 
 **What is mshta.exe?** 
 
@@ -33,7 +33,8 @@ A potential detection opportunity would be to check when mshta.exe spawns a chil
 Since Lumma Stealer is a type info stealer, remediation steps include:
 - Resetting credentials for the affected user(s)
 - Blocking the malicious domain(s) used in the attack
-- Deleting the phishing email or url responsible for the initial infection
+- Deleting the phishing email 
+- Blocking url responsible for the initial infection and blocking any url that is related fownloading additional payloads
 
 For a more comprehensive defense, consider implementing Windows Defender Application Control (WDAC) policies to block all HTA file execution. This mitigates an entire class of attacks that abuse mshta.exe.
 
