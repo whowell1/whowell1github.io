@@ -34,7 +34,6 @@ Some common Windows Persistence locations are listed below:
 
 Just a quick reminder, a Windows Registry is a database where Windows stores all the configurations for users, applications, system, and hardware. 
 
-
 Common Registry keys that have Windows malware establish persistence in a single user is: 
 
 - NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Run
@@ -44,12 +43,12 @@ Common Registry keys that have Windows malware establish persistence in a all us
 
 - Software\Microsoft\Windows\CurrentVersion\Run
 - Software\Microsoft\Windows\CurrentVersion\RunOnce
-- Software\Microsoft\Windows\CurrentVeersion\policies\Explorer\Run
+- Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run
  - This is a group policy based auto-run location 
 
 Another common place where persistence occurs is in the Windows Start up folder. Any programs in this folder will execute when a user logs on. 
 
-Location is
+Location for the Start Folder is located below:
 
 - %AppData%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup 
 
@@ -65,6 +64,12 @@ Schtasks.exe is a Windows command-line application for managing scheduled tasks 
 
 Some of the reasons that actors install programs in scheduled tasks at certain intervals to execute at particular time, to try to evade detection by blending in with other starts. 
 
+
+**What is DLL Hijacking?**
+
+- DLL Hijacking abuses legit features of the Windows OS. Some examples of DLL Hijacking are DLL Search Order Hijacking, Phantom DLL Hijacking, DLL Side Loading, and  Relative Path DLL Hijacking. 
+
+- DLL Search Order is a technique where a attacker tricks a program into loading a malicious DLL instead of the legit one. When a program in Windows runs, it does not know the location of where the DLL (a piece of code is located). Because the program does not know where the DLL is, it follows a search order to find it. If an attacker is able to load a DLL in one of the searched folders (where the executable lives, or in the System32 directory), an attacker can load the malicious DLL. 
 
 
 {{< css.inline >}}
