@@ -19,8 +19,8 @@ Breaking down the language in a more straightforward way, persistence is the abi
 Some common Windows Persistence locations are listed below:
 
 - Auto Run 
-- - Includes places in the Windows Registry 
-- - Includes Windows Startup folder
+  - Includes places in the Windows Registry 
+  - Includes Windows Startup folder
 - Scheduled tasks
 - Services 
 - DLL Hijacking
@@ -45,7 +45,7 @@ Common Registry keys that have Windows malware establish persistence in a all us
 - Software\Microsoft\Windows\CurrentVersion\Run
 - Software\Microsoft\Windows\CurrentVersion\RunOnce
 - Software\Microsoft\Windows\CurrentVeersion\policies\Explorer\Run
-- - This is a group policy based auto-run location 
+ - This is a group policy based auto-run location 
 
 Another common place where persistence occurs is in the Windows Start up folder. Any programs in this folder will execute when a user logs on. 
 
