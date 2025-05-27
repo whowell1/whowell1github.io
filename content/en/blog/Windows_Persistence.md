@@ -44,7 +44,7 @@ Common Registry keys that have Windows malware establish persistence in a all us
 - Software\Microsoft\Windows\CurrentVersion\Run
 - Software\Microsoft\Windows\CurrentVersion\RunOnce
 - Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run
- - This is a group policy based auto-run location 
+  - This is a group policy based auto-run location 
 
 Another common place where persistence occurs is in the Windows Start up folder. Any programs in this folder will execute when a user logs on. 
 
