@@ -4,7 +4,7 @@ title: "Looking at Windows Persistence Mechanisms"
 date: 2025-05-10
 description: "Exploring Windows Persistence"
 tags: ["Windows Persistence, Registry keys"]
-thumbnail: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXKNLUFoerYB1G7RZIH-KLBUZvEtj4HDPg3b9luwJFgegwZfYTCgbpHuq5YHBCz_xPZQk&usqp=CAU
+thumbnail: https://www.bleepstatic.com/content/hl-images/2021/07/23/Windows-attack.jpg
 ---
 
 Recently, I had a to write a playbook on common persistent mechanisms. Even though there are lot of resources for this, I did not feel like recreating common persistence mechanisms playbooks on Windows again. This is not a comprehensive list of all the places that persistence can occur on Windows, but it is a start and order will be from most common locations to lesser known places. This page is going to be a work in progress as I add more persistence locations in the future. 
