@@ -67,14 +67,13 @@ Some of the reasons that actors install programs in scheduled tasks at certain i
 
 **What is DLL Hijacking?**
 
-- DLL Hijacking abuses legit features of the Windows OS. Some examples of DLL Hijacking are DLL Search Order Hijacking, Phantom DLL Hijacking, DLL Side Loading, and  Relative Path DLL Hijacking. 
+DLL Hijacking abuses legit features of the Windows OS. Some examples of DLL Hijacking are DLL Search Order Hijacking, Phantom DLL Hijacking, and DLL Side Loading. 
 
   - DLL Search Order is a technique where a attacker tricks a program into loading a malicious DLL instead of the legit one. When a program in Windows runs, it does not know the location of where the DLL (a piece of code is located). Because the program does not know where the DLL is, it follows a search order to find it. If an attacker is able to load a DLL in one of the searched folders (where the executable lives, or in the System32 directory), an attacker can load the malicious DLL. 
 
   - Phantom DLL Hijacking is a technique where attacker uses a DLL that no longer in the Windows operating systems or not neccessary. When a attacker is able to do this, this can lead to code execution. 
 
-  - DLL Side Loading is an attack where the attacker loads a legit exe with a malicious dll in the same folder because the EXE does not specify a full path. DLL Side loading abuses a Windows feature where a a new DLL gets loaded onto the path of a executable. This new DLL has a no validity checks that allows the malicious DLL to run. 
-
+  - DLL Side Loading is an attack where the attacker loads a legit exe with a malicious dll in the same folder because the EXE does not specify a full path. DLL Side loading abuses a Windows feature where a a new DLL gets loaded onto the path of a executable. This new DLL has a no validity checks that allows the malicious DLL to run. A analogy to give for DLL Side Loading is getting catfished on a dating app. The person that you match with has great pictures and is attactive in a conventional way. However, when you meet up with the person you matched with looks nothing like the person in the picture. 
 
 
 {{< css.inline >}}
