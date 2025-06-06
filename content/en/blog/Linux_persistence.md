@@ -22,9 +22,11 @@ Some common Linux Persistence locations are listed below:
 
 - Scheduled tasks through cron jobs 
 - SSH
-- Autorun through startup scripts
+- Modifying start up scripts 
+- Creation of accounts
 
 **What is Cron job and where is it located?**
+
 - Cron jobs are like scheduled tasks in Windows. They are used to schedule tasks to run at specific times or intervals and come on most Linux systems. Cron jobs can executed from both a system level and a user level so this is very common way that threat actors try to achieve persistence. The file locations of the crob jobs are located below.  
 
 For user wide cron jobs:
@@ -67,6 +69,13 @@ stat ~/.ssh/authorized_keys
 ```
 
 
+**What are start up scripts and where are they located?**
+
+Start up scripts are like autorun scripts in Windows and these programs run automatically when the system boot or when a user logs in. There are many scripts that run on the user and system level. 
+
+User Level
+
+- .
 
 {{< css.inline >}}
 
