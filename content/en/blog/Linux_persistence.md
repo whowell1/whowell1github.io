@@ -53,13 +53,18 @@ The authorized keys in located in two directories
 - In the user directory:
 
 ```bash
-/home/<username>/.ssh/authorized_keys
+~/.ssh/id_rsa
+~/.ssh/id_rsa.pub
+~/.ssh/authorized_keys
+/root/.ssh/id_rsa
+/root/.ssh/id_rsa.pub
+/root/.ssh/authorized_keys
 ``` 
 
-- In the file system 
+- In the system wide configs is at 
 
 ```bash
-/root/.ssh/authorized_keys
+/etc/ssh/
 ``` 
 
 To show when the authorized keys were added 
@@ -71,11 +76,17 @@ stat ~/.ssh/authorized_keys
 
 **What are start up scripts and where are they located?**
 
-Start up scripts are like autorun scripts in Windows and these programs run automatically when the system boot or when a user logs in. There are many scripts that run on the user and system level. 
+Start up scripts are like autorun scripts in Windows and these programs run automatically when the system boot or when a user logs in. There are many scripts in Linux that are considered start up scripts. 
 
 User Level
 
-- .
+- ~/.profile
+- ~/.bash_profile
+- ~/.bash_login
+- ~/.bash_logout
+- ~/.bashrc
+
+
 
 {{< css.inline >}}
 
