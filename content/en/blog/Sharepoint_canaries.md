@@ -3,11 +3,11 @@ author: "Wren Howell"
 title: "Detecting Read Teaming By Threat Actors"
 date: 2025-07-10
 description: "Using Canary Tokens to Combat Read Teaming"
-tags: ["a day in a life, learning"]
-thumbnail: https://cdn.shopify.com/s/files/1/0120/4849/8752/files/iStock-1284852950_480x480.jpg?v=1618857709
+tags: ["honeypot, tripwire, honeytoken"]
+thumbnail: https://www.yalepest.com/wp-content/uploads/2021/12/Hand-reaching-for-a-piece-of-cheese-in-a-mousetrap.jpg
 ---
 
-With Scattered Spider in the news again for breaching insurance firms, they have proven once again that having an EDR system on endpoints is not enough. Once an attacker is able to get in through social engineering, threat actors like to look for sensitive information in an organization, like SharePoint, Confluence, code repos, chats, and JIRA. Of course, as security professionals, we preach about access control and the concept of least privilege. However, no matter how good clean-up attempts are, there will always be sensitive information stored somewhere because somebody will inevitably make mistakes. So instead of aiming for perfection, we can use the fact that sensitive information will be stored somewhere accessible to the public to catch potential threat actors by using canary tokens. The use of canary tokens can help catch threat actors performing some reconnaissance activity. 
+With Scattered Spider in the news again for breaching insurance firms, they have proven once again that having an EDR system on endpoints is not enough. Once an attacker is able to get in through social engineering, threat actors like to look for sensitive information in an organization, like SharePoint, Confluence, code repos, chats, and JIRA. Of course, as security professionals, we preach about access control and the concept of least privilege. However, no matter how good clean-up attempts are, there will always be sensitive information stored somewhere because someone will inevitably a password in a place, where they are not supposed to. So instead of aiming for perfection, we can use the fact that sensitive information will be stored somewhere accessible to the public to catch potential threat actors by using canary tokens. The use of canary tokens can help catch threat actors performing some reconnaissance activity. 
 
 **What is a canary?**
 
