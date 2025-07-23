@@ -1,7 +1,7 @@
 ---
 author: "Wren Howell"
 title: "Learning from Setbacks"
-date: 2024-02-26
+date: 2024-03-26
 description: "Battling Back from Setbacks in Cyber"
 tags: ["Learning, developing, setbacks"]
 thumbnail: https://breakintoenglish.com/wp-content/uploads/2019/03/Common-mistakes-in-English-to-avoid.png
