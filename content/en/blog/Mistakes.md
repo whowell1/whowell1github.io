@@ -25,13 +25,16 @@ In our world, especially in Digital Forensics and Incident Response (DFIR), we o
 **Some Mistakes I’ve Made**
 
 Missing Persistence:
-During one case, an infected machine used DLL injection to maintain persistence. I removed the malicious DLL, but missed another file that was executing from a non-standard folder. That file was being repeatedly launched by a scheduled cron job. The machine was not fully contained.
+
+- During a case, an infected machine used DLL injection to maintain persistence. I removed the malicious DLL, but missed another file that was executing from a non-standard folder. That file was being repeatedly launched by a scheduled cron job. The machine was not fully contained.
 
 Blanking on Scripting:
-In a job interview, I was asked to write a simple script. But anxiety and stress took over. I froze. Something I’d done a many times  before suddenly became impossible. The frustration spiraled and I never recovered to be able to solve the problem.
+
+- In a job interview, I was asked to write a simple script. But anxiety and stress took over. I froze. Something I’d done a many times  before suddenly became impossible. The frustration spiraled and I never recovered to be able to solve the problem.
 
 Blocking Bitdefender: 
-At one point, I saw an email flagged by Proofpoint that referenced Bitdefender. Without fully understanding the context, I blocked all Bitdefender URLs. This flooded the queue and added more work to the team.
+
+- I saw an email flagged by Proofpoint that had Bitdefender url. Without fully understanding the context, I blocked all Bitdefender URLs in Proofpoint. This flooded the queue and added more work to the team.
 
 Every time I make a mistake, the same feeling of disappointment, self-doubt, and frustration occur.
 
@@ -54,13 +57,16 @@ The lesson here is that greatness is not absence of failure, because often times
 **Learning from the Aforementioned Setbacks**
 
 Persistence Blind Spot:
-I now make it a point to examine not just what’s malicious, but _where_ it’s executing from. Suspicious execution paths—non-standard directories, temporary folders, AppData—are now a routine part of my investigative checklist.
+
+- I now make it a point to examine not just what’s malicious, but _where_ it’s executing from. Suspicious execution paths—non-standard directories, temporary folders, AppData—are now a routine part of my investigative checklist.
 
 Scripting Paralysis:
-I am working on a page that is helpful for security professionals to use when doing a typical IR jobs. 
+
+- I am working on a page that is helpful for security professionals to use when doing a typical IR jobs. 
 
 Blocking Domains:
-To avoid blocking common domains, I wrote a Python script that cross-references a domain against the Tranco top 10,000 list. If the domain is in this list the script raises a warning to help prevent business disruption. 
+
+- To avoid blocking common domains, I wrote a Python script that cross-references a domain against the Tranco top 10,000 list. If the domain is in this list the script raises a warning to help prevent business disruption. 
 
 **Final Thoughts**
 
