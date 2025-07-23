@@ -24,12 +24,13 @@ In our world, especially in Digital Forensics and Incident Response (DFIR), we o
 
 **Some Mistakes I’ve Made**
 
-Missing Persistence 
+Missing Persistence:
 During one case, an infected machine used DLL injection to maintain persistence. I removed the malicious DLL, but missed another file that was executing from a non-standard folder. That file was being repeatedly launched by a scheduled cron job. The machine was not fully contained.
-Blanking on Scripting 
-In a job interview, I was asked to write a simple script. But anxiety and stress took over. I froze. Something I’d done a many times  before suddenly became impossible. The frustration spiraled and never recovered to be able to solve the problem.
 
-Blocking Bitdefender
+Blanking on Scripting:
+In a job interview, I was asked to write a simple script. But anxiety and stress took over. I froze. Something I’d done a many times  before suddenly became impossible. The frustration spiraled and I never recovered to be able to solve the problem.
+
+Blocking Bitdefender: 
 At one point, I saw an email flagged by Proofpoint that referenced Bitdefender. Without fully understanding the context, I blocked all Bitdefender URLs. This flooded the queue and added more work to the team.
 
 Every time I make a mistake, the same feeling of disappointment, self-doubt, and frustration occur.
