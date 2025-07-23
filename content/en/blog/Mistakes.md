@@ -1,7 +1,7 @@
 ---
 author: "Wren Howell"
 title: "Learning from Setbacks"
-date: 2024-03-26
+date: 2025-03-26
 description: "Battling Back from Setbacks in Cyber"
 tags: ["Learning, developing, setbacks"]
 thumbnail: https://breakintoenglish.com/wp-content/uploads/2019/03/Common-mistakes-in-English-to-avoid.png
@@ -64,7 +64,7 @@ To avoid blocking common domains, I wrote a Python script that cross-references 
 
 **Final Thoughts**
 
-In a field where we are expected to contain threats and mitigate risk, it easy to believe that failure is unacceptable. However, cybersecurity professionals is a complex field with many moving parts that makes failure inevitable. 
+In a field where we are expected to contain threats and mitigate risk, it easy to believe that failure is unacceptable. However, cybersecurity is a complex field with many moving parts that makes failure inevitable. 
 
 The goal of a cybersecurity, and society as a whole, should not be to eliminate mistakes entirely, but to have systems, teams, and mindsets that are resilient in the face of failure. 
 
