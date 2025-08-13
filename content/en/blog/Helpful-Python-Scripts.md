@@ -7,10 +7,9 @@ tags: ["Python, Useful Scripts "]
 thumbnail: https://loudbench.com/wp-content/uploads/2023/02/Python-logo-1024x576.png
 ---
 
-During a recent triage, I had to brush up on my Python skills to try to automate some tasks that I had to do. Here are a few helpful Python scripts could be helpful for security professionals. 
+During a recent triage, I had to brush up on my Python skills to try to automate some tasks that I had to do. Here are a few helpful Python scripts could be helpful for security professionals. This page will continue to be updated as I often times use the same scripts to manipulate data in similiar ways
 
 This first script reads a file with IPs and gets the unique IPs and stores them into a set and prints them out. In the example below, the strip method is invoked twice, the first to remove spaces, and the second time to remove the []. 
-
 
 ```python
 cleaned_ips = set()
