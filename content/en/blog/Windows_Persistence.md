@@ -39,7 +39,7 @@ Common Registry keys that have Windows malware establish persistence in a single
 - NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Run
 - NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\RunOnce
 
-Common Registry keys that have Windows malware establish persistence in a all users are: 
+Common Registry keys that have Windows malware establish persistence in all users are: 
 
 - Software\Microsoft\Windows\CurrentVersion\Run
 - Software\Microsoft\Windows\CurrentVersion\RunOnce
