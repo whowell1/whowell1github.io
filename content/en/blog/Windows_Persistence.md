@@ -64,8 +64,6 @@ Schtasks.exe is a Windows command-line application for managing scheduled tasks 
 
 Threat actors install programs in scheduled tasks at certain intervals to execute at particular time to try to evade detection by blending in with other start up programs. 
 
-A way to 
-
 **What is DLL Hijacking?**
 
 DLL Hijacking abuses legit features of the Windows OS. Some examples of DLL Hijacking are DLL Search Order Hijacking, Phantom DLL Hijacking, and DLL Side Loading. 
