@@ -62,7 +62,7 @@ Scheduled Tasks or Task Scheduler is a built-in Windows utility that allows user
 
 Schtasks.exe is a Windows command-line application for managing scheduled tasks on local or remote computers, such as creating, removing, editing, executing, and terminating tasks. 
 
-Some of the reasons that actors install programs in scheduled tasks at certain intervals to execute at particular time, to try to evade detection by blending in with other starts. 
+Some of the reasons that threat actors install programs in scheduled tasks at certain intervals to execute at particular time, to try to evade detection by blending in with other start up programs. 
 
 
 **What is DLL Hijacking?**
@@ -88,6 +88,8 @@ The Service Registry Keys are located at:
 
 - HKLM/System/CurrentControlSet/Services  
 
+
+**What is Windows I?**
 
 
 {{< css.inline >}}
