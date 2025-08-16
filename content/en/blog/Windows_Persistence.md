@@ -89,7 +89,6 @@ The Service Registry Keys are located at:
 
 - HKLM/System/CurrentControlSet/Services  
 
-
 {{< css.inline >}}
 
 <style>
