@@ -9,7 +9,7 @@ thumbnail: https://loudbench.com/wp-content/uploads/2023/02/Python-logo-1024x576
 
 During a recent triage, I had to brush up on my Python skills to try to automate some tasks that I had to do. Here are a few helpful Python scripts could be helpful for security professionals. This page will continue to be updated as I often times use the same scripts to manipulate data in similiar ways.
 
-This first script reads a file with IPs and gets the unique IPs and stores them into a set and prints them out. In the example below, the strip method is invoked twice, the first to remove spaces, and the second time to remove the []. This script can be modified to a users needs. In this case, the data was looked like: ["12.21.13.23"], with no other data. 
+This first script reads a file with IPs and gets the unique IPs and stores them into a set and prints them out. A set is a datatype unordered collection of UNIQUE datatypes. In the example below, the strip method is invoked twice, the first to remove spaces, and the second time to remove the []. This script can be modified to a users needs. In this case, the data was looked like: ["12.21.13.23"], with no other data. 
 
 ```python
 cleaned_ips = set()
