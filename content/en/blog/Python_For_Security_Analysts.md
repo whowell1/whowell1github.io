@@ -24,6 +24,7 @@ for ip in cleaned_ips:
     print(ip)
 ``` 
 
+There are many other variations of the code of this that can be useful as well. What if instead of priting all the unique ips in the data, you also want to count the number of IPs in the list? A len method can be invoked in the cleaned_ip set. 
 
 {{< css.inline >}}
 
