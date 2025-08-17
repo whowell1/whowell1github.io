@@ -1,17 +1,28 @@
 ---
 author: "Wren Howell"
 title: Quick Python Scripts for Security Professionals
-date: 08/12/2025 
+date: 2025-08-10
 description: "Helpful Python Scripts"
 tags: ["Python, Useful Scripts "]
-thumbnail: https://images.ctfassets.net/em6l9zw4tzag/oVfiswjNH7DuCb7qGEBPK/b391db3a1d0d3290b96ce7f6aacb32b0/python.png
+thumbnail: https://loudbench.com/wp-content/uploads/2023/02/Python-logo-1024x576.png
 ---
 
 During a recent triage, I had to brush up on my Python skills to try to automate some tasks that I had to do. Here are a few helpful Python scripts could be helpful for security professionals. This page will continue to be updated as I often times use the same scripts to manipulate data in similiar ways.
 
 This first script reads a file with IPs and gets the unique IPs and stores them into a set and prints them out. In the example below, the strip method is invoked twice, the first to remove spaces, and the second time to remove the []. 
 
+```python
+cleaned_ips = set()
 
+with open("ips.txt", "r") as f:
+    for line in f:
+        ip = line.strip().strip("[]")  
+        cleaned_ips.add(ip)
+
+# Print distinct IPs
+for ip in cleaned_ips:
+    print(ip)
+``` 
 
 
 {{< css.inline >}}
