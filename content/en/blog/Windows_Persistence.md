@@ -30,7 +30,7 @@ Some common Windows Persistence locations are listed below:
 
 **What is AutoRun and where is it located?**
 
-- Auto run are programs or applications that are designed to run automatically when operating system or the user logs in. AutoRuns are also referenced as  AutoStart Extension Points (ASEPs). There are over 50+ places where maliware can run, but many of these are located in the Registry. 
+- Auto run are programs or applications that are designed to run automatically when operating system or the user logs in. AutoRuns are also referred to  as AutoStart Extension Points (ASEPs). There are over 50+ places where maliware can run, but many of these are located in the Registry. 
 
 Just a quick reminder, a Windows Registry is a database where Windows stores all the configurations for users, applications, system, and hardware. 
 
@@ -62,7 +62,7 @@ Scheduled Tasks or Task Scheduler is a built-in Windows utility that allows user
 
 Schtasks.exe is a Windows command-line application for managing scheduled tasks on local or remote computers, such as creating, removing, editing, executing, and terminating tasks. 
 
-Threat actors install programs in scheduled tasks at certain intervals to execute at particular time to try to evade detection by blending in with other start up programs. 
+Threat actors install programs in scheduled tasks to execute at particular time to try to evade detection by blending in with other start up programs. 
 
 **What is DLL Hijacking?**
 
@@ -79,13 +79,17 @@ DLL Hijacking abuses legit features of the Windows OS. Some examples of DLL Hija
 
 Windows Services are programs that are intended to run in the background without user interaction. Services are required to run when the operating systems first start up as either executables or are DLLs. If the computer was a TV network like ESPN, the Windows Services would be the backroom staff that would make the broadcast go smoothly. 
 
-Because there are so many types of Windows Services running, they are implented as DLL's or executables to save resources. When the operating system is running, it is normal to see several instances of svchost.exe, a generic Windows host process, running in the background. 
+Because there are so many types of Windows Services running, they are implemented as DLL's or executables to save resources. When the operating system is running, it is normal to see several instances of svchost.exe, a generic Windows host process, running in the background. 
 
 Another type of Windows service is the  Windows service control manager (services.exe) which is an interface to manage and manipulate services. The service control manager is accessible to users via GUI components as well as system utilities such as sc.exe and net. 
 
 The Service Registry Keys are located at:
 
 - HKLM/System/CurrentControlSet/Services  
+
+Threat actors can run register a malicious service and then have that malicious task run to establish persistence on a host. 
+
+
 
 {{< css.inline >}}
 
