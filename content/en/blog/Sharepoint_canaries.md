@@ -9,7 +9,7 @@ thumbnail: https://www.yalepest.com/wp-content/uploads/2021/12/Hand-reaching-for
 
 With Scattered Spider in the news again for breaching insurance firms, they have proven once again that having an EDR system on endpoints is not enough. Once an attacker is able to get in through social engineering, threat actors like to look for sensitive information in an organization, like SharePoint, Confluence, code repos, chats, and JIRA. Of course, as security professionals, we preach about access control and the concept of least privilege. However, no matter how good clean-up attempts are, there will always be sensitive information stored somewhere because someone will inevitably a password in a place, where they are not supposed to. So instead of aiming for perfection, we can use the fact that sensitive information will be stored somewhere accessible to the public to catch potential threat actors by using canary tokens. The use of canary tokens can help catch threat actors performing some reconnaissance activity. 
 
-**What is Read Teaming**
+**What is Read Teaming?**
 
 "Read" Teaming is somewhat a colloquial term used by Red Teamers and adversaries that involves reading internal documentation to look for valid credentials in an environment. An "Read teaming" attack sequence that groups like Scattered Spider shows a familiar pattern of:
  
