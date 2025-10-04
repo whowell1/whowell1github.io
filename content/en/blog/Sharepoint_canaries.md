@@ -2,7 +2,7 @@
 author: "Wren Howell"
 title: "Detecting 'Read' Teaming By Threat Actors"
 date: 2025-07-10
-description: "Using Canary Tokens to Combat Read Teaming"
+description: "Using Canary Tokens to Combat 'Read' Teaming"
 tags: ["honeypot, tripwire, honeytoken"]
 thumbnail: https://www.yalepest.com/wp-content/uploads/2021/12/Hand-reaching-for-a-piece-of-cheese-in-a-mousetrap.jpg
 ---
