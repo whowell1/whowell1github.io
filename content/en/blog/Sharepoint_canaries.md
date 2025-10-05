@@ -11,7 +11,7 @@ With Scattered Spider in the news again for breaching insurance firms, they have
 
 **What is Read Teaming?**
 
-"Read" Teaming is somewhat a colloquial term used by Red Teamers and adversaries that involves reading internal documentation to look for valid credentials in an environment. An "Read teaming" attack sequence that groups like Scattered Spider shows a familiar pattern of:
+"Read" Teaming is somewhat a colloquial term used by Red Teamers and adversaries that involves reading internal documentation to look for valid credentials in an environment. A "Read teaming" attack sequence that groups like Scattered Spider use shows generally looks like:
  
 1) Initial access through social engineering 
 2) Looking for valid credentials like API keys, secrets in Confluence, Slack, Jira, and Git
