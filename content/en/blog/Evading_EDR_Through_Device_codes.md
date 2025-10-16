@@ -32,7 +32,7 @@ Access token
 - Access tokens are issued in the form of a JWT (JSON Web Token) and typically expire after about an hour.
 
 Refresh Tokens 
--  They are long-lived credentials issued by Microsoft Entra ID (Azure AD) that allows a client application to get a new access token without asking the user to sign in again.
+-  They are long-lived credentials issued by Microsoft Entra ID that allows a client application to get a new access token without asking the user to sign in again.
 
 **Detection Ideas: Spotting Device Logins**
 
