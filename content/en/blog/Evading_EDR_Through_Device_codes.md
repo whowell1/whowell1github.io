@@ -51,8 +51,7 @@ Resources
 - https://www.volexity.com/blog/2025/04/22/phishing-for-codes-russian-threat-actors-target-microsoft-365-oauth-workflows
 - https://aadinternals.com/post/phishing
 - https://dirkjanm.io/phishing-for-microsoft-entra-primary-refresh-tokens
-- Xintra.org
-
+- https://www.xintra.org/
 
 {{< css.inline >}}
 
