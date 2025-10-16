@@ -7,10 +7,7 @@ tags: ["Evading EDR, identity"]
 thumbnail: https://media.licdn.com/dms/image/v2/C5612AQEDmE7dEsxqZQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1541702431785?e=1763596800&v=beta&t=JUdJe7rv49SiBEwcmzgnPW1yp6b-AYrkYxvb8ST0BLQ
 ---
 
-Cybersecurity is a game of cat and mouse between the threat actors and the cybersecurity professionals. Ten years ago, most companies did not have endpoint security systems so threat actors were able to install malware on systems. When EDR started to get installed on enterprise endpoints to be able to identify malware, threat actors moved to using living off the land techniques to move stealthily in environments. After Covid-19, as more companies moved to the cloud, threat actors were able to see that it was easier to log in than to break in. This shift gave rise to the phrase that defines today’s threat landscape:
-
-**Identity is the new perimeter**
-
+Cybersecurity is a game of cat and mouse between the threat actors and the cybersecurity professionals. Ten years ago, most companies did not have endpoint security systems so threat actors were able to install malware on systems. When EDR started to get installed on enterprise endpoints to be able to identify malware, threat actors moved to using living off the land techniques to move stealthily in environments. After Covid-19, as more companies moved to the cloud, threat actors were able to see that it was easier to log in than to break in. This shift gave rise to the phrase that defines today’s threat landscape: **Identity is the new perimeter**
 In this post, we’ll explore how threat actors can use the Device Code authentication flow in Azure to gain initial access.
 
 **What is Device Code Authentication?**
