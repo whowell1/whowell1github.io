@@ -24,7 +24,7 @@ This is a little different from traditional phishing attacks because there is no
 
 **What are Access Token and Refresh Tokens in Azure?**
 
-Access token
+Access Tokens
 -  They are short-lived credentials issued by Microsoft Entra ID that allow a client (an application) to authenticate and access specific resources or APIs (Microsoft Graph, Azure Resource Manager, or a custom API you’ve protected with Entra ID).  
 - Access tokens are issued in the form of a JWT (JSON Web Token) and typically expire after about an hour.
 
@@ -51,7 +51,7 @@ Resources
 - https://www.volexity.com/blog/2025/04/22/phishing-for-codes-russian-threat-actors-target-microsoft-365-oauth-workflows
 - https://aadinternals.com/post/phishing
 - https://dirkjanm.io/phishing-for-microsoft-entra-primary-refresh-tokens
-- Xintra 
+- Xintra.org
 
 
 {{< css.inline >}}
