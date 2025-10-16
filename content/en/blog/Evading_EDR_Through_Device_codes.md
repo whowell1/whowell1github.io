@@ -1,6 +1,6 @@
 ---
 author: "Wren Howell"
-title: "Identity is the New Perimeter" 
+title: "Evading EDR Through Device Codes" 
 date: 2025-09-30
 description: "Evading EDR through identity"
 tags: ["Evading EDR, identity"]
@@ -23,26 +23,26 @@ Device code flow lets you sign into devices that lack local input devices, like 
 2) Send a user the phishing email with legit Microsoft URL and device code on it
 3) Retrieve the access token and refresh token from the compromised user. 
 
-This is a little different from traditional phishing attacks because there is not a suspicious url or domain to block, the whole attack flow uses Microsoft hosted infrastructure. 
+This is a little different from traditional phishing attacks because there is not a suspicious url or domain to block, the whole attack flow uses Microsoft hosted infrastructure that makes it more difficult to spot.
 
 **What are Access Token and Refresh Tokens in Azure?**
 
-- Access token
-- -  They are short-lived credentials issued by Microsoft Entra ID that allow a client (an application) to authenticate and access specific resources or APIs (Microsoft Graph, Azure Resource Manager, or a custom API you’ve protected with Entra ID).  
-- - Access tokens are issued in the form of a JWT (JSON Web Token) and typically expire after about an hour.
+Access token
+-  They are short-lived credentials issued by Microsoft Entra ID that allow a client (an application) to authenticate and access specific resources or APIs (Microsoft Graph, Azure Resource Manager, or a custom API you’ve protected with Entra ID).  
+- Access tokens are issued in the form of a JWT (JSON Web Token) and typically expire after about an hour.
 
-- Refresh Tokens 
-- - They are long-lived credentials issued by Microsoft Entra ID (Azure AD) that allows a client application to get a new access token without asking the user to sign in again.
+Refresh Tokens 
+-  They are long-lived credentials issued by Microsoft Entra ID (Azure AD) that allows a client application to get a new access token without asking the user to sign in again.
 
 **Detection Ideas: Spotting Device Logins**
 
-- Endpoint Forensics in the browser 
-- - Look at browser history and see the links to https://microsoft.com/devicelogin. Combine this artifact with additional artifacts using Sign-in logs. 
+Endpoint Forensics in the browser 
+-  Look at browser history and see the links to https://microsoft.com/devicelogin. Combine this artifact with additional artifacts using Sign-in logs. 
 
-- Sign-in logs
-- - Look for where the authentication method is Device Login
-- - Look for newly registered devices or devices that are non-managed in Intune that have been registered.
-- - Look for anomalous IP addresses that are not associated with the user.
+Sign-in logs
+- Look for where the authentication method is Device Login
+- Look for newly registered devices or devices that are non-managed in Intune that have been registered.
+- Look for anomalous IP addresses that are not associated with the user.
 
 
 **Mitigating Device Flow Authentication** 
