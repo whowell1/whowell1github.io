@@ -16,7 +16,7 @@ Device code flow lets you sign into devices that lack local input devices, like 
 
 **How Threat Actors Exploit Device Code Authentication in Azure**
 
-1) Send a post request to https://login.microsoftonline.com/common/oauth2/devicecode?api-version=1.0 with a client_id and resource_id. 
+1) Send a post request to https://login.microsoftonline.com/common/oauth2/devicecode?api-version=1.0 with resource and a client_id. Resource is the application that that the attacker wants to mimick like Microsoft Graph and the client_id is the numerical representation of the id of the application.
 2) Send a user the phishing email with legit Microsoft URL and device code on it
 3) Retrieve the access token and refresh token from the compromised user. 
 
