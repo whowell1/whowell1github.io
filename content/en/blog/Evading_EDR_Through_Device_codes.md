@@ -37,7 +37,7 @@ Endpoint Forensics in the browser
 -  Look at browser history and see the links to https://microsoft.com/devicelogin. Combine this artifact with additional artifacts using Sign-in logs. 
 
 Sign-in logs
-- Look for where the authentication method is Device Login
+- Look for where the authentication method is: Device Login
 - Look for newly registered devices or devices that are non-managed in Intune that have been registered.
 - Look for anomalous IP addresses that are not associated with the user.
 
