@@ -18,6 +18,15 @@ Depending on the day, I also try to write tooling to make my job easier, or to f
 
 One of the things that I like about my job is that there are no two days that are the same and I get to learn new things everyday.
 
+Update
+
+As my team starts to mature a little bit, now I am seeing myself doing more SIEM engineering than daily SOC work. I am working to see what logs my team needs to ingest, determine what alerts can be automatically closed using automations in Defender, and figuring out the fidelity of the alerts that come into the SOC. 
+
+The hard part of detection logic is seeing if the rule is relevant after it was written. As a detection rule author, I need to see if the rule logic that was written in the past was firing correctly, and still relevant to the threat that the incident response team wants to alert on. As a team that does not have a dedicated detection team, the fidelity of the rule becomes ever more important, as a small team does not need to flooded with false positive alerts. Here is in general, the characteristis of high fidelity alert:
+
+1) Clear rule names, with clear actionable items. Based on the rule name, the incident response analyst should be able to know whatrule is alerting on, and what they should look for. When investigating an incident, the analyst should know what the rule is looking, where the intel from the rule is coming from, so should have enough context to  guide them what to look for in the environment. For example, earlier on when I was CSIRT, I saw a rule that fired related to a Sliver payload. I downloaded the 
+2) 
+
 
 {{< css.inline >}}
 
