@@ -18,7 +18,7 @@ Depending on the day, I also try to write tooling to make my job easier, or to f
 
 One of the things that I like about my job is that there are no two days that are the same and I get to learn new things everyday.
 
-**Update**
+**Job Updates**
 
 As my team has begun to mature, I’ve found myself taking on more SIEM engineering responsibilities in addition to incident response. This includes identifying which logs we need to ingest, determining which alerts can be automatically closed through Microsoft Defender automations, and evaluating the overall fidelity of the alerts being sent to the incident response team.
 
@@ -30,7 +30,7 @@ In general, high-fidelity alerts share a few key characteristics.
 
 Based on the rule name alone, an incident response analyst should understand what behavior is being detected and what they should be looking for during an investigation. The rule should clearly convey what it is detecting, where the intelligence comes from, and provide enough context to guide analysis within the environment.
 
-For example, earlier in my security career, I encountered a rule that fired on a Sliver payload. I downloaded the host artifacts and simply searched for the string “Sliver.” A more senior analyst later explained what Sliver actually is and why my analysis was incomplete. That experience highlighted how important clear detection context is—both for effective investigations and for helping analysts grow their understanding of threats.
+For example, earlier in my security career, I encountered a rule that fired on a Sliver payload. I downloaded the host artifacts and simply searched for the string “Sliver.” A more senior analyst later explained what Sliver actually is and why my analysis was incomplete. That experience highlighted how important clear detection context is for both effective investigations and for helping analysts grow their understanding of threats.
 
 2) Reliance on Static Indicators
 
