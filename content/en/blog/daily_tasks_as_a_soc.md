@@ -18,14 +18,27 @@ Depending on the day, I also try to write tooling to make my job easier, or to f
 
 One of the things that I like about my job is that there are no two days that are the same and I get to learn new things everyday.
 
-Update
+**Update**
 
-As my team starts to mature a little bit, now I am seeing myself doing more SIEM engineering than daily SOC work. I am working to see what logs my team needs to ingest, determine what alerts can be automatically closed using automations in Defender, and figuring out the fidelity of the alerts that come into the SOC. 
+As my team has begun to mature, I’ve found myself taking on more SIEM engineering responsibilities in addition to incident response. This includes identifying which logs we need to ingest, determining which alerts can be automatically closed through Microsoft Defender automations, and evaluating the overall fidelity of the alerts being sent to the incident response team.
 
-The hard part of detection logic is seeing if the rule is relevant after it was written. As a detection rule author, I need to see if the rule logic that was written in the past was firing correctly, and still relevant to the threat that the incident response team wants to alert on. As a team that does not have a dedicated detection team, the fidelity of the rule becomes ever more important, as a small team does not need to flooded with false positive alerts. Here is in general, the characteristis of high fidelity alert:
+One of the most challenging aspects of detection engineering is determining whether a rule remains relevant after it has been written. As a detection rule author, I need to assess whether historical rule logic is firing as expected and whether it still aligns with the threats the incident response team actually cares about. Because our team does not have a dedicated detection engineering function, alert fidelity becomes even more critical. 
 
-1) Clear rule names, with clear actionable items. Based on the rule name, the incident response analyst should be able to know whatrule is alerting on, and what they should look for. When investigating an incident, the analyst should know what the rule is looking, where the intel from the rule is coming from, so should have enough context to  guide them what to look for in the environment. For example, earlier on when I was CSIRT, I saw a rule that fired related to a Sliver payload. I downloaded the 
-2) 
+In general, high-fidelity alerts share a few key characteristics.
+
+1) Clear rule names with actionable context.
+
+Based on the rule name alone, an incident response analyst should understand what behavior is being detected and what they should be looking for during an investigation. The rule should clearly convey what it is detecting, where the intelligence comes from, and provide enough context to guide analysis within the environment.
+
+For example, earlier in my security career, I encountered a rule that fired on a Sliver payload. I downloaded the host artifacts and simply searched for the string “Sliver.” A more senior analyst later explained what Sliver actually is and why my analysis was incomplete. That experience highlighted how important clear detection context is—both for effective investigations and for helping analysts grow their understanding of threats.
+
+2) Reliance on Static Indicators
+
+Unless a detection is intentionally built around very specific, newly observed indicators or short-lived IOCs, effective detection logic should be broad enough to identify anomalous behavior even as attackers change tools or techniques. Indicators such as IP addresses and file hashes are trivial for attackers to change (unless you are using a TLSH hash), and detections that rely heavily on them can be easily bypassed. When this happens, defenders risk missing malicious activity entirely once the indicator becomes stale.
+
+For this reason, static indicators should generally be used as supporting context or enrichment, rather than serving as the primary signal for a detection. Behavioral logic provides far more durable coverage against evolving threats.
+
+
 
 
 {{< css.inline >}}
