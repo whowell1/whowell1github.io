@@ -57,7 +57,6 @@ Endpoint Detection and Response (EDR) tools are excellent at detecting known thr
 **2. High-Fidelity Alerts**
 - Deception creates a low amount of false positives (no legitimate user should touch decoys)
 - Reduces alert fatigue for security teams
-- Allows EDR analysts to focus on real threats instead of investigating endless alerts
 
 **3. Attacker Intelligence**
 - Observe attacker techniques in a safe environment
@@ -106,7 +105,7 @@ This creates a defense-in-depth strategy where deception provides early detectio
 - Plant fake credentials in files, memory, and configuration files
 - Create decoy network shares with realistic-looking documents
 - Ensure decoys have appropriate names, roles, and apparent purposes
-- Keep decoys maintained and updated like real systems
+
 
 **Why this matters:** If decoys look fake or abandoned, sophisticated attackers will ignore them. They need to be indistinguishable from real assets to be effective traps.
 
@@ -118,7 +117,7 @@ This creates a defense-in-depth strategy where deception provides early detectio
 - Create clear escalation procedures for deception alerts
 - Train your security team to recognize and respond to deception events
 - Establish playbooks for investigating deception triggers
-- Set up automated responses to contain threats immediately
+
 
 **Why this matters:** A deception alert is one of the highest-fidelity signals you can get—there's no legitimate reason for anyone to interact with a decoy. But this only works if your team knows how to act on these alerts quickly and effectively.
 
