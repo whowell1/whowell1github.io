@@ -10,7 +10,6 @@ AI and LLMs have changed cybersecurity, but the real shift for defenders isn't A
 
 Today's attackers increasingly log in with stolen credentials instead of deploying malware. They abuse legitimate tools, compromise supply chains, and quietly persist in environments long before taking overt action.
 
-
 Meanwhile, security teams face shrinking budgets, leaner teams, and higher expectations. Even well-funded organizations struggle to maintain visibility against increasingly evasive adversaries.
 
 Working harder isn't the answer. Working smarter is.
@@ -45,7 +44,7 @@ When an attacker approaches your environment:
 - **You gain time** to harden defenses where needed
 - **You bridge gaps** in your security posture before real damage occurs
 
-The attacker must guess which castle holds the king, wasting time and resources while you watch, learn, and respond.
+The attacker must guess which castle holds the king, using time and resources while you watch, learn, and respond.
 
 ## Why This Could Be a Better Way with EDR
 
@@ -65,9 +64,8 @@ Endpoint Detection and Response (EDR) tools are excellent at detecting known thr
 - Reduces alert fatigue for security teams
 
 **3. Attacker Intelligence**
-- Observe attacker techniques in a safe environment
+- Observe attacker techniques
 - Feed this intelligence into EDR detection rules
-- Improve threat hunting queries based on observed behavior
 
 **4. Extended Visibility**
 - Deception fills visibility gaps where EDR agents might not be deployed
@@ -75,7 +73,6 @@ Endpoint Detection and Response (EDR) tools are excellent at detecting known thr
 - Provides coverage for legacy systems that can't run modern EDR
 
 **5. Slows Down Attackers**
-- While attackers investigate decoys, EDR has more time to detect lateral movement
 - Gives incident response teams time to contain before exfiltration
 - Forces attackers to be noisier, making EDR detection easier
 
