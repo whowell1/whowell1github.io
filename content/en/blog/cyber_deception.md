@@ -1,9 +1,9 @@
 ---
 author: "Wren Howell"
-title: "Cyber Deception"
+title: "The Importance of using Cyber Deception as Part of Cybersecurity Strategy"
 date: 2025-12-10
 description: "Using Cyber Deception"
-tags: ["honeypot, tripwire, honeytoken"]
+tags: ["Cyber Deception, Decoys, honeytoken"]
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/3/32/Matsumoto_castle_3.jpg
 ---
 
