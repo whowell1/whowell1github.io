@@ -82,7 +82,7 @@ docker run -it --rm --network none <image_name>:<tag> /bin/bash
 **Flags explained:**
 - `-it`: Interactive terminal
 - `--rm`: Automatically remove the container when it exits
-- `--network none`: Isolate the container from the network (important for malware analysis)
+- `--network none`: Isolate the container from the network (this is a safeguard to make sure the malware does not connect to the network)
 - `/bin/bash`: Start a bash shell 
 
 **Alternative: Analyze without running the container**
