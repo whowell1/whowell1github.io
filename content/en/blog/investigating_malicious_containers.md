@@ -13,7 +13,7 @@ Supply chain compromises like Shai-Hulud are nightmares because remediation has 
 
 Shai-Hulud 2.0 is a supply chain worm that targets the npm ecosystem by infecting legitimate packages with malicious code. Once a developer installs a compromised package, the worm steals sensitive credentials such as npm tokens, GitHub tokens, and cloud keys from local machines and CI/CD pipelines. It then uses those stolen credentials to automatically compromise and republish other packages—allowing it to propagate rapidly like a worm.
 
-Many researchers have published IOCs associated with Shai-Hulud 2.0, and identifying them on hosts by looking up hashes is relatively trivial. But if the affected Shai-Hulud npm package is not on a traditional host (e.g., a container service), triaging looks a little different.
+Many researchers have published IOCs associated with Shai-Hulud 2.0, and identifying them on hosts by looking up hashes is relatively trivial. But if the affected Shai-Hulud npm package is not on a traditional host (e.g., a containers), triaging looks a little different.
 
 I've wanted to write a blog post on how to triage potentially malicious containers for a long time, so I'm using this Shai-Hulud incident to do so. This guide is a walkthrough on how to investigate potentially malicious containers using the IOCs from Shai-Hulud as a guide. This walkthrough assumes that the container is running on a host and is a Linux-based container.
 
