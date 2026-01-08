@@ -17,7 +17,7 @@ Many researchers have published IOCs associated with Shai-Hulud 2.0, and identif
 
 I've wanted to write a blog post on how to triage potentially malicious containers for a long time, so I'm using this Shai-Hulud incident to do so. This guide is a walkthrough on how to investigate potentially malicious containers using the IOCs from Shai-Hulud as a guide. This walkthrough assumes that the container is running on a host and is a Linux-based container. 
 
-Please note that this is not a remediation guide for organizations affected by Sha-Hulud. Sha-Hulud indicators of compromise (IOCs) are used solely as examples to demonstrate how to investigate container artifacts. More detailed reports on Sha-Hulud are linked in the resource section. 
+Please note that this is not a remediation guide for organizations affected by Sha-Hulud. Sha-Hulud IOCs are used solely as examples to demonstrate how to investigate container artifacts. More detailed reports on Sha-Hulud are linked in the resource section. 
 
 ## Important Distinctions
 
@@ -112,10 +112,9 @@ Now that you're in the shell of the container (or have extracted the filesystem)
 find / -name "malicious_node_modules_like_AsyncAPI" -type d 2>/dev/null
 ```
 
-
 ## Conclusion
 
-Supply chain attacks like Shai-Hulud demonstrate the importance of having proper incident response procedures for containerized environments. By following this methodology, security teams can effectively triage suspicious containers and identify compromised dependencies before they spread further through the environment.
+Supply chain attacks like Shai-Hulud demonstrate the importance of having proper incident response procedures for containerized environments. By following this methodology, security teams can effectively triage suspicious containers.
 
 Resources 
 - https://www.trendmicro.com/en_us/research/25/k/shai-hulud-2-0-targets-cloud-and-developer-systems.html
