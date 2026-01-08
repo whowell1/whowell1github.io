@@ -4,7 +4,7 @@ title: "Investigating Suspicious Containers on Host"
 date: 2025-12-15
 description: "Investigating Containers"
 tags: ["Incident Response, Container Security"]
-thumbnail: https://as1.ftcdn.net/jpg/07/22/57/22/1000_F_722572280_NEm2lcXDqeOowglTUdMtxwxPdQdnHW7r.jpg
+thumbnail: https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/952/cached.offlinehbpl.hbpl.co.uk/news/RDN/Ashippingcontainerfullofplasticwasteforexport-landscape.ENDSReport_TessColley-fotor-20250916114748.jpg
 ---
 
 Supply chain compromises like Shai-Hulud are nightmares because remediation has to happen at every level of the affected machines. Even if remediation is done at the first tier, if it doesn't occur at every level after that, there is still a risk of compromise—especially when a popular tool like npm packages gets hit.
@@ -123,6 +123,8 @@ find / -name "malicious_node_modules" -type d 2>/dev/null
 ## Conclusion
 
 Supply chain attacks like Shai-Hulud demonstrate the importance of having proper incident response procedures for containerized environments. By following this methodology, security teams can effectively triage suspicious containers and identify compromised dependencies before they spread further through the environment.
+
+
 
 {{< css.inline >}}
 
