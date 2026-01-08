@@ -108,21 +108,15 @@ Now that you're in the shell of the container (or have extracted the filesystem)
 ```bash
 # Check for suspicious npm packages in node_modules
 find / -name "malicious_node_modules" -type d 2>/dev/null
-
-
-## Additional Forensic Steps when looking for compromised npm packages on a host
-
-- **Inspect package.json files** for suspicious dependencies or install scripts
-- **Review .npmrc files** for unexpected registry configurations
-- **Review Docker image layers** to see when malicious code was introduced:
-
-```bash
-  docker history <image_name>:<tag>
 ```
+
 
 ## Conclusion
 
 Supply chain attacks like Shai-Hulud demonstrate the importance of having proper incident response procedures for containerized environments. By following this methodology, security teams can effectively triage suspicious containers and identify compromised dependencies before they spread further through the environment.
+
+Resources 
+- https://www.trendmicro.com/en_us/research/25/k/shai-hulud-2-0-targets-cloud-and-developer-systems.html
 
 
 
