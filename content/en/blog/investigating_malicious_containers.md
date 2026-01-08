@@ -15,7 +15,9 @@ Shai-Hulud 2.0 is a supply chain worm that targets the npm ecosystem by infectin
 
 Many researchers have published IOCs associated with Shai-Hulud 2.0, and identifying them on hosts by looking up hashes is relatively trivial. But if the affected Shai-Hulud npm package is not on a traditional host (e.g., a containers), triaging looks a little different.
 
-I've wanted to write a blog post on how to triage potentially malicious containers for a long time, so I'm using this Shai-Hulud incident to do so. This guide is a walkthrough on how to investigate potentially malicious containers using the IOCs from Shai-Hulud as a guide. This walkthrough assumes that the container is running on a host and is a Linux-based container.
+I've wanted to write a blog post on how to triage potentially malicious containers for a long time, so I'm using this Shai-Hulud incident to do so. This guide is a walkthrough on how to investigate potentially malicious containers using the IOCs from Shai-Hulud as a guide. This walkthrough assumes that the container is running on a host and is a Linux-based container. 
+
+Please note that this is not a remediation guide for organizations affected by Sha-Hulud. Sha-Hulud indicators of compromise (IOCs) are used solely as examples to demonstrate how to investigate container artifacts. More detailed reports on Sha-Hulud are linked in the resource section. 
 
 ## Important Distinctions
 
@@ -103,11 +105,11 @@ docker rm analysis_container
 
 ## Step 5: Look for Shai-Hulud IOCs
 
-Now that you're in the shell of the container (or have extracted the filesystem), you can look for potential IOCs associated with the Shai-Hulud malware:
+Now that you're in the shell of the container (or have extracted the filesystem), you can look for potential IOCs associated with the Shai-Hulud malware(any of the packages affected by Shai-Hulud like AsyncAPI):
 
 ```bash
 # Check for suspicious npm packages in node_modules
-find / -name "malicious_node_modules" -type d 2>/dev/null
+find / -name "malicious_node_modules_like_AsyncAPI" -type d 2>/dev/null
 ```
 
 
@@ -117,6 +119,10 @@ Supply chain attacks like Shai-Hulud demonstrate the importance of having proper
 
 Resources 
 - https://www.trendmicro.com/en_us/research/25/k/shai-hulud-2-0-targets-cloud-and-developer-systems.html
+
+Affected Sha-Hulud 2.0 published by Wiz
+- https://github.com/wiz-sec-public/wiz-research-iocs/blob/main/reports/shai-hulud-2-packages.csv 
+
 
 
 
