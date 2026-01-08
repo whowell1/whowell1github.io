@@ -1,6 +1,6 @@
 ---
 author: "Wren Howell"
-title: "Investigating Suspicious Containers on Host" 
+title: "Analyzing Suspicious Containers on Hosts: A Sha-Hulud Case Study" 
 date: 2025-12-15
 description: "Investigating Containers"
 tags: ["Incident Response, Container Security"]
@@ -120,7 +120,7 @@ Supply chain attacks like Shai-Hulud demonstrate the importance of having proper
 Resources 
 - https://www.trendmicro.com/en_us/research/25/k/shai-hulud-2-0-targets-cloud-and-developer-systems.html
 
-Affected Sha-Hulud 2.0 published by Wiz
+Affected Sha-Hulud 2.0 NPM packages published by Wiz
 - https://github.com/wiz-sec-public/wiz-research-iocs/blob/main/reports/shai-hulud-2-packages.csv 
 
 
