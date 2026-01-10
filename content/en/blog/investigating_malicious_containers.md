@@ -99,7 +99,7 @@ docker export analysis_container -o filesystem.tar
 # Extract and analyze
 tar -xf filesystem.tar -C ./analysis_directory/
 
-# Clean up
+# Clean up after analysis is done
 docker rm analysis_container
 ```
 
