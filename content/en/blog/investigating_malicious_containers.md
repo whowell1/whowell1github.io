@@ -53,7 +53,7 @@ docker save -o malicious_image.tar <image_name>:<tag>
 
 ## Step 2: Transfer the .tar File to Your Analysis Machine
 
-Transfer the `.tar` file to your analysis machine. I use a EDR like Crowdstrike and Defender so all I do is download the file and unzip it onto my analysis machine. 
+Transfer the `.tar` file to your analysis machine. If you use a EDR like Crowdstrike, Defender, SentinelOne, or Semantic all you have to do is download the tar file on the analysis machine. 
 
 ## Step 3: Load the Container/Image on Your Analysis Machine
 
