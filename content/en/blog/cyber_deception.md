@@ -6,6 +6,7 @@ description: "Using Cyber Deception"
 tags: ["Cyber Deception, Decoys, Honeytoken"]
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/3/32/Matsumoto_castle_3.jpg
 ---
+
 AI and LLMs have changed cybersecurity, but the real shift isn't AI-generated malware. It's how attackers operate.
 
 Attackers are having an easier time compromising systems by using stolen credentials, abusing legitimate tools through living off the land and living off the orchard techniques, and compromising supply chains that enable them to persist in an environment for a long time before taking action.
