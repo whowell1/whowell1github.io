@@ -6,128 +6,110 @@ description: "Using Cyber Deception"
 tags: ["Cyber Deception, Decoys, honeytoken"]
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/3/32/Matsumoto_castle_3.jpg
 ---
-AI and LLMs have changed cybersecurity, but the real shift for defenders isn't AI-generated malware. It's how attackers operate.
+AI and LLMs have changed cybersecurity, but the real shift isn't AI-generated malware. It's how attackers operate.
 
-Today's attackers increasingly log in with stolen credentials instead of deploying malware. They abuse legitimate tools, compromise supply chains, and quietly persist in environments long before taking overt action.
+Attackers are having an easier time compromising systems by using stolen credentials, abusing legitimate tools through living off the land and living off the orchard techniques, and compromising supply chains that enable them to persist in an environment for a long time before taking action.
 
-Meanwhile, security teams face shrinking budgets, leaner teams, and higher expectations. Even well-funded organizations struggle to maintain visibility against increasingly evasive adversaries.
+At the same time, security teams are dealing with tighter budgets, smaller teams, and higher expectations. Even organizations with decent funding struggle to maintain visibility when attackers are this good at staying hidden.
 
-Working harder isn't the answer. Working smarter is.
+You can't just work harder. You need a different approach.
 
-That's why organizations should consider deception as a core cybersecurity strategy.
-
-Even in organizations with bigger budgets, attackers are figuring out ways to evade detection, compromising supply chains, and logging in with stolen credentials instead of running malware that traditional defenses can catch.
+That's where cyber deception becomes an important part of your cybersecurity strategy. By incorporating deception, organizations can shift the advantage back in their favor and create uncertainty for attackers. 
 
 ## What is the Current Strategy?
 
 ### Analogy: Protect the King in the Castle
 
-The current defense strategy can be summed up in one sentence: **protect the king in the castle and equip the castle with the best guns.**
+The current defense strategy is pretty straightforward: **protect the king in the castle and equip the castle with the best guns.**
 
-This approach assumes that the castle you built won't require significant changes in the future. But in IT, like any homeowner will know, the castle will always need fine-tuning—upgrading its weapons, training staff, and dealing with projects that go on longer than originally thought.
+This works if you assume your infrastructure won't change much. But anyone who's worked in IT knows that's not realistic. You're constantly upgrading tools, training staff, dealing with projects that take longer than expected, and adjusting to new requirements.
 
-This sounds great in practice, but you have to make sure you always have the biggest gun, that the people with the guns are well-trained, and most importantly—**it tells other people where the king is.**
-
-### The Problem
-
-Attackers know what to look for. They know where your critical systems are. They know what security tools you're likely using. The castle approach is predictable, and predictability is a defender's weakness.
+The bigger problem though is when you focus all your defenses around specific assets, you're basically telling attackers where the valuable stuff is. They know what to look for, they know where your critical systems probably are, and they know what security tools you're likely running. The approach is predictable.
 
 ## What is Cyber Deception?
 
 ### Analogy: Build Many Castles
 
-Deception takes a different approach: **You build equal castles with defenses. Only you know where the king is.**
+Deception takes a different approach: **You build multiple castles that all look equally defended. Only you know where the king actually is.**
 
-When an attacker approaches your environment:
-- **The noise the attacker generates is the alert** - they reveal themselves by touching what they shouldn't
-- **You collect intel** on what the attacker is doing and their techniques
-- **You gain time** to harden defenses where needed
-- **You bridge gaps** in your security posture before real damage occurs
+When an attacker gets into your environment:
+- The noise they generate touching decoys becomes your alert; they reveal themselves by interacting with things they shouldn't
+- You collect intelligence on what they're doing and what techniques they're using
+- You gain time to strengthen defenses where you need them
+- You can address gaps in your security before real damage happens
 
-The attacker must guess which castle holds the king, using time and resources while you watch, learn, and respond.
+The attacker has to guess which castle holds the king, burning time and resources while you watch, learn, and respond.
 
-## Why This Could Be a Better Way with EDR
+## Why This Works Well with EDR
 
-### The Power of Combining Deception with EDR
+### Combining Deception with EDR
 
-Endpoint Detection and Response (EDR) tools are excellent at detecting known threats and suspicious behavior on endpoints. But they work best when they have context about what's happening across your environment.
+EDR tools are good at detecting known threats and suspicious behavior on endpoints. But they work better when they have context about what's happening across your environment.
 
-**Deception enhances EDR in several ways:**
+Deception can enhance EDR in a few ways:
 
-**1. Early Warning System**
-- Deception catches attackers during reconnaissance, before they reach real assets
-- EDR gets advanced notice to watch for specific attack patterns
-- Security teams can proactively hunt based on deception intelligence
+**Early Warning**
+Deception can catch attackers during reconnaissance, before they reach real assets. This gives security teams a chance to hunt proactively instead of reacting to an alert after damage is done.
 
-**2. High-Fidelity Alerts**
-- Deception creates a low amount of false positives (no legitimate user should touch decoys)
-- Reduces alert fatigue for security teams
+**High-Fidelity Alerts**
+Deception generates fewer false positives; there's no legitimate reason for anyone to touch a decoy. This reduces alert fatigue, which is a real problem when your team is drowning in alerts from other tools.
 
-**3. Attacker Intelligence**
-- Observe attacker techniques
-- Feed this intelligence into EDR detection rules
+**Attacker Intelligence**
+You can observe attacker techniques in real-time and feed that intelligence into your detection rules. This makes your other tools smarter.
 
-**4. Extended Visibility**
-- Deception fills visibility gaps where EDR agents might not be deployed
-- Creates tripwires across network segments
-- Provides coverage for legacy systems that can't run modern EDR
+**Extended Visibility**
+Deception fills visibility gaps where EDR agents might not be deployed; legacy systems, network segments without coverage, systems that can't run modern EDR. It creates tripwires across your environment.
 
-**5. Slows Down Attackers**
-- Gives incident response teams time to contain before exfiltration
-- Forces attackers to be noisier, making EDR detection easier
+**Slows Down Attackers**
+When attackers interact with decoys, it gives your incident response team time to contain the threat before exfiltration happens. It also forces attackers to be noisier, which makes EDR detection easier.
 
-### The Combined Approach
+### How This Works Together
 
 When an attacker touches a decoy:
-1. **Deception system alerts** immediately (high-confidence threat)
-2. **EDR investigates** the source endpoint for compromise indicators
-3. **Security team analyzes** attacker TTPs from deception logs
-4. **EDR hunts proactively** for similar behavior across all endpoints
-5. **Response team contains** the threat before it reaches critical assets
+1. The deception system alerts immediately; this is a high-confidence threat
+2. EDR investigates the source endpoint for compromise indicators
+3. Your security team analyzes attacker TTPs from deception logs
+4. EDR hunts proactively for similar behavior across all endpoints
+5. Your response team contains the threat before it reaches critical assets
 
-This creates a defense-in-depth strategy where deception provides early detection and EDR provides detailed endpoint visibility and response capabilities.
+This creates defense-in-depth where deception provides early detection and EDR provides detailed endpoint visibility and response capabilities.
 
-## Key Steps to Incorporating Deception in Your Environment
+## Getting Deception Running in Your Environment
 
-### 1. Identify the Crown Jewels (Your Castles)
+### 1. Identify the Crown Jewels
 
-**You cannot protect what you don't know.**
+You can't protect what you don't know about.
 
-- Map your critical assets: databases, file servers, domain controllers, sensitive applications
-- Understand your most valuable data and where it lives
-- Identify the paths attackers would take to reach these assets
-- Document which systems, if compromised, would cause the most damage
+Start by mapping your critical assets; databases, file servers, domain controllers, sensitive applications. Figure out where your most valuable data lives, what paths attackers would take to reach it, and which systems would cause the most damage if compromised.
 
-**Why this matters:** Deception is most effective when deployed strategically around your actual crown jewels. You need to know what you're protecting before you can create convincing distractions.
+This matters because deception works best when it's deployed strategically around your actual crown jewels. You need to know what you're protecting before you can create convincing distractions around it.
 
-### 2. Create Believable Decoys (Make the Castles Look Real)
+### 2. Create Believable Decoys
 
-**Make sure the decoys mimic the real environment.**
+Your decoys need to look real. If they look fake or abandoned, sophisticated attackers will ignore them.
 
-- Deploy fake servers, workstations, and databases that match your actual infrastructure
-- Plant fake credentials in files, memory, and configuration files
-- Create decoy network shares with realistic-looking documents
-- Ensure decoys have appropriate names, roles, and apparent purposes
+Deploy fake servers, workstations, and databases that match your actual infrastructure. Plant fake credentials in files, memory, and configuration files. Create decoy network shares with realistic-looking documents. Make sure decoys have appropriate names, roles, and purposes that fit your environment.
 
+The goal is making them indistinguishable from real assets.
 
-**Why this matters:** If decoys look fake or abandoned, sophisticated attackers will ignore them. They need to be indistinguishable from real assets to be effective traps.
+### 3. Set Up Alerts and Triage
 
-### 3. Alert and Triage Correctly (Know When the Castle is Under Attack)
+Make sure your team knows when a decoy has been touched.
 
-**Make sure your team knows when a decoy has been touched.**
+Integrate deception alerts with your SIEM and EDR. Create clear escalation procedures for deception events. Train your security team to recognize and respond to these alerts. Establish playbooks for investigating deception triggers.
 
-- Integrate deception alerts with your SIEM and EDR
-- Create clear escalation procedures for deception alerts
-- Train your security team to recognize and respond to deception events
-- Establish playbooks for investigating deception triggers
+A deception alert is one of the highest-fidelity signals you can get; there's no legitimate reason for anyone to interact with a decoy. But this only works if your team knows how to act on these alerts quickly.
 
+### 4. Test from an Attacker's Perspective
 
-**Why this matters:** A deception alert is one of the highest-fidelity signals you can get—there's no legitimate reason for anyone to interact with a decoy. But this only works if your team knows how to act on these alerts quickly and effectively.
+After deploying decoys, approach them like an attacker would. If you brought in a red teamer to find the decoys, would they spot them? What non-technical controls could make the decoys more convincing and harder to distinguish from real assets?
+
+**Why this matters:** Decoys only work if they're believable. Regular testing from an adversarial perspective helps ensure your decoys stay effective as your environment and attacker techniques evolve.
 
 ## Getting Started
 
 **Start Small:**
-1. Deploy a few decoy credentials in common locations
+1. Deploy a few decoy credentials in common locations; I've written about doing this with SharePoint decoys before
 2. Create 2-3 fake servers that look important
 3. Monitor for any interactions
 4. Use findings to improve your real defenses
@@ -146,11 +128,11 @@ This creates a defense-in-depth strategy where deception provides early detectio
 
 ## Conclusion
 
-The cybersecurity landscape has changed. Attackers are smarter, faster, and more evasive. Traditional "castle defense" strategies are necessary but no longer sufficient.
+The cybersecurity landscape has changed. Attackers are smarter and more evasive. Traditional defense strategies are necessary but not sufficient anymore.
 
-By incorporating deception, you shift from a purely reactive posture to a proactive one. You create uncertainty for attackers, gain early warning of threats, and gather intelligence that makes all your other security tools more effective.
+Deception shifts you from purely reactive to proactive. You create uncertainty for attackers, get early warning of threats, and gather intelligence that makes your other security tools more effective.
 
-Don't just build a better castle. Build many castles, and let attackers waste their time and reveal themselves while your real crown jewels remain hidden and protected.
+Don't just build a better castle. Build multiple castles and let attackers waste their time revealing themselves while your real assets stay hidden and protected.
 
 {{< css.inline >}}
 
