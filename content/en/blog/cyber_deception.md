@@ -3,7 +3,7 @@ author: "Wren Howell"
 title: "The Importance of using Cyber Deception as Part of Cybersecurity Strategy"
 date: 2025-12-10
 description: "Using Cyber Deception"
-tags: ["Cyber Deception, Decoys, honeytoken"]
+tags: ["Cyber Deception, Decoys, Honeytoken"]
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/3/32/Matsumoto_castle_3.jpg
 ---
 AI and LLMs have changed cybersecurity, but the real shift isn't AI-generated malware. It's how attackers operate.
