@@ -30,7 +30,7 @@ The bigger problem though is when you focus all your defenses around specific as
 
 ### Analogy: Build Many Castles
 
-Deception takes a different approach: **You build multiple castles that all look equally defended. Only you know where the king actually is.**
+Deception takes a different approach: **You build multiple castles that all look equally defended. Only you know where the king actually is**
 
 When an attacker gets into your environment:
 - The noise they generate touching decoys becomes your alert; they reveal themselves by interacting with things they shouldn't
