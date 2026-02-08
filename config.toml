@@ -1,4 +1,5 @@
 baseurl = "https://wrentarohowell.com/"
+googleAnalytics = "G-LLJZBFYQND"
 #baseurl = "https://wonderful-wescoff-cddc75.netlify.app/"
 metaDataFormat = "yaml"
 title = "Wren Howell"
