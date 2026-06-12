@@ -7,7 +7,6 @@ tags: ["AI, LLM"]
 thumbnail: https://blog.adobe.com/security/media_11634bb135281c9b51d236031f2c0d6c7d92336b3.jpg?width=750&format=jpg&optimize=medium
 ---
 
-
 Artificial intelligence (AI) is the new buzzword businesses use to capture the attention of customers, employees, and the board. The narrative around AI is full of hyperbolic takes from people who do not know how this technology works, AI salesmen and AI saleswomen who sell AI products, and grifters who want to make money off of it. With so many hyperbolic takes, I wanted to take a step back and winnow out the hype from reality.
 
 The initial idea for this blog post came from Luke Kanies, who wrote about how AI was impacting mobile developers. At first, I wanted to write something similar for security professionals, because aside from Marcus Hutchins, there were few honest blog posts geared toward a general audience on how AI was affecting the security community. However, as I started writing, the noise around the grand promises of AI became louder, which frustrated me. I realized that my initial points were incomplete. This frustration led me on a deeper intellectual journey to understand AI: what it is, the technical, financial, and cognitive infrastructure behind it, and what we risk losing as humans if we start to depend on it. This blog, in whatever published form it takes, draws inspiration from many writers, researchers, journalists, and others. The links to their works are cited in the post's references. This blog is the first part of my understanding of what AI is and the technical infrastructure behind it. 
@@ -59,9 +58,12 @@ AGI is a type of artificial intelligence that matches or surpasses human capabil
 These definitions are important because the tech industry often uses the terms AGI, LLM, and AI interchangeably, which can confuse the general public. There is no scientific consensus on the definition of AGI because intelligence is hard to measure. This lack of definition resulted in tech CEOs and tech companies obscuring and redefining these terms to suit their needs. The quotes by Sam Altman in 2025, 'AI systems can rival a legitimate PhD-level expert in any field,' and Dario Amodei's 2026 remark, 'I do not know if AI models are conscious,' are obvious examples of highly public figures conflating terms and confusing the public.
 
 
-### Explaining the Technical Tidbits of LLMs (Training, Benchmarking, RAG, and Inference)
+### Explaining the Technical Tidbits of LLMs (Training, Inference, etc)
 
 ### Training
+
+Training is the process by which the LLM understands and generates human language. The training process has three steps.
+
 
 Stage 1: Pre-training
 
@@ -72,62 +74,75 @@ The model starts by consuming a massive amount of text (trillions of words) from
 Stage 2: Fine-tuning
 
 
-Once pre-training is complete, the model is then specialized using smaller, carefully curated datasets. This fine-tuning step is where the model learns to follow instructions, answer questions in a structured way, and adapt to specific domains. A good way to think about this step is someone with a broad general education and giving them focused, on-the-job training.
+Once pre-training is complete, the model is then specialized using smaller, carefully curated datasets. This fine-tuning step is where the model learns to follow instructions, answer questions in a structured way, and adapt to specific domains. A good way to think about this step is to give someone with a broad general education focused on-the-job training.
 
 
 Stage 3: Alignment
 
 
-The final stage involves shaping the model's behavior to ensure it is helpful, accurate, and safe. This is done through Reinforcement Learning from Human Feedback (RLHF), where human raters review and rank the model's responses. The model learns to favor highly rated responses, reducing harmful outputs and improving how well it follows instructions in ways users actually expect.
+The final stage involves shaping the model's behavior to ensure it is helpful, accurate, and safe. Shaping the model's behavior is done through Reinforcement Learning from Human Feedback (RLHF), where human raters review and rank the model's responses. The model learns to favor highly rated responses, reducing harmful outputs and improving how well it follows instructions in ways users actually expect.
 
 
-LLM Benchmarking
+#### Inference
 
 
-Benchmarking is a standardized framework for measuring and evaluating an LLM's performance (https://blog-datalab.com/making-sense-of-ai-benchmarks/). Huggingface, a popular open-source benchmark tool for LLMs, describes it as "a community-driven exam for AI." Benchmarking established a way to measure LLM progress that could be observed and verified by others.
+Inference is when an LLM produces predictions or conclusions, or, put more simply, the results of its output. When a user puts a prompt into a frontier model (OpenAI, ClaudeCode, xAI), the prompt is split into tokens and converted to numbers for matrix multiplication. This step, called prefill, is performed in parallel, enabling all input tokens to be processed simultaneously. The next step, decode, is where the model produces its output. This step is an iterative process in which the model generates one token at a time, with each new token predicted based on the probabilities of all tokens that came before it, until the full response is generated.
 
-Retrieval-Augmented Generation (RAG)
+#### Prompt Engineering
+
+The idea behind prompt engineering is that, because LLMs generate responses by predicting patterns in data, optimizing the input is the most direct way to get high-quality outputs.
+
+#### Contextual Engineering
+
+Contextual engineering is the process of designing and optimizing instructions and relevant context so that LLMs can perform tasks more accurately and effectively within the bounds of their context window. RAG is an example of contextual engineering. 
+
+#### Retrieval-Augmented Generation (RAG)
 
 Marcus Hutchins, a security researcher, best describes RAG. He describes RAG as the ability for LLMs "to search the Internet for fresh data relevant to the user's query that allows it to use its training data to summarize information. This feature combines LLMs and search engines into a single product" (https://malwaretech.com/2025/08/every-reason-why-i-hate-ai.html). According to Microsoft (https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/02/13/5-key-features-and-benefits-of-retrieval-augmented-generation-rag/), RAG helps LLMS retrieve current, up-to-date knowledge, provide contextual relevance, reduce hallucinations, reduce costs, and increase user productivity.
 
 
-Inference
+#### Harness Engineering
+
+As use cases grew more complex and LLMs evolved from simple chat tools into more complex tasks, there needed to be a better way to manage and delegate tasks. Harness engineering is the process of designing, building, and optimizing the entire environment around an LLM. 
 
 
-Inference is when an LLM produces predictions or conclusions, or, put more simply, the results of its output. When a user puts a prompt into a frontier model (OpenAI, ClaudeCode, xAI), the prompt is split into tokens and converted to numbers for matrix multiplication. This step, called prefill, is performed in parallel, enabling all input tokens to be processed simultaneously. The next step, decode, is where the model produces its output. This step is an iterative process in which the model generates one token at a time, with each new token predicted based on the probabilities of all tokens that came before it, until the full response is generated.
+#### LLM Benchmarking
+
+
+Benchmarking is a standardized framework for measuring and evaluating an LLM's performance (https://blog-datalab.com/making-sense-of-ai-benchmarks/). Huggingface, a popular open-source benchmark tool for LLMs, describes it as "a community-driven exam for AI." Benchmarking established a way to measure LLM progress that could be observed and verified by others.
 
 
 ### Technical Limitations of LLM's
 
 
-Benchmark Limitations
+#### Benchmark Limitations
 
 
 The paper from James Fodor titled "Line Goes Up? Inherent Limitations of Benchmarks for Evaluating Large Language Models" outlines the limitations of benchmarks perfectly. He writes, "benchmarks suffer from overfitting, lack real-world relevance, and aren't validated against general cognitive performance." He continues to write that "LLMs consistently fail to learn the underlying structure of the tasks they are trained on, instead relying on complex statistical associations and heuristics which enable good performance on test benchmarks but generalize poorly to many real-world tasks." In simple terms, benchmarks are gamed to feign improvement, and they are, in themselves, a terrible way to measure LLM effectiveness.
 
 
-Prompt Injection
+#### Prompt Injection
 
 
 Prompt injection occurs when users craft prompts that bypass or override the built-in safeguards. Even though there are ways to reduce the likelihood of prompt injection, there is currently no way to prevent it completely (https://genai.owasp.org/llmrisk/llm01-prompt-injection/).
 
 
-LLM Hallucinations
+#### LLM Hallucinations
 
 
 Hallucinations are plausible but false statements generated by language models. According to OpenAI's own research, LLMs hallucinate "because standard training and evaluation procedures reward guessing over acknowledging uncertainty" (https://openai.com/index/why-language-models-hallucinate/). Just like prompt injection, hallucinations are a feature of LLMs, not a bug.
 
 
-RAG Limitations
+#### RAG Limitations
 
 
 One way companies tried to address factual inaccuracies was through RAG. It turns out that searching the Internet for unverified sources and summarizing ideas did not lead to more accurate facts. Although the implementation of RAG has improved since it was first introduced, due to its design, it struggles to differentiate between a troll on Reddit or X and an expert when querying data; it loses important context when retrieving data from the Internet, which makes it still prone to inaccuracies.
 
 
-Model Drift
+#### Model Drift
 
 
-Model drift is the degradation of a model's performance due to changes in the data it was originally trained on. Model drift happens because changes in the real world like language, facts, user behavior, shift the underlying patterns the model learned during training, that makes its predictions or outputs less accurate, relevant, or reliable over time.
+Model drift is the degradation of a model's performance due to changes in the data it was originally trained on. Model drift happens because changes in the real world, like language, facts, and user behavior, shift the underlying patterns the model learned during training, which makes its predictions or outputs less accurate, relevant, or reliable over time.
 
 
 Additional Risks To Consider When LLMs are Embedded in Our Applications
@@ -145,7 +160,7 @@ Building software is like building a car; different parts need to be shipped fro
 Use of LLMs increases the Potential for Data Exfiltration.
 
 
-Data Exfiltration is the unauthorized transfer of data from a system or network to an external destination controlled by an attacker. The attack surface for data exfiltration expands significantly with LLM usage, as these systems are designed to accept broad inputs, making it difficult to prevent users from submitting sensitive information. Even with technical  methods to minimize risk, a significant gap persists due to the fundamental design of LLMs. In highly regulated environments like healthcare or critical infrastructure, submitting sensitive information externally carries significant legal, operational, and reputational consequences, something most businesses cannot ignore.
+Data Exfiltration is the unauthorized transfer of data from a system or network to an external destination controlled by an attacker. The attack surface for data exfiltration expands significantly with LLM usage, as these systems are designed to accept broad inputs, making it difficult to prevent users from submitting sensitive information. Even with technical methods to minimize risk, a significant gap persists due to the fundamental design of LLMs. In highly regulated environments like healthcare or critical infrastructure, submitting sensitive information externally carries significant legal, operational, and reputational consequences, something most businesses cannot ignore.
 
 
 Use of LLMs increases Fundamental Design Flaws.
@@ -165,7 +180,7 @@ The first principle, confidentiality, ensures that information is accessible onl
 During a security investigation, an LLM introduces risks across all three pillars of the CIA triad. Confidentiality is at risk because an LLM's inability to determine which information is confidential or sensitive, combined with its tendency to trust user input blindly, can lead to the disclosure of sensitive information. During an investigation, analysts examine a variety of logs that contain sensitive information, including PII, system logs, and forensic artifacts. When this data is entered into an LLM unintentionally, the analyst has no control over where it goes. Microsoft has already acknowledged past instances of confidential data leaked to outside actors (https://www.bbc.com/news/articles/c8jxevd8mdyo).
 
 
-Integrity is at risk by the aforementioned tendency of LLMs to hallucinate, which includes reaching plausible but factually incorrect conclusions, misattributing indicators of compromise, or confidently recommending the wrong remediation steps. The tendency for LLMs to hallucinate is troubling in security operations where analysts are under significant pressure to find relevant logs to remediate the incident, leaving them vulnerable to cognitive shortcuts and to trusting hallucinated findings. Hallucinated findings can derail the entire investigation, causing analysts to chase non-existent threats and incorrect logs, while the threat actor continues to operate undetected. Acting upon hallucinated outputs can lead to destroying forensic evidence crucial to understanding the investigation, closing off recovery paths, or even destabilizing systems, prolonging and complicating incidents further.
+Integrity is at risk from the aforementioned tendency of LLMs to hallucinate, which includes reaching plausible but factually incorrect conclusions, misattributing indicators of compromise, or confidently recommending the wrong remediation steps. The tendency for LLMs to hallucinate is troubling in security operations where analysts are under significant pressure to find relevant logs to remediate the incident, leaving them vulnerable to cognitive shortcuts and to trusting hallucinated findings. Hallucinated findings can derail the entire investigation, causing analysts to chase non-existent threats and incorrect logs, while the threat actor continues to operate undetected. Acting upon hallucinated outputs can lead to destroying forensic evidence crucial to understanding the investigation, closing off recovery paths, or even destabilizing systems, prolonging and complicating incidents further.
 
 
 The last part of the CIA triad, availability, is a risk as well. LLMs have a limited context window, which is the maximum amount of text they can process in a single interaction. The majority of security incidents require analysts to review large volumes of data from system logs, memory dumps, and tool logs, which are analyzed together to understand what happened. No current LLM has a sufficiently large context window to perform this analysis. Even though analysts could mitigate this limitation by feeding the LLM fragments of data, it introduces new problems. Critical information is omitted, increasing the likelihood that the LLM will draw incomplete or hallucinated conclusions. In addition, it introduces context rot, the tendency of LLMs to become less accurate and lose track of earlier information as a conversation grows longer.
@@ -174,10 +189,10 @@ The last part of the CIA triad, availability, is a risk as well. LLMs have a lim
 The Use of LLMs in Security
 
 
-What I personally use LLMs for is very limited tasks like coming up with Kusto Query Language/Kibana Query Language (KQL) to help me write queries, rewrite regex filters, help rewrite emails, reformat things, rewrite some Dockerfiles, resolve syntax errors in my code, get started on reverse engineering basic obfuscation along with CyberChef, and aid in research and pulling data sources together. In addition, I spend part of my day experimenting with ways to bypass the guardrails built into these systems. For more complex tasks, LLMs usefulness is limited, so I avoid them unless I can break them down into smaller tasks.  
+What I personally use LLMs for is very limited tasks like coming up with Kusto Query Language/Kibana Query Language (KQL) to help me write queries, rewrite regex filters, help rewrite emails, reformat things, rewrite some Dockerfiles, resolve syntax errors in my code, get started on reverse engineering basic obfuscation along with CyberChef, and aid in research and pulling data sources together (that I still have to verify). As an incident responder with very little time to program, the use of LLMs and their harnesses can help speed up the automation of basic tasks, but they cannot perform their intended tasks without proper guidance. In addition, I try to spend part of my time experimenting with ways to bypass the guardrails built into these systems. For more complex tasks, LLMs usefulness is limited, so I avoid them unless I can break them down into smaller tasks.  
 
 
-As a security practitioner, the inherent limitations of LLMs make it hard for me to trust their judgment in complex incident response cases. The potential for its use in security and coding seemed clear in a sandboxed environment, but the realities of the real world made its limitations clear, and the potential for catastrophic misuse outweighs its benefits. However, the use of LLMs in security is not completely useless; they can find software vulnerabilities (but not because LLMs are good at finding them; we have tooling doing that for 10+ years) and be useful for creating creative honeypots that mimic real-world assets. Overall, the introduction of LLMs added more work to my colleagues in the industry. It has led to more people outsourcing their thinking to mathematical prediction machines that introduced more bugs and, more worryingly, cut budgets and headcount to finance AI projects. In addition, it has led to the degradation of the services that we use every day, causing notable outages of tools and bloating software, examples of what Cory Doctrow calls "enshitification." My experience is starkly at odds with the salespeople of AI (product/project managers, former crypto bros, and C-suite executives) who claim that AI will somehow eliminate white-collar jobs, make software better, and make life easier. The irony is that if we continue to push these LLM's into our products aggressively without knowing the effects of it, the inception of enshitification will continue, and it will be the security practitioners on the ground to tell the real story. Stay tuned for the second installment, where I will inspect the financial infrastructure of AI. 
+As a security practitioner, I find the inherent limitations of LLMs make it hard for me to trust their judgment in complex incident response cases, no matter how much their harnesses improve, because hallucinations are a mathematical certainty. The potential for its use in security and coding seemed clear in a sandboxed environment. Still, the realities of the real world made its limitations clear, and the potential for catastrophic misuse outweighs its benefits. However, the use of LLMs in security is not completely useless; they can find software vulnerabilities (but not because LLMs are good at finding them; we have tooling doing that for 10+ years) and be useful for creating creative honeypots that mimic real-world assets. Overall, the introduction of LLMs added more work to my colleagues in the industry. It has led to more people outsourcing their thinking to mathematical prediction machines that introduced more bugs and, more worryingly, cut budgets and headcount to finance AI projects. In addition, it has led to the degradation of the services we use every day, causing notable tool outages and bloated software, examples of what Cory Doctorow calls "enshitification." My experience is starkly at odds with the salespeople of AI (product/project managers, former crypto bros, and C-suite executives) who claim that AI will somehow eliminate white-collar jobs, make software better, and make life easier. The irony is that if we continue to push these LLM's into our products aggressively without knowing the effects of it, the inception of enshitification will continue, and it will be the security practitioners on the ground to tell the real story. Stay tuned for the second installment, where I will break down the financial infrastructure behind LLMs. 
 
 References
 
@@ -193,8 +208,6 @@ References
 - Model Drift (https://www.ibm.com/think/topics/model-drift)
 - Context Rot (https://www.understandingai.org/p/context-rot-the-emerging-challenge)
 - LLM Benchmarking (https://blog-datalab.com/making-sense-of-ai-benchmarks/)
-
-
 
 
 {{< css.inline >}}
