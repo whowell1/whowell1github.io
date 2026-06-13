@@ -6,7 +6,6 @@ description: "Understanding Technical Infrastucture of LLMs for Security Practio
 tags: ["AI, LLM"]
 thumbnail: https://blog.adobe.com/security/media_11634bb135281c9b51d236031f2c0d6c7d92336b3.jpg?width=750&format=jpg&optimize=medium
 ---
-
 Artificial intelligence (AI) is the new buzzword businesses use to capture the attention of customers, employees, and the board. The narrative around AI is full of hyperbolic takes from people who do not know how this technology works, AI salesmen and AI saleswomen who sell AI products, and grifters who want to make money off of it. With so many hyperbolic takes, I wanted to take a step back and winnow out the hype from reality.
 
 The initial idea for this blog post came from Luke Kanies, who wrote about how AI was impacting mobile developers. At first, I wanted to write something similar for security professionals, because aside from Marcus Hutchins, there were few honest blog posts geared toward a general audience on how AI was affecting the security community. However, as I started writing, the noise around the grand promises of AI became louder, which frustrated me. I realized that my initial points were incomplete. This frustration led me on a deeper intellectual journey to understand AI: what it is, the technical, financial, and cognitive infrastructure behind it, and what we risk losing as humans if we start to depend on it. This blog, in whatever published form it takes, draws inspiration from many writers, researchers, journalists, and others. The links to their works are cited in the post's references. This blog is the first part of my understanding of what AI is and the technical infrastructure behind it. 
@@ -145,31 +144,31 @@ One way companies tried to address factual inaccuracies was through RAG. It turn
 Model drift is the degradation of a model's performance due to changes in the data it was originally trained on. Model drift happens because changes in the real world, like language, facts, and user behavior, shift the underlying patterns the model learned during training, which makes its predictions or outputs less accurate, relevant, or reliable over time.
 
 
-Additional Risks To Consider When LLMs are Embedded in Our Applications
+#### Additional Risks To Consider When LLMs are Embedded in Our Applications
 
 
 The promise of LLMs has led to a vibecoding, where developers use LLMs to generate functional code by describing what they need in plain language. The rise of vibe coding has tricked non-technical users into believing that they can code an app with just an idea and an LLM. Seasoned engineers are pushed to vibecode, too, as companies encourage them to use LLMs. Microsoft's CEO recently bragged that 30% of its code was vibecoded. Vibecoded apps introduce additional risks that even seasoned developers can overlook, which increase the attack surface.
 
 
-Use of LLMs increases the Potential for Supply Chain Compromise.
+#### Use of LLMs increases the Potential for Supply Chain Compromise.
 
 
 Building software is like building a car; different parts need to be shipped from different places to complete it. If the supplier that makes the engine is defective, then the integrity of the entire car is at risk. Similarly, in software, if the package used by the program is compromised, the entire program is at risk. The potential for software supply chain compromises increases when vibecoding because LLMs could hallucinate a malicious package that mimics a legitimate one and compromise the whole application. Historically, software supply chain packages have been a nightmare to detect, contain, and mitigate because of how dependent libraries are on each other. (e.g., Sha-hulud). 
 
 
-Use of LLMs increases the Potential for Data Exfiltration.
+#### Use of LLMs increases the Potential for Data Exfiltration.
 
 
 Data Exfiltration is the unauthorized transfer of data from a system or network to an external destination controlled by an attacker. The attack surface for data exfiltration expands significantly with LLM usage, as these systems are designed to accept broad inputs, making it difficult to prevent users from submitting sensitive information. Even with technical methods to minimize risk, a significant gap persists due to the fundamental design of LLMs. In highly regulated environments like healthcare or critical infrastructure, submitting sensitive information externally carries significant legal, operational, and reputational consequences, something most businesses cannot ignore.
 
 
-Use of LLMs increases Fundamental Design Flaws.
+#### Use of LLMs increases Fundamental Design Flaws.
 
 
 Since LLMs use publicly accessible internet data, they can build flawed systems that rely on insecure defaults. For example, when configuring a virtual machine in Microsoft Azure, an LLM will most likely leave all ports open to the Internet, mirroring the common but inherently insecure default configuration when building Azure VMs. Just as building a house without locks increases the risk of being robbed, building a VM with all ports open to the Internet leaves a company extremely vulnerable to breaches.
 
 
-How Improper Use of LLMs in Security Affects Security Operations
+#### How Improper Use of LLMs in Security Affects Security Operations
 
 
 In the areas of security operations and cyber defense, LLMs' weaknesses are glaring. In this space, I see many LinkedIn posts claiming that AI-operated Security Operations Centers (SOCs) are a panacea for SOC problems. An AI SOC promises to fight alert fatigue, make analysts more skilled, and automate some tedious processes. As promising as this might sound, an "AI SOC" will be difficult to execute well. An AI-SOC will be difficult to implement effectively because the inherent limitations in LLMS compromise the CIA triad of security (confidentiality, integrity, and availability) in unpredictable ways that are crucial during security investigations.
@@ -186,7 +185,7 @@ Integrity is at risk from the aforementioned tendency of LLMs to hallucinate, wh
 The last part of the CIA triad, availability, is a risk as well. LLMs have a limited context window, which is the maximum amount of text they can process in a single interaction. The majority of security incidents require analysts to review large volumes of data from system logs, memory dumps, and tool logs, which are analyzed together to understand what happened. No current LLM has a sufficiently large context window to perform this analysis. Even though analysts could mitigate this limitation by feeding the LLM fragments of data, it introduces new problems. Critical information is omitted, increasing the likelihood that the LLM will draw incomplete or hallucinated conclusions. In addition, it introduces context rot, the tendency of LLMs to become less accurate and lose track of earlier information as a conversation grows longer.
 
 
-The Use of LLMs in Security
+#### The Use of LLMs in Security
 
 
 What I personally use LLMs for is very limited tasks like coming up with Kusto Query Language/Kibana Query Language (KQL) to help me write queries, rewrite regex filters, help rewrite emails, reformat things, rewrite some Dockerfiles, resolve syntax errors in my code, get started on reverse engineering basic obfuscation along with CyberChef, and aid in research and pulling data sources together (that I still have to verify). As an incident responder with very little time to program, the use of LLMs and their harnesses can help speed up the automation of basic tasks, but they cannot perform their intended tasks without proper guidance. In addition, I try to spend part of my time experimenting with ways to bypass the guardrails built into these systems. For more complex tasks, LLMs usefulness is limited, so I avoid them unless I can break them down into smaller tasks.  
