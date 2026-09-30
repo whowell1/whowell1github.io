@@ -93,7 +93,7 @@ The idea behind prompt engineering is that, because LLMs generate responses by p
 
 #### Contextual Engineering
 
-Contextual engineering is the process of designing and optimizing instructions and relevant context so that LLMs can perform tasks more accurately and effectively within the bounds of their context window. RAG is an example of contextual engineering. 
+Contextual engineering is the process of designing and optimizing instructions and relevant context so that LLMs can perform tasks more accurately and effectively within the bounds of their context window. 
 
 #### Retrieval-Augmented Generation (RAG)
 
@@ -102,7 +102,8 @@ Marcus Hutchins, a security researcher, best describes RAG. He describes RAG as 
 
 #### Harness Engineering
 
-As use cases grew more complex and LLMs evolved from simple chat tools into more complex tasks, there needed to be a better way to manage and delegate tasks. Harness engineering is the process of designing, building, and optimizing the entire environment around an LLM. 
+A harness is the orchestration layer around a model, or around many models at once. It's code, workflow logic, prompt design, and validation working together, with the model sitting inside as one component among several. The harness holds the logic that decides which model runs when, what context each one sees, how findings get checked, and when to escalate to a stronger model.
+
 
 
 #### LLM Benchmarking
