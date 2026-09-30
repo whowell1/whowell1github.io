@@ -8,7 +8,7 @@ thumbnail: https://blog.adobe.com/security/media_11634bb135281c9b51d236031f2c0d6
 ---
 Artificial intelligence (AI) is the new buzzword businesses use to capture the attention of customers, employees, and the board. The narrative around AI is full of hyperbolic takes from people who do not know how this technology works, AI salesmen and AI saleswomen who sell AI products, and grifters who want to make money off of it. With so many hyperbolic takes, I wanted to take a step back and winnow out the hype from reality.
 
-The initial idea for this blog post came from Luke Kanies, who wrote about how AI was impacting mobile developers. At first, I wanted to write something similar for security professionals, because aside from Marcus Hutchins, there were few honest blog posts geared toward a general audience on how AI was affecting the security community. However, as I started writing, the noise around the grand promises of AI became louder, which frustrated me. I realized that my initial points were incomplete. This frustration led me on a deeper intellectual journey to understand AI: what it is, the technical, financial, and cognitive infrastructure behind it, and what we risk losing as humans if we start to depend on it. This blog, in whatever published form it takes, draws inspiration from many writers, researchers, journalists, and others. The links to their works are cited in the post's references. This blog is the first part of my understanding of what AI is and the technical infrastructure behind it. 
+The initial idea for this blog post came from Luke Kanies, who wrote about how AI was impacting mobile developers. At first, I wanted to write something similar for security professionals, because aside from Marcus Hutchins, there were few honest blog posts geared toward a general audience on how AI was affecting the security community. However, as I started writing, the noise around the grand promises of AI became louder, which frustrated me. I realized that my initial points were incomplete. This frustration led me on a deeper intellectual journey to understand AI: what it is, the technical, financial, and cognitive infrastructure behind it. My first class in AI was as a university student.  This blog, in whatever published form it takes, draws inspiration from many writers, researchers, journalists, and others. The links to their works are cited in the post's references. This blog is the first part of understanding AI is and the technical infrastructure behind it. 
 
 
 ## Part I: Understanding the Technical Infrastructure Behind AI
@@ -42,17 +42,16 @@ IT security professionals protect systems, networks, and data from unauthorized 
 
 #### Artificial Intelligence (AI)
 
-AI is a broad term that encompasses fields of computer and data science focused on building machines with human-like intelligence to perform tasks such as learning, reasoning, problem-solving, perception, and language understanding (https://www.mtu.edu/computing/ai/). AI as a domain has been around since the 1950s. AI is used in commercial software for tasks such as recommendation engines and phishing email detection. What introduced AI into the cultural zeitgeist was the release of ChatGPT, a conversational chatbot built on a large language model (LLM).
+AI is a broad term that encompasses fields of computer and data science focused on building machines with human-like intelligence to perform tasks such as learning, reasoning, problem-solving, perception, and language understanding (https://www.mtu.edu/computing/ai/). AI as a domain has been around since the 1950s. AI is used in commercial software for tasks such as recommendation engines and phishing email detection. What introduced AI into the cultural zeitgeist was the release of ChatGPT, a conversational chatbot built on a large language model (LLM). Even though recommendation engines, phishing email detection, and LLM's are all different technologies, they are used interchangeably that is confusing.  
 
 #### Large Language Model (LLM)
 
-Dr. Timnit Gebru, an AI researcher, describes language models as "systems trained on string prediction tasks, predicting the likelihood of a token (character, word, or string) given either its preceding context or (in bidirectional and masked LMs) its surrounding context" (https://s10251.pcdn.co/pdf/2021-bender-parrots.pdf).
+Dr. Timnit Gebru, an researcher, describes language models as "systems trained on string prediction tasks, predicting the likelihood of a token (character, word, or string) given either its preceding context or (in bidirectional and masked LMs) its surrounding context" (https://s10251.pcdn.co/pdf/2021-bender-parrots.pdf).
 
 
 #### Artificial General Intelligence (AGI)
 
 AGI is a type of artificial intelligence that matches or surpasses human capabilities across virtually all cognitive tasks (https://www.ibm.com/think/topics/artificial-general-intelligence).
-
 
 These definitions are important because the tech industry often uses the terms AGI, LLM, and AI interchangeably, which can confuse the general public. There is no scientific consensus on the definition of AGI because intelligence is hard to measure. This lack of definition resulted in tech CEOs and tech companies obscuring and redefining these terms to suit their needs. The quotes by Sam Altman in 2025, 'AI systems can rival a legitimate PhD-level expert in any field,' and Dario Amodei's 2026 remark, 'I do not know if AI models are conscious,' are obvious examples of highly public figures conflating terms and confusing the public.
 
